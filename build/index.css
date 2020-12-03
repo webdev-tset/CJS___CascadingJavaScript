@@ -2319,59 +2319,61 @@ textarea.form-control {
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
 
-.form-inline {
+.form-inline, body > nav[class^=navbarre] > form, nav-bar > form {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
 }
-.form-inline .form-check {
+.form-inline .form-check, body > nav[class^=navbarre] > form .form-check, nav-bar > form .form-check {
   width: 100%;
 }
 @media (min-width: 576px) {
-  .form-inline label {
+  .form-inline label, body > nav[class^=navbarre] > form label, nav-bar > form label {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
   }
-  .form-inline .form-group {
+  .form-inline .form-group, body > nav[class^=navbarre] > form .form-group, nav-bar > form .form-group {
     display: flex;
     flex: 0 0 auto;
     flex-flow: row wrap;
     align-items: center;
     margin-bottom: 0;
   }
-  .form-inline .form-control {
+  .form-inline .form-control, body > nav[class^=navbarre] > form .form-control, nav-bar > form .form-control {
     display: inline-block;
     width: auto;
     vertical-align: middle;
   }
-  .form-inline .form-control-plaintext {
+  .form-inline .form-control-plaintext, body > nav[class^=navbarre] > form .form-control-plaintext, nav-bar > form .form-control-plaintext {
     display: inline-block;
   }
-  .form-inline .input-group,
-.form-inline .custom-select {
+  .form-inline .input-group, body > nav[class^=navbarre] > form .input-group, nav-bar > form .input-group,
+.form-inline .custom-select,
+body > nav[class^=navbarre] > form .custom-select,
+nav-bar > form .custom-select {
     width: auto;
   }
-  .form-inline .form-check {
+  .form-inline .form-check, body > nav[class^=navbarre] > form .form-check, nav-bar > form .form-check {
     display: flex;
     align-items: center;
     justify-content: center;
     width: auto;
     padding-left: 0;
   }
-  .form-inline .form-check-input {
+  .form-inline .form-check-input, body > nav[class^=navbarre] > form .form-check-input, nav-bar > form .form-check-input {
     position: relative;
     flex-shrink: 0;
     margin-top: 0;
     margin-right: 0.25rem;
     margin-left: 0;
   }
-  .form-inline .custom-control {
+  .form-inline .custom-control, body > nav[class^=navbarre] > form .custom-control, nav-bar > form .custom-control {
     align-items: center;
     justify-content: center;
   }
-  .form-inline .custom-control-label {
+  .form-inline .custom-control-label, body > nav[class^=navbarre] > form .custom-control-label, nav-bar > form .custom-control-label {
     margin-bottom: 0;
   }
 }
@@ -2436,12 +2438,12 @@ fieldset:disabled a.btn {
   background-color: #007bff;
   border-color: #007bff;
 }
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-primary, nav-bar > menu > li.dropdown.show > a.btn-primary {
   color: #fff;
   background-color: #0062cc;
   border-color: #005cbf;
 }
-.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-primary:focus, nav-bar > menu > li.dropdown.show > a.btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
@@ -2466,12 +2468,12 @@ fieldset:disabled a.btn {
   background-color: #6c757d;
   border-color: #6c757d;
 }
-.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-secondary, nav-bar > menu > li.dropdown.show > a.btn-secondary {
   color: #fff;
   background-color: #545b62;
   border-color: #4e555b;
 }
-.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-secondary:focus, nav-bar > menu > li.dropdown.show > a.btn-secondary:focus {
   box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
 }
 
@@ -2496,12 +2498,12 @@ fieldset:disabled a.btn {
   background-color: #28a745;
   border-color: #28a745;
 }
-.btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active, .show > .btn-success.dropdown-toggle {
+.btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active, .show > .btn-success.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-success, nav-bar > menu > li.dropdown.show > a.btn-success {
   color: #fff;
   background-color: #1e7e34;
   border-color: #1c7430;
 }
-.btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus, .show > .btn-success.dropdown-toggle:focus {
+.btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus, .show > .btn-success.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-success:focus, nav-bar > menu > li.dropdown.show > a.btn-success:focus {
   box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
 }
 
@@ -2526,12 +2528,12 @@ fieldset:disabled a.btn {
   background-color: #17a2b8;
   border-color: #17a2b8;
 }
-.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .show > .btn-info.dropdown-toggle {
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .show > .btn-info.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-info, nav-bar > menu > li.dropdown.show > a.btn-info {
   color: #fff;
   background-color: #117a8b;
   border-color: #10707f;
 }
-.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus, .show > .btn-info.dropdown-toggle:focus {
+.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus, .show > .btn-info.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-info:focus, nav-bar > menu > li.dropdown.show > a.btn-info:focus {
   box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
 }
 
@@ -2556,12 +2558,12 @@ fieldset:disabled a.btn {
   background-color: #ffc107;
   border-color: #ffc107;
 }
-.btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active, .show > .btn-warning.dropdown-toggle {
+.btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active, .show > .btn-warning.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-warning, nav-bar > menu > li.dropdown.show > a.btn-warning {
   color: #212529;
   background-color: #d39e00;
   border-color: #c69500;
 }
-.btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-warning.dropdown-toggle:focus {
+.btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-warning.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-warning:focus, nav-bar > menu > li.dropdown.show > a.btn-warning:focus {
   box-shadow: 0 0 0 0.2rem rgba(222, 170, 12, 0.5);
 }
 
@@ -2586,12 +2588,12 @@ fieldset:disabled a.btn {
   background-color: #dc3545;
   border-color: #dc3545;
 }
-.btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .show > .btn-danger.dropdown-toggle {
+.btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .show > .btn-danger.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-danger, nav-bar > menu > li.dropdown.show > a.btn-danger {
   color: #fff;
   background-color: #bd2130;
   border-color: #b21f2d;
 }
-.btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-danger.dropdown-toggle:focus {
+.btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-danger.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-danger:focus, nav-bar > menu > li.dropdown.show > a.btn-danger:focus {
   box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
 }
 
@@ -2616,12 +2618,12 @@ fieldset:disabled a.btn {
   background-color: #f8f9fa;
   border-color: #f8f9fa;
 }
-.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle {
+.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-light, nav-bar > menu > li.dropdown.show > a.btn-light {
   color: #212529;
   background-color: #dae0e5;
   border-color: #d3d9df;
 }
-.btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .show > .btn-light.dropdown-toggle:focus {
+.btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .show > .btn-light.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-light:focus, nav-bar > menu > li.dropdown.show > a.btn-light:focus {
   box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
 }
 
@@ -2646,12 +2648,12 @@ fieldset:disabled a.btn {
   background-color: #343a40;
   border-color: #343a40;
 }
-.btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active, .show > .btn-dark.dropdown-toggle {
+.btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active, .show > .btn-dark.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-dark, nav-bar > menu > li.dropdown.show > a.btn-dark {
   color: #fff;
   background-color: #1d2124;
   border-color: #171a1d;
 }
-.btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-dark.dropdown-toggle:focus {
+.btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-dark.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-dark:focus, nav-bar > menu > li.dropdown.show > a.btn-dark:focus {
   box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
 }
 
@@ -2671,12 +2673,12 @@ fieldset:disabled a.btn {
   color: #007bff;
   background-color: transparent;
 }
-.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-primary, nav-bar > menu > li.dropdown.show > a.btn-outline-primary {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
 }
-.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-primary:focus, nav-bar > menu > li.dropdown.show > a.btn-outline-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 
@@ -2696,12 +2698,12 @@ fieldset:disabled a.btn {
   color: #6c757d;
   background-color: transparent;
 }
-.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle {
+.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-secondary, nav-bar > menu > li.dropdown.show > a.btn-outline-secondary {
   color: #fff;
   background-color: #6c757d;
   border-color: #6c757d;
 }
-.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-secondary.dropdown-toggle:focus {
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-secondary.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-secondary:focus, nav-bar > menu > li.dropdown.show > a.btn-outline-secondary:focus {
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
 
@@ -2721,12 +2723,12 @@ fieldset:disabled a.btn {
   color: #28a745;
   background-color: transparent;
 }
-.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, .show > .btn-outline-success.dropdown-toggle {
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, .show > .btn-outline-success.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-success, nav-bar > menu > li.dropdown.show > a.btn-outline-success {
   color: #fff;
   background-color: #28a745;
   border-color: #28a745;
 }
-.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-success.dropdown-toggle:focus {
+.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-success.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-success:focus, nav-bar > menu > li.dropdown.show > a.btn-outline-success:focus {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
@@ -2746,12 +2748,12 @@ fieldset:disabled a.btn {
   color: #17a2b8;
   background-color: transparent;
 }
-.btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active, .show > .btn-outline-info.dropdown-toggle {
+.btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active, .show > .btn-outline-info.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-info, nav-bar > menu > li.dropdown.show > a.btn-outline-info {
   color: #fff;
   background-color: #17a2b8;
   border-color: #17a2b8;
 }
-.btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-info.dropdown-toggle:focus {
+.btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-info.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-info:focus, nav-bar > menu > li.dropdown.show > a.btn-outline-info:focus {
   box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
 
@@ -2771,12 +2773,12 @@ fieldset:disabled a.btn {
   color: #ffc107;
   background-color: transparent;
 }
-.btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active, .show > .btn-outline-warning.dropdown-toggle {
+.btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active, .show > .btn-outline-warning.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-warning, nav-bar > menu > li.dropdown.show > a.btn-outline-warning {
   color: #212529;
   background-color: #ffc107;
   border-color: #ffc107;
 }
-.btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-warning.dropdown-toggle:focus {
+.btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-warning.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-warning:focus, nav-bar > menu > li.dropdown.show > a.btn-outline-warning:focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 
@@ -2796,12 +2798,12 @@ fieldset:disabled a.btn {
   color: #dc3545;
   background-color: transparent;
 }
-.btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active, .show > .btn-outline-danger.dropdown-toggle {
+.btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active, .show > .btn-outline-danger.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-danger, nav-bar > menu > li.dropdown.show > a.btn-outline-danger {
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;
 }
-.btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-danger.dropdown-toggle:focus {
+.btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-danger.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-danger:focus, nav-bar > menu > li.dropdown.show > a.btn-outline-danger:focus {
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
 
@@ -2821,12 +2823,12 @@ fieldset:disabled a.btn {
   color: #f8f9fa;
   background-color: transparent;
 }
-.btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active, .show > .btn-outline-light.dropdown-toggle {
+.btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active, .show > .btn-outline-light.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-light, nav-bar > menu > li.dropdown.show > a.btn-outline-light {
   color: #212529;
   background-color: #f8f9fa;
   border-color: #f8f9fa;
 }
-.btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-light.dropdown-toggle:focus {
+.btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-light.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-light:focus, nav-bar > menu > li.dropdown.show > a.btn-outline-light:focus {
   box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
 
@@ -2846,12 +2848,12 @@ fieldset:disabled a.btn {
   color: #343a40;
   background-color: transparent;
 }
-.btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active, .show > .btn-outline-dark.dropdown-toggle {
+.btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active, .show > .btn-outline-dark.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-dark, nav-bar > menu > li.dropdown.show > a.btn-outline-dark {
   color: #fff;
   background-color: #343a40;
   border-color: #343a40;
 }
-.btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-dark.dropdown-toggle:focus {
+.btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-dark.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-dark:focus, nav-bar > menu > li.dropdown.show > a.btn-outline-dark:focus {
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
@@ -2912,7 +2914,7 @@ input[type=button].btn-block {
   opacity: 0;
 }
 
-.collapse:not(.show) {
+.collapse:not(.show), body > nav[class^=navbarre] > menu:not(.show), nav-bar > menu:not(.show) {
   display: none;
 }
 
@@ -2935,10 +2937,10 @@ input[type=button].btn-block {
   position: relative;
 }
 
-.dropdown-toggle {
+.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown > a, nav-bar > menu > li.dropdown > a {
   white-space: nowrap;
 }
-.dropdown-toggle::after {
+.dropdown-toggle::after, body > nav[class^=navbarre] > menu > li.dropdown > a::after, nav-bar > menu > li.dropdown > a::after {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
@@ -2948,11 +2950,11 @@ input[type=button].btn-block {
   border-bottom: 0;
   border-left: 0.3em solid transparent;
 }
-.dropdown-toggle:empty::after {
+.dropdown-toggle:empty::after, body > nav[class^=navbarre] > menu > li.dropdown > a:empty::after, nav-bar > menu > li.dropdown > a:empty::after {
   margin-left: 0;
 }
 
-.dropdown-menu {
+.dropdown-menu, body > nav[class^=navbarre] > menu > li.dropdown > div, body > nav[class^=navbarre] > menu > li.dropdown > ul, body > nav[class^=navbarre] > menu > li.dropdown > ol, body > nav[class^=navbarre] > menu > li.dropdown > dt, nav-bar > menu > li.dropdown > div, nav-bar > menu > li.dropdown > ul, nav-bar > menu > li.dropdown > ol, nav-bar > menu > li.dropdown > dt {
   position: absolute;
   top: 100%;
   left: 0;
@@ -3026,13 +3028,13 @@ input[type=button].btn-block {
     left: auto;
   }
 }
-.dropup .dropdown-menu {
+.dropup .dropdown-menu, .dropup body > nav[class^=navbarre] > menu > li.dropdown > div, .dropup body > nav[class^=navbarre] > menu > li.dropdown > ul, .dropup body > nav[class^=navbarre] > menu > li.dropdown > ol, .dropup body > nav[class^=navbarre] > menu > li.dropdown > dt, .dropup nav-bar > menu > li.dropdown > div, .dropup nav-bar > menu > li.dropdown > ul, .dropup nav-bar > menu > li.dropdown > ol, .dropup nav-bar > menu > li.dropdown > dt {
   top: auto;
   bottom: 100%;
   margin-top: 0;
   margin-bottom: 0.125rem;
 }
-.dropup .dropdown-toggle::after {
+.dropup .dropdown-toggle::after, .dropup body > nav[class^=navbarre] > menu > li.dropdown > a::after, .dropup nav-bar > menu > li.dropdown > a::after {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
@@ -3042,18 +3044,18 @@ input[type=button].btn-block {
   border-bottom: 0.3em solid;
   border-left: 0.3em solid transparent;
 }
-.dropup .dropdown-toggle:empty::after {
+.dropup .dropdown-toggle:empty::after, .dropup body > nav[class^=navbarre] > menu > li.dropdown > a:empty::after, .dropup nav-bar > menu > li.dropdown > a:empty::after {
   margin-left: 0;
 }
 
-.dropright .dropdown-menu {
+.dropright .dropdown-menu, .dropright body > nav[class^=navbarre] > menu > li.dropdown > div, .dropright body > nav[class^=navbarre] > menu > li.dropdown > ul, .dropright body > nav[class^=navbarre] > menu > li.dropdown > ol, .dropright body > nav[class^=navbarre] > menu > li.dropdown > dt, .dropright nav-bar > menu > li.dropdown > div, .dropright nav-bar > menu > li.dropdown > ul, .dropright nav-bar > menu > li.dropdown > ol, .dropright nav-bar > menu > li.dropdown > dt {
   top: 0;
   right: auto;
   left: 100%;
   margin-top: 0;
   margin-left: 0.125rem;
 }
-.dropright .dropdown-toggle::after {
+.dropright .dropdown-toggle::after, .dropright body > nav[class^=navbarre] > menu > li.dropdown > a::after, .dropright nav-bar > menu > li.dropdown > a::after {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
@@ -3063,30 +3065,30 @@ input[type=button].btn-block {
   border-bottom: 0.3em solid transparent;
   border-left: 0.3em solid;
 }
-.dropright .dropdown-toggle:empty::after {
+.dropright .dropdown-toggle:empty::after, .dropright body > nav[class^=navbarre] > menu > li.dropdown > a:empty::after, .dropright nav-bar > menu > li.dropdown > a:empty::after {
   margin-left: 0;
 }
-.dropright .dropdown-toggle::after {
+.dropright .dropdown-toggle::after, .dropright body > nav[class^=navbarre] > menu > li.dropdown > a::after, .dropright nav-bar > menu > li.dropdown > a::after {
   vertical-align: 0;
 }
 
-.dropleft .dropdown-menu {
+.dropleft .dropdown-menu, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > div, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > ul, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > ol, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > dt, .dropleft nav-bar > menu > li.dropdown > div, .dropleft nav-bar > menu > li.dropdown > ul, .dropleft nav-bar > menu > li.dropdown > ol, .dropleft nav-bar > menu > li.dropdown > dt {
   top: 0;
   right: 100%;
   left: auto;
   margin-top: 0;
   margin-right: 0.125rem;
 }
-.dropleft .dropdown-toggle::after {
+.dropleft .dropdown-toggle::after, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > a::after, .dropleft nav-bar > menu > li.dropdown > a::after {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
   content: "";
 }
-.dropleft .dropdown-toggle::after {
+.dropleft .dropdown-toggle::after, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > a::after, .dropleft nav-bar > menu > li.dropdown > a::after {
   display: none;
 }
-.dropleft .dropdown-toggle::before {
+.dropleft .dropdown-toggle::before, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > a::before, .dropleft nav-bar > menu > li.dropdown > a::before {
   display: inline-block;
   margin-right: 0.255em;
   vertical-align: 0.255em;
@@ -3095,14 +3097,14 @@ input[type=button].btn-block {
   border-right: 0.3em solid;
   border-bottom: 0.3em solid transparent;
 }
-.dropleft .dropdown-toggle:empty::after {
+.dropleft .dropdown-toggle:empty::after, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > a:empty::after, .dropleft nav-bar > menu > li.dropdown > a:empty::after {
   margin-left: 0;
 }
-.dropleft .dropdown-toggle::before {
+.dropleft .dropdown-toggle::before, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > a::before, .dropleft nav-bar > menu > li.dropdown > a::before {
   vertical-align: 0;
 }
 
-.dropdown-menu[x-placement^=top], .dropdown-menu[x-placement^=right], .dropdown-menu[x-placement^=bottom], .dropdown-menu[x-placement^=left] {
+.dropdown-menu[x-placement^=top], body > nav[class^=navbarre] > menu > li.dropdown > div[x-placement^=top], body > nav[class^=navbarre] > menu > li.dropdown > ul[x-placement^=top], body > nav[class^=navbarre] > menu > li.dropdown > ol[x-placement^=top], body > nav[class^=navbarre] > menu > li.dropdown > dt[x-placement^=top], nav-bar > menu > li.dropdown > div[x-placement^=top], nav-bar > menu > li.dropdown > ul[x-placement^=top], nav-bar > menu > li.dropdown > ol[x-placement^=top], nav-bar > menu > li.dropdown > dt[x-placement^=top], .dropdown-menu[x-placement^=right], body > nav[class^=navbarre] > menu > li.dropdown > div[x-placement^=right], body > nav[class^=navbarre] > menu > li.dropdown > ul[x-placement^=right], body > nav[class^=navbarre] > menu > li.dropdown > ol[x-placement^=right], body > nav[class^=navbarre] > menu > li.dropdown > dt[x-placement^=right], nav-bar > menu > li.dropdown > div[x-placement^=right], nav-bar > menu > li.dropdown > ul[x-placement^=right], nav-bar > menu > li.dropdown > ol[x-placement^=right], nav-bar > menu > li.dropdown > dt[x-placement^=right], .dropdown-menu[x-placement^=bottom], body > nav[class^=navbarre] > menu > li.dropdown > div[x-placement^=bottom], body > nav[class^=navbarre] > menu > li.dropdown > ul[x-placement^=bottom], body > nav[class^=navbarre] > menu > li.dropdown > ol[x-placement^=bottom], body > nav[class^=navbarre] > menu > li.dropdown > dt[x-placement^=bottom], nav-bar > menu > li.dropdown > div[x-placement^=bottom], nav-bar > menu > li.dropdown > ul[x-placement^=bottom], nav-bar > menu > li.dropdown > ol[x-placement^=bottom], nav-bar > menu > li.dropdown > dt[x-placement^=bottom], .dropdown-menu[x-placement^=left], body > nav[class^=navbarre] > menu > li.dropdown > div[x-placement^=left], body > nav[class^=navbarre] > menu > li.dropdown > ul[x-placement^=left], body > nav[class^=navbarre] > menu > li.dropdown > ol[x-placement^=left], body > nav[class^=navbarre] > menu > li.dropdown > dt[x-placement^=left], nav-bar > menu > li.dropdown > div[x-placement^=left], nav-bar > menu > li.dropdown > ul[x-placement^=left], nav-bar > menu > li.dropdown > ol[x-placement^=left], nav-bar > menu > li.dropdown > dt[x-placement^=left] {
   right: auto;
   bottom: auto;
 }
@@ -3114,7 +3116,7 @@ input[type=button].btn-block {
   border-top: 1px solid #e9ecef;
 }
 
-.dropdown-item {
+.dropdown-item, body > nav[class^=navbarre] > menu > li.dropdown > div > a, body > nav[class^=navbarre] > menu > li.dropdown > ul > a, body > nav[class^=navbarre] > menu > li.dropdown > ol > a, body > nav[class^=navbarre] > menu > li.dropdown > dt > a, nav-bar > menu > li.dropdown > div > a, nav-bar > menu > li.dropdown > ul > a, nav-bar > menu > li.dropdown > ol > a, nav-bar > menu > li.dropdown > dt > a {
   display: block;
   width: 100%;
   padding: 0.25rem 1.5rem;
@@ -3126,23 +3128,23 @@ input[type=button].btn-block {
   background-color: transparent;
   border: 0;
 }
-.dropdown-item:hover, .dropdown-item:focus {
+.dropdown-item:hover, body > nav[class^=navbarre] > menu > li.dropdown > div > a:hover, body > nav[class^=navbarre] > menu > li.dropdown > ul > a:hover, body > nav[class^=navbarre] > menu > li.dropdown > ol > a:hover, body > nav[class^=navbarre] > menu > li.dropdown > dt > a:hover, nav-bar > menu > li.dropdown > div > a:hover, nav-bar > menu > li.dropdown > ul > a:hover, nav-bar > menu > li.dropdown > ol > a:hover, nav-bar > menu > li.dropdown > dt > a:hover, .dropdown-item:focus, body > nav[class^=navbarre] > menu > li.dropdown > div > a:focus, body > nav[class^=navbarre] > menu > li.dropdown > ul > a:focus, body > nav[class^=navbarre] > menu > li.dropdown > ol > a:focus, body > nav[class^=navbarre] > menu > li.dropdown > dt > a:focus, nav-bar > menu > li.dropdown > div > a:focus, nav-bar > menu > li.dropdown > ul > a:focus, nav-bar > menu > li.dropdown > ol > a:focus, nav-bar > menu > li.dropdown > dt > a:focus {
   color: #16181b;
   text-decoration: none;
   background-color: #f8f9fa;
 }
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active, body > nav[class^=navbarre] > menu > li.dropdown > div > a.active, body > nav[class^=navbarre] > menu > li.dropdown > ul > a.active, body > nav[class^=navbarre] > menu > li.dropdown > ol > a.active, body > nav[class^=navbarre] > menu > li.dropdown > dt > a.active, nav-bar > menu > li.dropdown > div > a.active, nav-bar > menu > li.dropdown > ul > a.active, nav-bar > menu > li.dropdown > ol > a.active, nav-bar > menu > li.dropdown > dt > a.active, .dropdown-item:active, body > nav[class^=navbarre] > menu > li.dropdown > div > a:active, body > nav[class^=navbarre] > menu > li.dropdown > ul > a:active, body > nav[class^=navbarre] > menu > li.dropdown > ol > a:active, body > nav[class^=navbarre] > menu > li.dropdown > dt > a:active, nav-bar > menu > li.dropdown > div > a:active, nav-bar > menu > li.dropdown > ul > a:active, nav-bar > menu > li.dropdown > ol > a:active, nav-bar > menu > li.dropdown > dt > a:active {
   color: #fff;
   text-decoration: none;
   background-color: #007bff;
 }
-.dropdown-item.disabled, .dropdown-item:disabled {
+.dropdown-item.disabled, body > nav[class^=navbarre] > menu > li.dropdown > div > a.disabled, body > nav[class^=navbarre] > menu > li.dropdown > ul > a.disabled, body > nav[class^=navbarre] > menu > li.dropdown > ol > a.disabled, body > nav[class^=navbarre] > menu > li.dropdown > dt > a.disabled, nav-bar > menu > li.dropdown > div > a.disabled, nav-bar > menu > li.dropdown > ul > a.disabled, nav-bar > menu > li.dropdown > ol > a.disabled, nav-bar > menu > li.dropdown > dt > a.disabled, .dropdown-item:disabled, body > nav[class^=navbarre] > menu > li.dropdown > div > a:disabled, body > nav[class^=navbarre] > menu > li.dropdown > ul > a:disabled, body > nav[class^=navbarre] > menu > li.dropdown > ol > a:disabled, body > nav[class^=navbarre] > menu > li.dropdown > dt > a:disabled, nav-bar > menu > li.dropdown > div > a:disabled, nav-bar > menu > li.dropdown > ul > a:disabled, nav-bar > menu > li.dropdown > ol > a:disabled, nav-bar > menu > li.dropdown > dt > a:disabled {
   color: #6c757d;
   pointer-events: none;
   background-color: transparent;
 }
 
-.dropdown-menu.show {
+.dropdown-menu.show, body > nav[class^=navbarre] > menu > li.dropdown > div.show, body > nav[class^=navbarre] > menu > li.dropdown > ul.show, body > nav[class^=navbarre] > menu > li.dropdown > ol.show, body > nav[class^=navbarre] > menu > li.dropdown > dt.show, nav-bar > menu > li.dropdown > div.show, nav-bar > menu > li.dropdown > ul.show, nav-bar > menu > li.dropdown > ol.show, nav-bar > menu > li.dropdown > dt.show {
   display: block;
 }
 
@@ -3841,14 +3843,14 @@ input[type=button].btn-block {
   list-style: none;
 }
 
-.nav-link {
+.nav-link, body > nav[class^=navbarre] > menu > li > a, nav-bar > menu > li > a {
   display: block;
   padding: 0.5rem 1rem;
 }
-.nav-link:hover, .nav-link:focus {
+.nav-link:hover, body > nav[class^=navbarre] > menu > li > a:hover, nav-bar > menu > li > a:hover, .nav-link:focus, body > nav[class^=navbarre] > menu > li > a:focus, nav-bar > menu > li > a:focus {
   text-decoration: none;
 }
-.nav-link.disabled {
+.nav-link.disabled, body > nav[class^=navbarre] > menu > li > a.disabled, nav-bar > menu > li > a.disabled {
   color: #6c757d;
   pointer-events: none;
   cursor: default;
@@ -3857,51 +3859,65 @@ input[type=button].btn-block {
 .nav-tabs {
   border-bottom: 1px solid #dee2e6;
 }
-.nav-tabs .nav-item {
+.nav-tabs .nav-item, .nav-tabs body > nav[class^=navbarre] > menu > li, .nav-tabs nav-bar > menu > li {
   margin-bottom: -1px;
 }
-.nav-tabs .nav-link {
+.nav-tabs .nav-link, .nav-tabs body > nav[class^=navbarre] > menu > li > a, .nav-tabs nav-bar > menu > li > a {
   border: 1px solid transparent;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
-.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+.nav-tabs .nav-link:hover, .nav-tabs body > nav[class^=navbarre] > menu > li > a:hover, .nav-tabs nav-bar > menu > li > a:hover, .nav-tabs .nav-link:focus, .nav-tabs body > nav[class^=navbarre] > menu > li > a:focus, .nav-tabs nav-bar > menu > li > a:focus {
   border-color: #e9ecef #e9ecef #dee2e6;
 }
-.nav-tabs .nav-link.disabled {
+.nav-tabs .nav-link.disabled, .nav-tabs body > nav[class^=navbarre] > menu > li > a.disabled, .nav-tabs nav-bar > menu > li > a.disabled {
   color: #6c757d;
   background-color: transparent;
   border-color: transparent;
 }
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
+.nav-tabs .nav-link.active, .nav-tabs body > nav[class^=navbarre] > menu > li > a.active, .nav-tabs nav-bar > menu > li > a.active,
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-item.show body > nav[class^=navbarre] > menu > li > a,
+.nav-tabs .nav-item.show nav-bar > menu > li > a,
+.nav-tabs body > nav[class^=navbarre] > menu > li.show .nav-link,
+.nav-tabs body > nav[class^=navbarre] > menu > li.show body > nav[class^=navbarre] > menu > li > a,
+.nav-tabs body > nav[class^=navbarre] > menu > li.show nav-bar > menu > li > a,
+.nav-tabs nav-bar > menu > li.show .nav-link,
+.nav-tabs nav-bar > menu > li.show body > nav[class^=navbarre] > menu > li > a,
+.nav-tabs nav-bar > menu > li.show nav-bar > menu > li > a {
   color: #495057;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
-.nav-tabs .dropdown-menu {
+.nav-tabs .dropdown-menu, .nav-tabs body > nav[class^=navbarre] > menu > li.dropdown > div, .nav-tabs body > nav[class^=navbarre] > menu > li.dropdown > ul, .nav-tabs body > nav[class^=navbarre] > menu > li.dropdown > ol, .nav-tabs body > nav[class^=navbarre] > menu > li.dropdown > dt, .nav-tabs nav-bar > menu > li.dropdown > div, .nav-tabs nav-bar > menu > li.dropdown > ul, .nav-tabs nav-bar > menu > li.dropdown > ol, .nav-tabs nav-bar > menu > li.dropdown > dt {
   margin-top: -1px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-.nav-pills .nav-link {
+.nav-pills .nav-link, .nav-pills body > nav[class^=navbarre] > menu > li > a, .nav-pills nav-bar > menu > li > a {
   border-radius: 0.25rem;
 }
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
+.nav-pills .nav-link.active, .nav-pills body > nav[class^=navbarre] > menu > li > a.active, .nav-pills nav-bar > menu > li > a.active,
+.nav-pills .show > .nav-link,
+.nav-pills body > nav[class^=navbarre] > menu > li.show > a,
+.nav-pills nav-bar > menu > li.show > a {
   color: #fff;
   background-color: #007bff;
 }
 
-.nav-fill > .nav-link,
-.nav-fill .nav-item {
+.nav-fill > .nav-link, body > nav[class^=navbarre] > menu > li.nav-fill > a, nav-bar > menu > li.nav-fill > a,
+.nav-fill .nav-item,
+.nav-fill body > nav[class^=navbarre] > menu > li,
+.nav-fill nav-bar > menu > li {
   flex: 1 1 auto;
   text-align: center;
 }
 
-.nav-justified > .nav-link,
-.nav-justified .nav-item {
+.nav-justified > .nav-link, body > nav[class^=navbarre] > menu > li.nav-justified > a, nav-bar > menu > li.nav-justified > a,
+.nav-justified .nav-item,
+.nav-justified body > nav[class^=navbarre] > menu > li,
+.nav-justified nav-bar > menu > li {
   flex-basis: 0;
   flex-grow: 1;
   text-align: center;
@@ -3914,7 +3930,7 @@ input[type=button].btn-block {
   display: block;
 }
 
-.navbar, nav[class^=navbarre], navbar {
+.navbar, body > nav[class^=navbarre], nav-bar {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -3922,28 +3938,28 @@ input[type=button].btn-block {
   justify-content: space-between;
   padding: 0.5rem 1rem;
 }
-.navbar .container, nav[class^=navbarre] .container, navbar .container,
+.navbar .container, body > nav[class^=navbarre] .container, nav-bar .container,
 .navbar .container-fluid,
-nav[class^=navbarre] .container-fluid,
-navbar .container-fluid,
+body > nav[class^=navbarre] .container-fluid,
+nav-bar .container-fluid,
 .navbar .container-sm,
-nav[class^=navbarre] .container-sm,
-navbar .container-sm,
+body > nav[class^=navbarre] .container-sm,
+nav-bar .container-sm,
 .navbar .container-md,
-nav[class^=navbarre] .container-md,
-navbar .container-md,
+body > nav[class^=navbarre] .container-md,
+nav-bar .container-md,
 .navbar .container-lg,
-nav[class^=navbarre] .container-lg,
-navbar .container-lg,
+body > nav[class^=navbarre] .container-lg,
+nav-bar .container-lg,
 .navbar .container-xl,
-nav[class^=navbarre] .container-xl,
-navbar .container-xl {
+body > nav[class^=navbarre] .container-xl,
+nav-bar .container-xl {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
-.navbar-brand {
+.navbar-brand, body > nav[class^=navbarre] > a, nav-bar > a {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
@@ -3952,22 +3968,22 @@ navbar .container-xl {
   line-height: inherit;
   white-space: nowrap;
 }
-.navbar-brand:hover, .navbar-brand:focus {
+.navbar-brand:hover, body > nav[class^=navbarre] > a:hover, nav-bar > a:hover, .navbar-brand:focus, body > nav[class^=navbarre] > a:focus, nav-bar > a:focus {
   text-decoration: none;
 }
 
-.navbar-nav {
+.navbar-nav, body > nav[class^=navbarre] > menu, nav-bar > menu {
   display: flex;
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
 }
-.navbar-nav .nav-link {
+.navbar-nav .nav-link, .navbar-nav nav-bar > menu > li > a, body > nav[class^=navbarre] > menu .nav-link, body > nav[class^=navbarre] > menu > li > a, nav-bar > menu .nav-link, nav-bar > menu > li > a {
   padding-right: 0;
   padding-left: 0;
 }
-.navbar-nav .dropdown-menu {
+.navbar-nav .dropdown-menu, .navbar-nav nav-bar > menu > li.dropdown > div, .navbar-nav nav-bar > menu > li.dropdown > ul, .navbar-nav nav-bar > menu > li.dropdown > ol, .navbar-nav nav-bar > menu > li.dropdown > dt, body > nav[class^=navbarre] > menu .dropdown-menu, body > nav[class^=navbarre] > menu > li.dropdown > div, body > nav[class^=navbarre] > menu > li.dropdown > ul, body > nav[class^=navbarre] > menu > li.dropdown > ol, body > nav[class^=navbarre] > menu > li.dropdown > dt, nav-bar > menu .dropdown-menu, nav-bar > menu > li.dropdown > div, nav-bar > menu > li.dropdown > ul, nav-bar > menu > li.dropdown > ol, nav-bar > menu > li.dropdown > dt {
   position: static;
   float: none;
 }
@@ -3978,13 +3994,13 @@ navbar .container-xl {
   padding-bottom: 0.5rem;
 }
 
-.navbar-collapse {
+.navbar-collapse, body > nav[class^=navbarre] > menu, nav-bar > menu {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
 }
 
-.navbar-toggler {
+.navbar-toggler, body > nav[class^=navbarre] > button, nav-bar > button {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
@@ -3992,11 +4008,11 @@ navbar .container-xl {
   border: 1px solid transparent;
   border-radius: 0.25rem;
 }
-.navbar-toggler:hover, .navbar-toggler:focus {
+.navbar-toggler:hover, body > nav[class^=navbarre] > button:hover, nav-bar > button:hover, .navbar-toggler:focus, body > nav[class^=navbarre] > button:focus, nav-bar > button:focus {
   text-decoration: none;
 }
 
-.navbar-toggler-icon {
+.navbar-toggler-icon, body > nav[class^=navbarre] > button > span, nav-bar > button > span {
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
@@ -4007,64 +4023,64 @@ navbar .container-xl {
 }
 
 @media (max-width: 575.98px) {
-  .navbar-expand-sm > .container, nav[class^=navbarre] > .container, navbar > .container,
+  .navbar-expand-sm > .container, body > nav[class^=navbarre] > .container, nav-bar > .container,
 .navbar-expand-sm > .container-fluid,
-nav[class^=navbarre] > .container-fluid,
-navbar > .container-fluid,
+body > nav[class^=navbarre] > .container-fluid,
+nav-bar > .container-fluid,
 .navbar-expand-sm > .container-sm,
-nav[class^=navbarre] > .container-sm,
-navbar > .container-sm,
+body > nav[class^=navbarre] > .container-sm,
+nav-bar > .container-sm,
 .navbar-expand-sm > .container-md,
-nav[class^=navbarre] > .container-md,
-navbar > .container-md,
+body > nav[class^=navbarre] > .container-md,
+nav-bar > .container-md,
 .navbar-expand-sm > .container-lg,
-nav[class^=navbarre] > .container-lg,
-navbar > .container-lg,
+body > nav[class^=navbarre] > .container-lg,
+nav-bar > .container-lg,
 .navbar-expand-sm > .container-xl,
-nav[class^=navbarre] > .container-xl,
-navbar > .container-xl {
+body > nav[class^=navbarre] > .container-xl,
+nav-bar > .container-xl {
     padding-right: 0;
     padding-left: 0;
   }
 }
 @media (min-width: 576px) {
-  .navbar-expand-sm, nav[class^=navbarre], navbar {
+  .navbar-expand-sm, body > nav[class^=navbarre], nav-bar {
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
-  .navbar-expand-sm .navbar-nav, nav[class^=navbarre] .navbar-nav, navbar .navbar-nav {
+  .navbar-expand-sm .navbar-nav, .navbar-expand-sm body > nav[class^=navbarre] > menu, .navbar-expand-sm nav-bar > menu, body > nav[class^=navbarre] .navbar-nav, body > nav[class^=navbarre] > menu, body > nav[class^=navbarre] nav-bar > menu, nav-bar .navbar-nav, nav-bar > menu {
     flex-direction: row;
   }
-  .navbar-expand-sm .navbar-nav .dropdown-menu, nav[class^=navbarre] .navbar-nav .dropdown-menu, navbar .navbar-nav .dropdown-menu {
+  .navbar-expand-sm .navbar-nav .dropdown-menu, .navbar-expand-sm .navbar-nav nav-bar > menu > li.dropdown > div, .navbar-expand-sm .navbar-nav nav-bar > menu > li.dropdown > ul, .navbar-expand-sm .navbar-nav nav-bar > menu > li.dropdown > ol, .navbar-expand-sm .navbar-nav nav-bar > menu > li.dropdown > dt, .navbar-expand-sm nav-bar > menu .dropdown-menu, .navbar-expand-sm nav-bar > menu > li.dropdown > div, .navbar-expand-sm nav-bar > menu > li.dropdown > ul, .navbar-expand-sm nav-bar > menu > li.dropdown > ol, .navbar-expand-sm nav-bar > menu > li.dropdown > dt, body > nav[class^=navbarre] .navbar-nav .dropdown-menu, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li.dropdown > div, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li.dropdown > ul, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li.dropdown > ol, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li.dropdown > dt, body > nav[class^=navbarre] > menu .dropdown-menu, body > nav[class^=navbarre] > menu > li.dropdown > div, body > nav[class^=navbarre] > menu > li.dropdown > ul, body > nav[class^=navbarre] > menu > li.dropdown > ol, body > nav[class^=navbarre] > menu > li.dropdown > dt, body > nav[class^=navbarre] nav-bar > menu .dropdown-menu, body > nav[class^=navbarre] nav-bar > menu > li.dropdown > div, body > nav[class^=navbarre] nav-bar > menu > li.dropdown > ul, body > nav[class^=navbarre] nav-bar > menu > li.dropdown > ol, body > nav[class^=navbarre] nav-bar > menu > li.dropdown > dt, nav-bar .navbar-nav .dropdown-menu, nav-bar .navbar-nav nav-bar > menu > li.dropdown > div, nav-bar .navbar-nav nav-bar > menu > li.dropdown > ul, nav-bar .navbar-nav nav-bar > menu > li.dropdown > ol, nav-bar .navbar-nav nav-bar > menu > li.dropdown > dt, nav-bar > menu .dropdown-menu, nav-bar > menu > li.dropdown > div, nav-bar > menu > li.dropdown > ul, nav-bar > menu > li.dropdown > ol, nav-bar > menu > li.dropdown > dt {
     position: absolute;
   }
-  .navbar-expand-sm .navbar-nav .nav-link, nav[class^=navbarre] .navbar-nav .nav-link, navbar .navbar-nav .nav-link {
+  .navbar-expand-sm .navbar-nav .nav-link, .navbar-expand-sm .navbar-nav body > nav[class^=navbarre] > menu > li > a, .navbar-expand-sm .navbar-nav nav-bar > menu > li > a, .navbar-expand-sm nav-bar > menu .nav-link, .navbar-expand-sm nav-bar > menu > li > a, body > nav[class^=navbarre] .navbar-nav .nav-link, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li > a, body > nav[class^=navbarre] > menu .nav-link, body > nav[class^=navbarre] > menu > li > a, body > nav[class^=navbarre] nav-bar > menu .nav-link, body > nav[class^=navbarre] nav-bar > menu > li > a, nav-bar .navbar-nav .nav-link, nav-bar .navbar-nav nav-bar > menu > li > a, nav-bar > menu .nav-link, nav-bar > menu > li > a {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .navbar-expand-sm > .container, nav[class^=navbarre] > .container, navbar > .container,
+  .navbar-expand-sm > .container, body > nav[class^=navbarre] > .container, nav-bar > .container,
 .navbar-expand-sm > .container-fluid,
-nav[class^=navbarre] > .container-fluid,
-navbar > .container-fluid,
+body > nav[class^=navbarre] > .container-fluid,
+nav-bar > .container-fluid,
 .navbar-expand-sm > .container-sm,
-nav[class^=navbarre] > .container-sm,
-navbar > .container-sm,
+body > nav[class^=navbarre] > .container-sm,
+nav-bar > .container-sm,
 .navbar-expand-sm > .container-md,
-nav[class^=navbarre] > .container-md,
-navbar > .container-md,
+body > nav[class^=navbarre] > .container-md,
+nav-bar > .container-md,
 .navbar-expand-sm > .container-lg,
-nav[class^=navbarre] > .container-lg,
-navbar > .container-lg,
+body > nav[class^=navbarre] > .container-lg,
+nav-bar > .container-lg,
 .navbar-expand-sm > .container-xl,
-nav[class^=navbarre] > .container-xl,
-navbar > .container-xl {
+body > nav[class^=navbarre] > .container-xl,
+nav-bar > .container-xl {
     flex-wrap: nowrap;
   }
-  .navbar-expand-sm .navbar-collapse, nav[class^=navbarre] .navbar-collapse, navbar .navbar-collapse {
+  .navbar-expand-sm .navbar-collapse, .navbar-expand-sm body > nav[class^=navbarre] > menu, .navbar-expand-sm nav-bar > menu, body > nav[class^=navbarre] .navbar-collapse, body > nav[class^=navbarre] > menu, body > nav[class^=navbarre] nav-bar > menu, nav-bar .navbar-collapse, nav-bar > menu {
     display: flex !important;
     flex-basis: auto;
   }
-  .navbar-expand-sm .navbar-toggler, nav[class^=navbarre] .navbar-toggler, navbar .navbar-toggler {
+  .navbar-expand-sm .navbar-toggler, .navbar-expand-sm body > nav[class^=navbarre] > button, .navbar-expand-sm nav-bar > button, body > nav[class^=navbarre] .navbar-toggler, body > nav[class^=navbarre] > button, body > nav[class^=navbarre] nav-bar > button, nav-bar .navbar-toggler, nav-bar > button {
     display: none;
   }
 }
@@ -4084,13 +4100,13 @@ navbar > .container-xl {
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
-  .navbar-expand-md .navbar-nav {
+  .navbar-expand-md .navbar-nav, .navbar-expand-md body > nav[class^=navbarre] > menu, .navbar-expand-md nav-bar > menu {
     flex-direction: row;
   }
-  .navbar-expand-md .navbar-nav .dropdown-menu {
+  .navbar-expand-md .navbar-nav .dropdown-menu, .navbar-expand-md .navbar-nav nav-bar > menu > li.dropdown > div, .navbar-expand-md .navbar-nav nav-bar > menu > li.dropdown > ul, .navbar-expand-md .navbar-nav nav-bar > menu > li.dropdown > ol, .navbar-expand-md .navbar-nav nav-bar > menu > li.dropdown > dt, .navbar-expand-md body > nav[class^=navbarre] > menu .dropdown-menu, .navbar-expand-md body > nav[class^=navbarre] > menu > li.dropdown > div, .navbar-expand-md body > nav[class^=navbarre] > menu > li.dropdown > ul, .navbar-expand-md body > nav[class^=navbarre] > menu > li.dropdown > ol, .navbar-expand-md body > nav[class^=navbarre] > menu > li.dropdown > dt, .navbar-expand-md nav-bar > menu .dropdown-menu, .navbar-expand-md nav-bar > menu > li.dropdown > div, .navbar-expand-md nav-bar > menu > li.dropdown > ul, .navbar-expand-md nav-bar > menu > li.dropdown > ol, .navbar-expand-md nav-bar > menu > li.dropdown > dt {
     position: absolute;
   }
-  .navbar-expand-md .navbar-nav .nav-link {
+  .navbar-expand-md .navbar-nav .nav-link, .navbar-expand-md .navbar-nav nav-bar > menu > li > a, .navbar-expand-md body > nav[class^=navbarre] > menu .nav-link, .navbar-expand-md body > nav[class^=navbarre] > menu > li > a, .navbar-expand-md nav-bar > menu .nav-link, .navbar-expand-md nav-bar > menu > li > a {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
@@ -4102,11 +4118,11 @@ navbar > .container-xl {
 .navbar-expand-md > .container-xl {
     flex-wrap: nowrap;
   }
-  .navbar-expand-md .navbar-collapse {
+  .navbar-expand-md .navbar-collapse, .navbar-expand-md body > nav[class^=navbarre] > menu, .navbar-expand-md nav-bar > menu {
     display: flex !important;
     flex-basis: auto;
   }
-  .navbar-expand-md .navbar-toggler {
+  .navbar-expand-md .navbar-toggler, .navbar-expand-md body > nav[class^=navbarre] > button, .navbar-expand-md nav-bar > button {
     display: none;
   }
 }
@@ -4126,13 +4142,13 @@ navbar > .container-xl {
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
-  .navbar-expand-lg .navbar-nav {
+  .navbar-expand-lg .navbar-nav, .navbar-expand-lg body > nav[class^=navbarre] > menu, .navbar-expand-lg nav-bar > menu {
     flex-direction: row;
   }
-  .navbar-expand-lg .navbar-nav .dropdown-menu {
+  .navbar-expand-lg .navbar-nav .dropdown-menu, .navbar-expand-lg .navbar-nav nav-bar > menu > li.dropdown > div, .navbar-expand-lg .navbar-nav nav-bar > menu > li.dropdown > ul, .navbar-expand-lg .navbar-nav nav-bar > menu > li.dropdown > ol, .navbar-expand-lg .navbar-nav nav-bar > menu > li.dropdown > dt, .navbar-expand-lg body > nav[class^=navbarre] > menu .dropdown-menu, .navbar-expand-lg body > nav[class^=navbarre] > menu > li.dropdown > div, .navbar-expand-lg body > nav[class^=navbarre] > menu > li.dropdown > ul, .navbar-expand-lg body > nav[class^=navbarre] > menu > li.dropdown > ol, .navbar-expand-lg body > nav[class^=navbarre] > menu > li.dropdown > dt, .navbar-expand-lg nav-bar > menu .dropdown-menu, .navbar-expand-lg nav-bar > menu > li.dropdown > div, .navbar-expand-lg nav-bar > menu > li.dropdown > ul, .navbar-expand-lg nav-bar > menu > li.dropdown > ol, .navbar-expand-lg nav-bar > menu > li.dropdown > dt {
     position: absolute;
   }
-  .navbar-expand-lg .navbar-nav .nav-link {
+  .navbar-expand-lg .navbar-nav .nav-link, .navbar-expand-lg .navbar-nav nav-bar > menu > li > a, .navbar-expand-lg body > nav[class^=navbarre] > menu .nav-link, .navbar-expand-lg body > nav[class^=navbarre] > menu > li > a, .navbar-expand-lg nav-bar > menu .nav-link, .navbar-expand-lg nav-bar > menu > li > a {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
@@ -4144,11 +4160,11 @@ navbar > .container-xl {
 .navbar-expand-lg > .container-xl {
     flex-wrap: nowrap;
   }
-  .navbar-expand-lg .navbar-collapse {
+  .navbar-expand-lg .navbar-collapse, .navbar-expand-lg body > nav[class^=navbarre] > menu, .navbar-expand-lg nav-bar > menu {
     display: flex !important;
     flex-basis: auto;
   }
-  .navbar-expand-lg .navbar-toggler {
+  .navbar-expand-lg .navbar-toggler, .navbar-expand-lg body > nav[class^=navbarre] > button, .navbar-expand-lg nav-bar > button {
     display: none;
   }
 }
@@ -4168,13 +4184,13 @@ navbar > .container-xl {
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
-  .navbar-expand-xl .navbar-nav {
+  .navbar-expand-xl .navbar-nav, .navbar-expand-xl body > nav[class^=navbarre] > menu, .navbar-expand-xl nav-bar > menu {
     flex-direction: row;
   }
-  .navbar-expand-xl .navbar-nav .dropdown-menu {
+  .navbar-expand-xl .navbar-nav .dropdown-menu, .navbar-expand-xl .navbar-nav nav-bar > menu > li.dropdown > div, .navbar-expand-xl .navbar-nav nav-bar > menu > li.dropdown > ul, .navbar-expand-xl .navbar-nav nav-bar > menu > li.dropdown > ol, .navbar-expand-xl .navbar-nav nav-bar > menu > li.dropdown > dt, .navbar-expand-xl body > nav[class^=navbarre] > menu .dropdown-menu, .navbar-expand-xl body > nav[class^=navbarre] > menu > li.dropdown > div, .navbar-expand-xl body > nav[class^=navbarre] > menu > li.dropdown > ul, .navbar-expand-xl body > nav[class^=navbarre] > menu > li.dropdown > ol, .navbar-expand-xl body > nav[class^=navbarre] > menu > li.dropdown > dt, .navbar-expand-xl nav-bar > menu .dropdown-menu, .navbar-expand-xl nav-bar > menu > li.dropdown > div, .navbar-expand-xl nav-bar > menu > li.dropdown > ul, .navbar-expand-xl nav-bar > menu > li.dropdown > ol, .navbar-expand-xl nav-bar > menu > li.dropdown > dt {
     position: absolute;
   }
-  .navbar-expand-xl .navbar-nav .nav-link {
+  .navbar-expand-xl .navbar-nav .nav-link, .navbar-expand-xl .navbar-nav nav-bar > menu > li > a, .navbar-expand-xl body > nav[class^=navbarre] > menu .nav-link, .navbar-expand-xl body > nav[class^=navbarre] > menu > li > a, .navbar-expand-xl nav-bar > menu .nav-link, .navbar-expand-xl nav-bar > menu > li > a {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
@@ -4186,11 +4202,11 @@ navbar > .container-xl {
 .navbar-expand-xl > .container-xl {
     flex-wrap: nowrap;
   }
-  .navbar-expand-xl .navbar-collapse {
+  .navbar-expand-xl .navbar-collapse, .navbar-expand-xl body > nav[class^=navbarre] > menu, .navbar-expand-xl nav-bar > menu {
     display: flex !important;
     flex-basis: auto;
   }
-  .navbar-expand-xl .navbar-toggler {
+  .navbar-expand-xl .navbar-toggler, .navbar-expand-xl body > nav[class^=navbarre] > button, .navbar-expand-xl nav-bar > button {
     display: none;
   }
 }
@@ -4207,13 +4223,13 @@ navbar > .container-xl {
   padding-right: 0;
   padding-left: 0;
 }
-.navbar-expand .navbar-nav {
+.navbar-expand .navbar-nav, .navbar-expand body > nav[class^=navbarre] > menu, .navbar-expand nav-bar > menu {
   flex-direction: row;
 }
-.navbar-expand .navbar-nav .dropdown-menu {
+.navbar-expand .navbar-nav .dropdown-menu, .navbar-expand .navbar-nav nav-bar > menu > li.dropdown > div, .navbar-expand .navbar-nav nav-bar > menu > li.dropdown > ul, .navbar-expand .navbar-nav nav-bar > menu > li.dropdown > ol, .navbar-expand .navbar-nav nav-bar > menu > li.dropdown > dt, .navbar-expand body > nav[class^=navbarre] > menu .dropdown-menu, .navbar-expand body > nav[class^=navbarre] > menu > li.dropdown > div, .navbar-expand body > nav[class^=navbarre] > menu > li.dropdown > ul, .navbar-expand body > nav[class^=navbarre] > menu > li.dropdown > ol, .navbar-expand body > nav[class^=navbarre] > menu > li.dropdown > dt, .navbar-expand nav-bar > menu .dropdown-menu, .navbar-expand nav-bar > menu > li.dropdown > div, .navbar-expand nav-bar > menu > li.dropdown > ul, .navbar-expand nav-bar > menu > li.dropdown > ol, .navbar-expand nav-bar > menu > li.dropdown > dt {
   position: absolute;
 }
-.navbar-expand .navbar-nav .nav-link {
+.navbar-expand .navbar-nav .nav-link, .navbar-expand .navbar-nav nav-bar > menu > li > a, .navbar-expand body > nav[class^=navbarre] > menu .nav-link, .navbar-expand body > nav[class^=navbarre] > menu > li > a, .navbar-expand nav-bar > menu .nav-link, .navbar-expand nav-bar > menu > li > a {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
@@ -4225,78 +4241,120 @@ navbar > .container-xl {
 .navbar-expand > .container-xl {
   flex-wrap: nowrap;
 }
-.navbar-expand .navbar-collapse {
+.navbar-expand .navbar-collapse, .navbar-expand body > nav[class^=navbarre] > menu, .navbar-expand nav-bar > menu {
   display: flex !important;
   flex-basis: auto;
 }
-.navbar-expand .navbar-toggler {
+.navbar-expand .navbar-toggler, .navbar-expand body > nav[class^=navbarre] > button, .navbar-expand nav-bar > button {
   display: none;
 }
 
-.navbar-light .navbar-brand {
+.navbar-light .navbar-brand, .navbar-light nav-bar > a, body > nav[class^=navbarre] .navbar-brand, body > nav[class^=navbarre] > a, body > nav[class^=navbarre] nav-bar > a, nav-bar .navbar-brand, nav-bar > a {
   color: rgba(0, 0, 0, 0.9);
 }
-.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+.navbar-light .navbar-brand:hover, .navbar-light nav-bar > a:hover, body > nav[class^=navbarre] .navbar-brand:hover, body > nav[class^=navbarre] > a:hover, body > nav[class^=navbarre] nav-bar > a:hover, nav-bar .navbar-brand:hover, nav-bar > a:hover, .navbar-light .navbar-brand:focus, .navbar-light nav-bar > a:focus, body > nav[class^=navbarre] .navbar-brand:focus, body > nav[class^=navbarre] > a:focus, body > nav[class^=navbarre] nav-bar > a:focus, nav-bar .navbar-brand:focus, nav-bar > a:focus {
   color: rgba(0, 0, 0, 0.9);
 }
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav nav-bar > menu > li > a, .navbar-light nav-bar > menu .nav-link, .navbar-light nav-bar > menu > li > a, body > nav[class^=navbarre] .navbar-nav .nav-link, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li > a, body > nav[class^=navbarre] > menu .nav-link, body > nav[class^=navbarre] > menu > li > a, body > nav[class^=navbarre] nav-bar > menu .nav-link, body > nav[class^=navbarre] nav-bar > menu > li > a, nav-bar .navbar-nav .nav-link, nav-bar .navbar-nav nav-bar > menu > li > a, nav-bar > menu .nav-link, nav-bar > menu > li > a {
   color: rgba(0, 0, 0, 0.5);
 }
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav nav-bar > menu > li > a:hover, body > nav[class^=navbarre] .navbar-nav .nav-link:hover, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li > a:hover, body > nav[class^=navbarre] .navbar-nav nav-bar > menu > li > a:hover, body > nav[class^=navbarre] > menu .nav-link:hover, body > nav[class^=navbarre] > menu > li > a:hover, nav-bar .navbar-nav .nav-link:hover, nav-bar .navbar-nav nav-bar > menu > li > a:hover, nav-bar > menu .nav-link:hover, nav-bar > menu > li > a:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav nav-bar > menu > li > a:focus, body > nav[class^=navbarre] .navbar-nav .nav-link:focus, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li > a:focus, body > nav[class^=navbarre] .navbar-nav nav-bar > menu > li > a:focus, body > nav[class^=navbarre] > menu .nav-link:focus, body > nav[class^=navbarre] > menu > li > a:focus, nav-bar .navbar-nav .nav-link:focus, nav-bar .navbar-nav nav-bar > menu > li > a:focus, nav-bar > menu .nav-link:focus, nav-bar > menu > li > a:focus {
   color: rgba(0, 0, 0, 0.7);
 }
-.navbar-light .navbar-nav .nav-link.disabled {
+.navbar-light .navbar-nav .nav-link.disabled, .navbar-light .navbar-nav nav-bar > menu > li > a.disabled, body > nav[class^=navbarre] .navbar-nav .nav-link.disabled, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li > a.disabled, body > nav[class^=navbarre] .navbar-nav nav-bar > menu > li > a.disabled, body > nav[class^=navbarre] > menu .nav-link.disabled, body > nav[class^=navbarre] > menu > li > a.disabled, nav-bar .navbar-nav .nav-link.disabled, nav-bar .navbar-nav nav-bar > menu > li > a.disabled, nav-bar > menu .nav-link.disabled, nav-bar > menu > li > a.disabled {
   color: rgba(0, 0, 0, 0.3);
 }
-.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav nav-bar > menu > li.show > a, body > nav[class^=navbarre] .navbar-nav .show > .nav-link, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li.show > a, body > nav[class^=navbarre] .navbar-nav nav-bar > menu > li.show > a, body > nav[class^=navbarre] > menu .show > .nav-link, body > nav[class^=navbarre] > menu > li.show > a, nav-bar .navbar-nav .show > .nav-link, nav-bar .navbar-nav nav-bar > menu > li.show > a, nav-bar > menu .show > .nav-link, nav-bar > menu > li.show > a,
 .navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav nav-bar > menu > li.active > a,
+body > nav[class^=navbarre] .navbar-nav .active > .nav-link,
+body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li.active > a,
+body > nav[class^=navbarre] .navbar-nav nav-bar > menu > li.active > a,
+body > nav[class^=navbarre] > menu .active > .nav-link,
+body > nav[class^=navbarre] > menu > li.active > a,
+nav-bar .navbar-nav .active > .nav-link,
+nav-bar .navbar-nav nav-bar > menu > li.active > a,
+nav-bar > menu .active > .nav-link,
+nav-bar > menu > li.active > a,
 .navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .nav-link.active {
+.navbar-light .navbar-nav nav-bar > menu > li > a.show,
+body > nav[class^=navbarre] .navbar-nav .nav-link.show,
+body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li > a.show,
+body > nav[class^=navbarre] .navbar-nav nav-bar > menu > li > a.show,
+body > nav[class^=navbarre] > menu .nav-link.show,
+body > nav[class^=navbarre] > menu > li > a.show,
+nav-bar .navbar-nav .nav-link.show,
+nav-bar .navbar-nav nav-bar > menu > li > a.show,
+nav-bar > menu .nav-link.show,
+nav-bar > menu > li > a.show,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav nav-bar > menu > li > a.active,
+body > nav[class^=navbarre] .navbar-nav .nav-link.active,
+body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li > a.active,
+body > nav[class^=navbarre] .navbar-nav nav-bar > menu > li > a.active,
+body > nav[class^=navbarre] > menu .nav-link.active,
+body > nav[class^=navbarre] > menu > li > a.active,
+nav-bar .navbar-nav .nav-link.active,
+nav-bar .navbar-nav nav-bar > menu > li > a.active,
+nav-bar > menu .nav-link.active,
+nav-bar > menu > li > a.active {
   color: rgba(0, 0, 0, 0.9);
 }
-.navbar-light .navbar-toggler {
+.navbar-light .navbar-toggler, .navbar-light nav-bar > button, body > nav[class^=navbarre] .navbar-toggler, body > nav[class^=navbarre] > button, body > nav[class^=navbarre] nav-bar > button, nav-bar .navbar-toggler, nav-bar > button {
   color: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.1);
 }
-.navbar-light .navbar-toggler-icon {
+.navbar-light .navbar-toggler-icon, .navbar-light nav-bar > button > span, body > nav[class^=navbarre] .navbar-toggler-icon, body > nav[class^=navbarre] > button > span, body > nav[class^=navbarre] nav-bar > button > span, nav-bar .navbar-toggler-icon, nav-bar > button > span {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-.navbar-light .navbar-text {
+.navbar-light .navbar-text, body > nav[class^=navbarre] .navbar-text, nav-bar .navbar-text {
   color: rgba(0, 0, 0, 0.5);
 }
-.navbar-light .navbar-text a {
+.navbar-light .navbar-text a, body > nav[class^=navbarre] .navbar-text a, nav-bar .navbar-text a {
   color: rgba(0, 0, 0, 0.9);
 }
-.navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
+.navbar-light .navbar-text a:hover, body > nav[class^=navbarre] .navbar-text a:hover, nav-bar .navbar-text a:hover, .navbar-light .navbar-text a:focus, body > nav[class^=navbarre] .navbar-text a:focus, nav-bar .navbar-text a:focus {
   color: rgba(0, 0, 0, 0.9);
 }
 
-.navbar-dark .navbar-brand {
+.navbar-dark .navbar-brand, .navbar-dark body > nav[class^=navbarre] > a, .navbar-dark nav-bar > a {
   color: #fff;
 }
-.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
+.navbar-dark .navbar-brand:hover, .navbar-dark body > nav[class^=navbarre] > a:hover, .navbar-dark nav-bar > a:hover, .navbar-dark .navbar-brand:focus, .navbar-dark body > nav[class^=navbarre] > a:focus, .navbar-dark nav-bar > a:focus {
   color: #fff;
 }
-.navbar-dark .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav nav-bar > menu > li > a, .navbar-dark body > nav[class^=navbarre] > menu .nav-link, .navbar-dark body > nav[class^=navbarre] > menu > li > a, .navbar-dark nav-bar > menu .nav-link, .navbar-dark nav-bar > menu > li > a {
   color: rgba(255, 255, 255, 0.5);
 }
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark body > nav[class^=navbarre] > menu .nav-link:hover, .navbar-dark body > nav[class^=navbarre] > menu > li > a:hover, .navbar-dark nav-bar > menu .nav-link:hover, .navbar-dark nav-bar > menu > li > a:hover, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark body > nav[class^=navbarre] > menu .nav-link:focus, .navbar-dark body > nav[class^=navbarre] > menu > li > a:focus, .navbar-dark nav-bar > menu .nav-link:focus, .navbar-dark nav-bar > menu > li > a:focus {
   color: rgba(255, 255, 255, 0.75);
 }
-.navbar-dark .navbar-nav .nav-link.disabled {
+.navbar-dark .navbar-nav .nav-link.disabled, .navbar-dark body > nav[class^=navbarre] > menu .nav-link.disabled, .navbar-dark body > nav[class^=navbarre] > menu > li > a.disabled, .navbar-dark nav-bar > menu .nav-link.disabled, .navbar-dark nav-bar > menu > li > a.disabled {
   color: rgba(255, 255, 255, 0.25);
 }
-.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark body > nav[class^=navbarre] > menu .show > .nav-link, .navbar-dark body > nav[class^=navbarre] > menu > li.show > a, .navbar-dark nav-bar > menu .show > .nav-link, .navbar-dark nav-bar > menu > li.show > a,
 .navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark body > nav[class^=navbarre] > menu .active > .nav-link,
+.navbar-dark body > nav[class^=navbarre] > menu > li.active > a,
+.navbar-dark nav-bar > menu .active > .nav-link,
+.navbar-dark nav-bar > menu > li.active > a,
 .navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .nav-link.active {
+.navbar-dark body > nav[class^=navbarre] > menu .nav-link.show,
+.navbar-dark body > nav[class^=navbarre] > menu > li > a.show,
+.navbar-dark nav-bar > menu .nav-link.show,
+.navbar-dark nav-bar > menu > li > a.show,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark body > nav[class^=navbarre] > menu .nav-link.active,
+.navbar-dark body > nav[class^=navbarre] > menu > li > a.active,
+.navbar-dark nav-bar > menu .nav-link.active,
+.navbar-dark nav-bar > menu > li > a.active {
   color: #fff;
 }
-.navbar-dark .navbar-toggler {
+.navbar-dark .navbar-toggler, .navbar-dark body > nav[class^=navbarre] > button, .navbar-dark nav-bar > button {
   color: rgba(255, 255, 255, 0.5);
   border-color: rgba(255, 255, 255, 0.1);
 }
-.navbar-dark .navbar-toggler-icon {
+.navbar-dark .navbar-toggler-icon, .navbar-dark body > nav[class^=navbarre] > button > span, .navbar-dark nav-bar > button > span {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .navbar-dark .navbar-text {
@@ -6092,7 +6150,7 @@ button.bg-danger:focus {
   background-color: #bd2130 !important;
 }
 
-.bg-light, nav[class^=navbarre], navbar {
+.bg-light, body > nav[class^=navbarre], nav-bar {
   background-color: #f8f9fa !important;
 }
 
@@ -6357,7 +6415,7 @@ button.bg-dark:focus {
   }
 }
 @media (min-width: 992px) {
-  .d-lg-none {
+  .d-lg-none, body > nav[class^=navbarre] > button, nav-bar > button {
     display: none !important;
   }
 
@@ -7296,7 +7354,7 @@ button.bg-dark:focus {
   position: sticky !important;
 }
 
-.fixed-top, nav[class^=navbarre], navbar {
+.fixed-top, body > nav[class^=navbarre], nav-bar {
   position: fixed;
   top: 0;
   right: 0;
@@ -7320,7 +7378,7 @@ button.bg-dark:focus {
   }
 }
 
-.sr-only {
+.sr-only, body > nav[class^=navbarre] > menu > li > a > span, nav-bar > menu > li > a > span {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -7473,8 +7531,10 @@ button.bg-dark:focus {
   margin: 0.5rem !important;
 }
 
-.mt-2,
-.my-2 {
+.mt-2, body > nav[class^=navbarre] > menu, nav-bar > menu,
+.my-2,
+body > nav[class^=navbarre] > form,
+nav-bar > form {
   margin-top: 0.5rem !important;
 }
 
@@ -7484,7 +7544,9 @@ button.bg-dark:focus {
 }
 
 .mb-2,
-.my-2 {
+.my-2,
+body > nav[class^=navbarre] > form,
+nav-bar > form {
   margin-bottom: 0.5rem !important;
 }
 
@@ -7838,7 +7900,7 @@ button.bg-dark:focus {
   margin-top: auto !important;
 }
 
-.mr-auto,
+.mr-auto, body > nav[class^=navbarre] > menu, nav-bar > menu,
 .mx-auto {
   margin-right: auto !important;
 }
@@ -8724,8 +8786,10 @@ button.bg-dark:focus {
     margin: 0 !important;
   }
 
-  .mt-lg-0,
-.my-lg-0 {
+  .mt-lg-0, body > nav[class^=navbarre] > menu, nav-bar > menu,
+.my-lg-0,
+body > nav[class^=navbarre] > form,
+nav-bar > form {
     margin-top: 0 !important;
   }
 
@@ -8735,7 +8799,9 @@ button.bg-dark:focus {
   }
 
   .mb-lg-0,
-.my-lg-0 {
+.my-lg-0,
+body > nav[class^=navbarre] > form,
+nav-bar > form {
     margin-bottom: 0 !important;
   }
 
@@ -9890,7 +9956,7 @@ h3 {
     min-width: 992px !important;
   }
 
-  .navbar, nav[class^=navbarre], navbar {
+  .navbar, body > nav[class^=navbarre], nav-bar {
     display: none;
   }
 
@@ -9926,7 +9992,7 @@ h3 {
     border-color: #dee2e6;
   }
 }
-nav[class^=navbarre], navbar {
+body > nav[class^=navbarre], nav-bar {
   /*UNE OPTION POURRA PERMETTRE DE DEFINIR LE COLLAPSE A LA VALEUR SOUHAITEE (lg,md,sm,xs,..), OPTION PAR DEFAUT A 'sm'*/
   /*UNE OPTION POURRA PERMETTRE DE DEFINIR LE BACKGROUND SOUHAITE(light,dark,..), OPTION PAR DEFAUT A 'light'*/
   /*UNE OPTION POURRA PERMETTRE DE DEFINIR si le navbar doit etre collé a un bord, et lequel(top,bottom,right,or left), OPTION PAR DEFAUT A 'top'*/

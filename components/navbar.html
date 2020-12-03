@@ -5,20 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testes avant collectes</title>
     <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="build/index.css">
+    <link rel="stylesheet" href="../build/index.css">
 </head>
 <body>
-    <h1>Instructions</h1>
-    <p>utiliser soit: </p>
-    <ul>
-        <li> la doc du framework en question</li>
-        <li>(solution recommandée) les snippets des extensions du framework dans un IDE(vscode) directement</li>
-    </ul>
-    <hr>
-
-    <h2> LE COMPOSANT ACTUELLEMENT EN COURS DE TRAITEMENT:
-        <span>navbar(4): default, background, placement, minimal(a), minimal(ul) </span>
-    </h2>
+    <h1>NAVBAR</h1>
 
     navbar#minimal(a)
     <nav class="navbar navbar-expand navbar-light bg-light">
@@ -43,8 +33,7 @@
     navbar#default
     <nav class="navbarre">
         <a href="#">Navbar 1</a>
-        <button data-toggle="collapse" data-target="menu"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button>
             <!-- PAS BESOIN DE L'ATTRIBUT 'aria-controls' => https://www.accede-web.com/notices/interface-riche/panneaux-depliants/#ancre-06-->
             <span></span>
         </button>
@@ -64,7 +53,7 @@
             </li>
         </menu>
         <form class="">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <input placeholder="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
     </nav>
@@ -128,8 +117,9 @@
     
     
     
-    <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="./node_modules/jquery/dist/jquery.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./navbar.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>
