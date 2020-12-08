@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git add . && git commit -m",
+    "amend": "git add . && git commit --amend",
+    "push": "git push origin master",
+    "puush": "npm run commit && npm run push",
+    "puuush": "npm run amend && npm run push"
   },
   "keywords": [],
   "author": "",
