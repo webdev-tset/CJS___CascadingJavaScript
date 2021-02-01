@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testes avant collectes</title>
     <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="import" href="templates.html">
     <link rel="stylesheet" href="../build/index.css">
     <script src="./data.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="module" src="./navbar.js"></script>
+    <script src="test.js"></script>
 </head>
 <body>
     <h1>NAVBAR</h1>
-
+    <navbar-std></navbar-std>
     navbar#default
     <nav class="navbarre">
+        <a></a>
         <button>
             <!-- PAS BESOIN DE L'ATTRIBUT 'aria-controls' pour <button/> => https://www.accede-web.com/notices/interface-riche/panneaux-depliants/#ancre-06-->
         </button>
@@ -20,6 +27,9 @@
         </menu>
         <form></form>
     </nav>
+
+
+
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -127,9 +137,5 @@
     
     
     
-    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="./navbar.js"></script>
 </body>
 </html>

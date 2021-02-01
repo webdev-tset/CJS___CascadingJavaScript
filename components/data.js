@@ -1,7 +1,7 @@
  
 var navbar_data = {
     "anchor": {
-        "title": "Ma navbarre :p",
+        "title": "Ma navbarre :p__",
         "href": "#mon-href",
     },
     "menu": [
@@ -11,5 +11,11 @@ var navbar_data = {
             {"html": "Action 1", "href": "#action-1"},
             {"html": "Action 2", "href": "#action-2"},  ]
         },
-    ]
+    ],
+    "button": {
+        
+    },
+    "form": {
+        
+    }
 }

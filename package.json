@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "commit": "git add . && git commit -m",
     "amend": "git add . && git commit --amend",
-    "push": "git push origin master",
+    "push": "git push origin master -f",
     "puush": "npm run commit && npm run push",
     "puuush": "npm run amend && npm run push"
   },
@@ -19,5 +19,6 @@
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "sass": "^1.29.0"
-  }
+  },
+  "type": "module"
 }
