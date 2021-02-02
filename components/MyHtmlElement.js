@@ -1,19 +1,29 @@
+import mapDOM from '../../mapDOM/mapDOM.js'
+
 //TEMPLATE DE CREATION D'UN WEB-COMPONENT
 export default class MyHtmlElement extends HTMLElement{
      constructor(){
+          // alert('a')
           super()
+          // alert('b')
           this.err = []
+          this.data = {}
+          this.elements = {}
+          this._ = new mapDOM()
+          console.log('ok');
+          console.log(this._.tags.html5.length);
 
-
-          // RECUPERE LES DONNEE DU COMPOSANT VIA LA VARIABLE CRÉÉ DANS LE <head/> VIA L'IMPORT DU SCRIPT ./data.js
-          this.data = navbar_data;
      }
      // APPELÉ LORSQUE L'ÉLEMENNT EST CONNECTÉ À LA PAGE
      connectedCallback(){
-        //
-        this.init()
-          //    this.connectedCallback_()
-        
+          alert("connectedCallback::connectedCallback() =>\n \
+               erreur:  LA MéTHODE DU CYCLE DE VIE DES WEB-COMPOSANT 'connectedCallback' \
+               n'a pa été CRéé DANS LA CLASSE PARENTE :p\n \
+               VEUILLEZ LA CRéER SVP !\ voir les logs console pour plus de détails")
+          console.log("CETTE METHODE DOIT: \n \
+               1 RECUPERER LES data CORRESPONDANTS À CE WEB-COMPOSANT \
+               2 RECUPERER LE SCHEMA ASSOCIE À CE WEB-COMPOSABT \
+               3 CREER LES ELEMENTS DE FACON AUTOMATISEE");
      }
 
 
@@ -32,15 +42,28 @@ export default class MyHtmlElement extends HTMLElement{
      }
 
      
-     getElements(){
+     getElementsFromData(){
+          // LE SCHEMA DES ELEMENTS DU WEB-COMPOSANT
+          // CE SCHEMA EST CALQUÉ SUR LE PROTOTYPE DU FICHIER data.js DE CE WEB-COMPOSANT
+          this.elements = {anchor:null,button:null,menu:null,form:null}
+          
+          // LE SCHEMA(this.elements) DE CE WEB-COMPOSANT EST 
+          // 1PARCOURU 
+          // 2ET SI CORRESPONDANCE 
+          // 3CRéER LES ELEMENTS HTML CORRESPONDANTS VIA this.tag__(), ..puis sauvegardé pour compléter le schéma
           for(let componentName in this.elements){
-               // VERIFIE SI L'ELEMENT LA CLE componentName EXISTE DANS LES data
+               // 2VERIFIE SI L'ELEMENT LA CLE componentName EXISTE DANS LE FICHIER data
                if(this.data[componentName]){ 
+                    // 3
                     let elt = this.tag__(componentName)
                     this.elements[componentName] = elt
+
+                    // 4SAUVEGARDER CES elements AUSSI DANS LES data
+                    //...pas très interessant au final, cause des problèmes lors de la boucles sur les data...normal :s
                     // if(Array.isArray(this.data[componentName])) this.data[componentName].push(elt)
                     // else this.data[componentName].component = elt
                }
+               // TABLEAU D'ERREUR: COMPLETÉ? IL SERA LOGGUÉ PAR LE WEB-COMPOSANT HÔTE
                else this.err.push(`MyHtmlElement:::getElements() => le tag '${componentName}' n'est pas valide.`)
           }
      }

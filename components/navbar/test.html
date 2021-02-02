@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <script src="test.js"></script>
+</head>
+<body>
+     <!-- <span is="mon-test-span" ok="iiii" /> -->
+     <mon-test ok="nonnnnnn">
+          <div slot="ok">yoshyoshyoshi</div>
+          <div slot="ko">èèèèèèèèèèèèèèè</div>
+     </mon-test>
+     <span>ouiouioui</span>
+     <script>
+          console.log('LES BALISES span DU DOCUMEBT');
+          console.log(document.querySelector('span'));
+          console.log("---");
+          console.log('LES BALISES span DU WEB-COMPOSANT: accessibles grâce au shadowRoot en mode "open"');
+          console.log(
+               document.querySelector('mon-test')
+                    .shadowRoot.querySelector('span')
+          )
+     </script>
+</body>
+</html>
