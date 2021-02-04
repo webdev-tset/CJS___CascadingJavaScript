@@ -54,6 +54,47 @@ for(z in b){
         c[d[0].textContent.replace('<','').replace('>','')] = {descr:                     d[1].textContent.replace('<','&lt;').replace('>','&gt;')}
   }
 }
+
+
+
+$('.w3-table-all tr').parentNode.removeChild($('.w3-table-all tr'))
+let a=$('.w3-table-all'), bool = true, tmpbis = 'properties',
+    tmp, d, c={properties: {}, methods: {}};
+//option
+bool = false
+tmpbis = 'methods'
+//ENDoption--
+b=a.getElementsByTagName('tr')
+console.log(b.length)
+for(z in b){
+  //console.log( b[z].innerHTML)
+console.log(b.length+" ___")
+console.log(Object.assign({},c))
+  if(z == parseInt(z)){
+console.log(b.length+" ---")
+    d = b[z].getElementsByTagName('td')
+    if(bool){
+      if(d[1].textContent.indexOf('Returns') != -1)tmp="getters";else if(d[1].textContent.indexOf('Sets') != -1) tmp="setters";else tmp="else"
+      if(!c[tmpbis][tmp])c[tmpbis][tmp] = {}
+    }
+console.log(tmp)
+    if(d[1].textContent.indexOf('Not supported in HTML5') == -1)if(bool){
+      console.log('pasok')
+      console.log(d[0].textContent.replace('()','').replace('<','').replace('>',''))
+      console.log('pasok')
+        c.properties[tmp][d[0].textContent.replace(/</,'').replace(/>/,'')] = {descr: d[1].textContent.replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+    }else {
+      console.log('ok')
+      console.log(d[0].textContent.replace('()','').replace(/</g,'').replace(/>/g,''))
+      console.log('ok')
+      c.methods[d[0].textContent.replace('()','').replace(/</g,'').replace(/>/g,'')] = {descr: d[1].textContent.replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+    }
+  }
+}
+a.parentNode.removeChild(a)
+document.write(JSON.stringify(c)) 
+
+
 obj.coding = {...c}
 $('.w3-table-all').parentNode.removeChild($('.w3-table-all'))
 */
