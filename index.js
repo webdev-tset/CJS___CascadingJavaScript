@@ -56,13 +56,17 @@ for(z in b){
 }
 
 
-
+z=[];y=document.querySelectorAll('.w3-table-all th')
+for(x in y)if(y[x].textContent!==undefined)z.push(y[x].textContent)
+console.log(z)
 $('.w3-table-all tr').parentNode.removeChild($('.w3-table-all tr'))
 let a=$('.w3-table-all'), bool = true, tmpbis = 'properties',
     tmp, d, c={properties: {}, methods: {}};
 //option
 bool = false
-tmpbis = 'methods'
+// tmpbis = 'methods'
+tmpbis = 'attributes'
+// tmpbis = 'events'
 //ENDoption--
 b=a.getElementsByTagName('tr')
 console.log(b.length)
@@ -73,7 +77,7 @@ console.log(Object.assign({},c))
   if(z == parseInt(z)){
 console.log(b.length+" ---")
     d = b[z].getElementsByTagName('td')
-    if(bool){
+    if(bool && (tmpbis == "methods" || tmpbis == "events")){
       if(d[1].textContent.indexOf('Returns') != -1)tmp="getters";else if(d[1].textContent.indexOf('Sets') != -1) tmp="setters";else tmp="else"
       if(!c[tmpbis][tmp])c[tmpbis][tmp] = {}
     }
@@ -95,6 +99,61 @@ a.parentNode.removeChild(a)
 document.write(JSON.stringify(c)) 
 
 
+
+
+https://www.w3schools.com/tags/tag_a.asp
+https://www.w3schools.com/jsref/dom_obj_anchor.asp
+https://www.w3schools.com/jsref/dom_obj_all.asp
+https://www.w3schools.com/jsref/dom_obj_event.asp
+https://www.w3schools.com/tags/ref_byfunc.asp
+https://jsonformatter.curiousconcept.com/#
+// IL FAUT D'ABORD DEFINIR LA VARIABLE tmpbis AVANT DE LANCER CE SCRIPT
+// 4 VALEURS POSSIBLES POUR tmpbis: attributes, properties, methods, events
+label=[];y=document.querySelectorAll('.w3-table-all th')
+for(x in y)if(y[x].textContent!==undefined)label.push(y[x].textContent)
+
+$('.w3-table-all tr').parentNode.removeChild($('.w3-table-all tr'))
+let a=$('.w3-table-all'), bool = true, tmpbis = prompt('Quel propriété ? ("attributes", "properties", "methods", or "events")') || 'attributes',
+    tmp, d, c={[tmpbis]: {}}, ccc={attributes: {}, properties: {}, methods: {}, events: {}},
+    lastCrowl=prompt('Il y a-t-il un ancien crowl ?');
+// alert(tmpbis)
+// alert(lastCrowl)
+console.log(JSON.parse(lastCrowl))
+console.log({...JSON.parse(lastCrowl), ...c})
+b=a.getElementsByTagName('tr')
+
+for(z in b)if(z == parseInt(z)){
+    d = b[z].getElementsByTagName('td'), cptbis={}
+    for(cpt in label)if(cpt!=0)
+        cptbis[label[cpt].toLowerCase()]=d[cpt].textContent.replace('()','').replace(/</g,'').replace(/>/g,'')
+    if(d[1].textContent.indexOf('Not supported in HTML5') == -1){
+        //alert(tmpbis)
+        if(tmpbis=="attributes"){
+            c['attributes'][d[0].textContent.replace('()','').replace(/</g,'').replace(/>/g,'')] = cptbis
+            // console.log(cptbis)
+            // console.log(c)
+        }else{
+            if(d[1].textContent.indexOf('Returns') != -1)tmp="getters"
+            else if(d[1].textContent.indexOf('Sets') != -1) tmp="setters"
+            else tmp="else"
+            if(!c[tmpbis][tmp])c[tmpbis][tmp] = {}
+            c[tmpbis][tmp][d[0].textContent.replace('()','').replace(/</g,'').replace(/>/g,'')] = cptbis
+        } 
+    }
+}
+a.parentNode.removeChild(a)
+console.log(lastCrowl)
+console.log(c) 
+if(typeof lastCrowl != "undefined"){
+  // alert('ok')
+  c={...JSON.parse(lastCrowl), ...c}
+  c={...ccc, ...c}
+}
+document.write(JSON.stringify(c)) 
+
+
+
+
 obj.coding = {...c}
 $('.w3-table-all').parentNode.removeChild($('.w3-table-all'))
 */
@@ -102,3 +161,7 @@ ACSIIEncodings = {"0":{"win1252":"%30","utf8":"%30"},"1":{"win1252":"%31","utf8"
 ISOLanguageCodes = {"ab":"Abkhazian","aa":"Afar","af":"Afrikaans","ak":"Akan","sq":"Albanian","am":"Amharic","ar":"Arabic","an":"Aragonese","hy":"Armenian","as":"Assamese","av":"Avaric","ae":"Avestan","ay":"Aymara","az":"Azerbaijani","bm":"Bambara","ba":"Bashkir","eu":"Basque","be":"Belarusian","bn":"Bengali (Bangla)","bh":"Bihari","bi":"Bislama","bs":"Bosnian","br":"Breton","bg":"Bulgarian","my":"Burmese","ca":"Catalan","ch":"Chamorro","ce":"Chechen","ny":"Chichewa, Chewa, Nyanja","zh":"Chinese","zh-Hans":"Chinese (Simplified)","zh-Hant":"Chinese (Traditional)","cv":"Chuvash","kw":"Cornish","co":"Corsican","cr":"Cree","hr":"Croatian","cs":"Czech","da":"Danish","dv":"Divehi, Dhivehi, Maldivian","nl":"Dutch","dz":"Dzongkha","en":"English","eo":"Esperanto","et":"Estonian","ee":"Ewe","fo":"Faroese","fj":"Fijian","fi":"Finnish","fr":"French","ff":"Fula, Fulah, Pulaar, Pular","gl":"Galician","gd":"Gaelic (Scottish)","gv":"Manx","ka":"Georgian","de":"German","el":"Greek","kl":"Kalaallisut, Greenlandic","gn":"Guarani","gu":"Gujarati","ht":"Haitian Creole","ha":"Hausa","he":"Hebrew","hz":"Herero","hi":"Hindi","ho":"Hiri Motu","hu":"Hungarian","is":"Icelandic","io":"Ido","ig":"Igbo","id, in":"Indonesian","ia":"Interlingua","ie":"Interlingue","iu":"Inuktitut","ik":"Inupiak","ga":"Irish","it":"Italian","ja":"Japanese","jv":"Javanese","kn":"Kannada","kr":"Kanuri","ks":"Kashmiri","kk":"Kazakh","km":"Khmer","ki":"Kikuyu","rw":"Kinyarwanda (Rwanda)","rn":"Kirundi","ky":"Kyrgyz","kv":"Komi","kg":"Kongo","ko":"Korean","ku":"Kurdish","kj":"Kwanyama","lo":"Lao","la":"Latin","lv":"Latvian (Lettish)","li":"Limburgish ( Limburger)","ln":"Lingala","lt":"Lithuanian","lu":"Luga-Katanga","lg":"Luganda, Ganda","lb":"Luxembourgish","mk":"Macedonian","mg":"Malagasy","ms":"Malay","ml":"Malayalam","mt":"Maltese","mi":"Maori","mr":"Marathi","mh":"Marshallese","mo":"Moldavian","mn":"Mongolian","na":"Nauru","nv":"Navajo","ng":"Ndonga","nd":"Northern Ndebele","ne":"Nepali","no":"Norwegian","nb":"Norwegian bokmål","nn":"Norwegian nynorsk","ii":"Sichuan Yi","oc":"Occitan","oj":"Ojibwe","cu":"Old Church Slavonic, Old Bulgarian","or":"Oriya","om":"Oromo (Afaan Oromo)","os":"Ossetian","pi":"Pāli","ps":"Pashto, Pushto","fa":"Persian (Farsi)","pl":"Polish","pt":"Portuguese","pa":"Punjabi (Eastern)","qu":"Quechua","rm":"Romansh","ro":"Romanian","ru":"Russian","se":"Sami","sm":"Samoan","sg":"Sango","sa":"Sanskrit","sr":"Serbian","sh":"Serbo-Croatian","st":"Sesotho","tn":"Setswana","sn":"Shona","sd":"Sindhi","si":"Sinhalese","ss":"Swati","sk":"Slovak","sl":"Slovenian","so":"Somali","nr":"Southern Ndebele","es":"Spanish","su":"Sundanese","sw":"Swahili (Kiswahili)","sv":"Swedish","tl":"Tagalog","ty":"Tahitian","tg":"Tajik","ta":"Tamil","tt":"Tatar","te":"Telugu","th":"Thai","bo":"Tibetan","ti":"Tigrinya","to":"Tonga","ts":"Tsonga","tr":"Turkish","tk":"Turkmen","tw":"Twi","ug":"Uyghur","uk":"Ukrainian","ur":"Urdu","uz":"Uzbek","ve":"Venda","vi":"Vietnamese","vo":"Volapük","wa":"Wallon","cy":"Welsh","wo":"Wolof","fy":"Western Frisian","xh":"Xhosa","yi, ji":"Yiddish","yo":"Yoruba","za":"Zhuang, Chuang","zu":"Zulu"}
 ISOCountryCodes = {"AF":"AFGHANISTAN","AL":"ALBANIA","DZ":"ALGERIA","AS":"AMERICAN SAMOA","AD":"ANDORRA","AO":"ANGOLA","AQ":"ANTARCTICA","AG":"ANTIGUA AND BARBUDA","AR":"ARGENTINA","AM":"ARMENIA","AW":"ARUBA","AU":"AUSTRALIA","AT":"AUSTRIA","AZ":"AZERBAIJAN","BS":"BAHAMAS","BH":"BAHRAIN","BD":"BANGLADESH","BB":"BARBADOS","BY":"BELARUS","BE":"BELGIUM","BZ":"BELIZE","BJ":"BENIN","BM":"BERMUDA","BT":"BHUTAN","BO":"BOLIVIA","BA":"BOSNIA AND HERZEGOVINA","BW":"BOTSWANA","BV":"BOUVET ISLAND","BR":"BRAZIL","IO":"BRITISH INDIAN OCEAN TERRITORY","BN":"BRUNEI DARUSSALAM","BG":"BULGARIA","BF":"BURKINA FASO","BI":"BURUNDI","KH":"CAMBODIA","CM":"CAMEROON","CA":"CANADA","CV":"CAPE VERDE","KY":"CAYMAN ISLANDS","CF":"CENTRAL AFRICAN REPUBLIC","TD":"CHAD","CL":"CHILE","CN":"CHINA","CX":"CHRISTMAS ISLAND","CC":"COCOS (KEELING) ISLANDS","CO":"COLOMBIA","KM":"COMOROS","CG":"CONGO","CD":"CONGO, THE DEMOCRATIC REPUBLIC OF THE","CK":"COOK ISLANDS","CR":"COSTA RICA","CI":"CÔTE D'IVOIRE","HR":"CROATIA","CU":"CUBA","CY":"CYPRUS","CZ":"CZECH REPUBLIC","DK":"DENMARK","DJ":"DJIBOUTI","DM":"DOMINICA","DO":"DOMINICAN REPUBLIC","EC":"ECUADOR","EG":"EGYPT","SV":"EL SALVADOR","GQ":"EQUATORIAL GUINEA","ER":"ERITREA","EE":"ESTONIA","ET":"ETHIOPIA","FK":"FALKLAND ISLANDS (MALVINAS)","FO":"FAROE ISLANDS","FJ":"FIJI","FI":"FINLAND","FR":"FRANCE","GF":"FRENCH GUIANA","PF":"FRENCH POLYNESIA","TF":"FRENCH SOUTHERN TERRITORIES","GA":"GABON","GM":"GAMBIA","GE":"GEORGIA","DE":"GERMANY","GH":"GHANA","GI":"GIBRALTAR","GR":"GREECE","GL":"GREENLAND","GD":"GRENADA","GP":"GUADELOUPE","GU":"GUAM","GT":"GUATEMALA","GN":"GUINEA","GW":"GUINEA-BISSAU","GY":"GUYANA","HT":"HAITI","HM":"HEARD ISLAND AND MCDONALD ISLANDS","HN":"HONDURAS","HK":"HONG KONG","HU":"HUNGARY","IS":"ICELAND","IN":"INDIA","ID":"INDONESIA","IR":"IRAN, ISLAMIC REPUBLIC OF","IQ":"IRAQ","IE":"IRELAND","IL":"ISRAEL","IT":"ITALY","JM":"JAMAICA","JP":"JAPAN","JO":"JORDAN","KZ":"KAZAKHSTAN","KE":"KENYA","KI":"KIRIBATI","KP":"KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF","KR":"KOREA, REPUBLIC OF","KW":"KUWAIT","KG":"KYRGYZSTAN","LA":"LAO PEOPLE'S DEMOCRATIC REPUBLIC(LAOS)","LV":"LATVIA","LB":"LEBANON","LS":"LESOTHO","LR":"LIBERIA","LY":"LIBYA, STATE OF","LI":"LIECHTENSTEIN","LT":"LITHUANIA","LU":"LUXEMBOURG","MO":"MACAO","MK":"MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF","MG":"MADAGASCAR","MW":"MALAWI","MY":"MALAYSIA","MV":"MALDIVES","ML":"MALI","MT":"MALTA","MH":"MARSHALL ISLANDS","MQ":"MARTINIQUE","MR":"MAURITANIA","MU":"MAURITIUS","YT":"MAYOTTE","MX":"MEXICO","FM":"MICRONESIA, FEDERATED STATES OF","MD":"MOLDOVA, REPUBLIC OF","MC":"MONACO","MN":"MONGOLIA","ME":"MONTENEGRO","MS":"MONTSERRAT","MA":"MOROCCO","MZ":"MOZAMBIQUE","MM":"MYANMAR","NA":"NAMIBIA","NR":"NAURU","NP":"NEPAL, FEDERAL DEMOCRATIC REPUBLIC OF","NL":"NETHERLANDS","AN":"NETHERLANDS ANTILLES","NC":"NEW CALEDONIA","NZ":"NEW ZEALAND","NI":"NICARAGUA","NE":"NIGER","NG":"NIGERIA","NU":"NIUE","NF":"NORFOLK ISLAND","MP":"NORTHERN MARIANA ISLANDS","NO":"NORWAY","OM":"OMAN","PK":"PAKISTAN","PW":"PALAU","PS":"PALESTINE, STATE OF","PA":"PANAMA","PG":"PAPUA NEW GUINEA","PY":"PARAGUAY","PE":"PERU","PH":"PHILIPPINES","PN":"PITCAIRN","PL":"POLAND","PT":"PORTUGAL","PR":"PUERTO RICO","QA":"QATAR","RE":"RÉUNION","RO":"ROMANIA","RU":"RUSSIAN FEDERATION","RW":"RWANDA","SH":"SAINT HELENA","KN":"SAINT KITTS AND NEVIS","LC":"SAINT LUCIA","PM":"SAINT PIERRE AND MIQUELON","VC":"SAINT VINCENT AND THE GRENADINES","WS":"SAMOA","SM":"SAN MARINO","ST":"SAO TOME AND PRINCIPE","SA":"SAUDI ARABIA","SN":"SENEGAL","RS":"SERBIA","SC":"SEYCHELLES","SL":"SIERRA LEONE","SG":"SINGAPORE","SK":"SLOVAKIA","SI":"SLOVENIA","SB":"SOLOMON ISLANDS","SO":"SOMALIA","ZA":"SOUTH AFRICA","GS":"SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS","SS":"SOUTH SUDAN","ES":"SPAIN","LK":"SRI LANKA","SD":"SUDAN","SR":"SURINAME","SJ":"SVALBARD AND JAN MAYEN","SZ":"SWAZILAND","SE":"SWEDEN","CH":"SWITZERLAND","SY":"SYRIAN ARAB REPUBLIC","TW":"TAIWAN","TJ":"TAJIKISTAN","TZ":"TANZANIA, UNITED REPUBLIC OF","TH":"THAILAND","TL":"TIMOR-LESTE","TG":"TOGO","TK":"TOKELAU","TO":"TONGA","TT":"TRINIDAD AND TOBAGO","TN":"TUNISIA","TR":"TURKEY","TM":"TURKMENISTAN","TC":"TURKS AND CAICOS ISLANDS","TV":"TUVALU","UG":"UGANDA","UA":"UKRAINE","AE":"UNITED ARAB EMIRATES","GB":"UNITED KINGDOM","US":"UNITED STATES","UM":"UNITED STATES MINOR OUTLYING ISLANDS","UY":"URUGUAY","UZ":"UZBEKISTAN","VU":"VANUATU","VE":"VENEZUELA","VN":"VIET NAM","VG":"VIRGIN ISLANDS, BRITISH","VI":"VIRGIN ISLANDS, U.S.","WF":"WALLIS AND FUTUNA","EH":"WESTERN SAHARA","YE":"YEMEN","ZM":"ZAMBIA","ZW":"ZIMBABWE"}
 HTTPStatusMessages = {"100":[" Continue"," The server has received the request headers, and the client should proceed to send the request body"],"101":[" Switching Protocols","The requester has asked the server to switch protocols"],"103":[" Checkpoint","Used in the resumable requests proposal to resume aborted PUT or POST requests"],"200":[" OK","The request is OK (this is the standard response for successful HTTP requests)"],"201":[" Created","The request has been fulfilled, and a new resource is\n created \n "],"202":[" Accepted","The request has been accepted for processing, but the processing\n has not been completed\n "],"203":[" Non-Authoritative Information","The request has been successfully processed, but is returning information that may be from another source"],"204":[" No Content","The request has been successfully processed, but is not returning any content"],"205":[" Reset Content","The request has been successfully processed, but is not returning any content, and requires that the requester reset the document view"],"206":[" Partial Content","The server is delivering only part of the resource due to a range header sent by the client"],"300":[" Multiple Choices","A link list. The user can select a link and go to that\n location. Maximum five addresses  "],"301":[" Moved Permanently","The requested page has moved to a new URL \n "],"302":[" Found","The requested page has moved temporarily to a new URL \n "],"303":[" See Other","The requested page can be found under a different URL"],"304":[" Not Modified","Indicates the requested page has not been modified since last requested"],"306":[" Switch Proxy","No longer used"],"307":[" Temporary Redirect","The requested page has moved temporarily to a new URL"],"308":[" Resume Incomplete","Used in the resumable requests proposal to resume aborted PUT or POST requests"],"400":[" Bad Request","The request cannot be fulfilled due to bad syntax"],"401":[" Unauthorized","The request was a legal request, but the server is refusing to respond to it. For use when authentication is possible but has failed or not yet been provided"],"402":[" Payment Required","Reserved for future use\n "],"403":[" Forbidden","The request was a legal request, but the server is refusing to respond to it"],"404":[" Not Found","The requested page could not be found but may be available again in the future"],"405":[" Method Not Allowed","A request was made of a page using a request method not supported by that page"],"406":[" Not Acceptable","The server can only generate a response that is not\n accepted by the client\n "],"407":[" Proxy Authentication Required","The client must first authenticate itself with the proxy\n "],"408":[" Request Timeout","The server timed out waiting for the request\n "],"409":[" Conflict","The request could not be completed because of a conflict\n in the request"],"410":[" Gone","The requested page is no longer available"],"411":[" Length Required","The \"Content-Length\" is not defined. The server\n will not accept the request without it \n "],"412":[" Precondition Failed","The precondition given in the request evaluated to false by\n the server\n "],"413":[" Request Entity Too Large","The server will not accept the request, because the request entity is\n too large\n "],"414":[" Request-URI Too Long","The server will not accept the request, because the URL is\n too long. Occurs when you convert a POST request to a GET request with\n a long query information \n "],"415":[" Unsupported Media Type","The server will not accept the request, because the media\n type is not supported \n "],"416":[" Requested Range Not Satisfiable","The client has asked for a portion of the file, but the server cannot supply that portion"],"417":[" Expectation Failed","The server cannot meet the requirements of the Expect request-header field"],"500":[" Internal Server Error","A generic error message, given when no more specific message is suitable"],"501":[" Not Implemented","The server either does not recognize the request method, or it lacks the ability to fulfill the request"],"502":[" Bad Gateway","The server was acting as a gateway or proxy and received an invalid response from the upstream server"],"503":[" Service Unavailable","The server is currently unavailable (overloaded or down)\n "],"504":[" Gateway Timeout","The server was acting as a gateway or proxy and did not receive a timely response from the upstream server"],"505":[" HTTP Version Not Supported","The server does not support the HTTP protocol version used in the request\n "],"511":[" Network Authentication Required","The client needs to authenticate to gain network access"]}
+
+for(cpt in label)
+cptbis[zz[cpt].toLowerCase()] = d[cpt].textContent.replace('()','').replace(/</g,'').replace(/>/g,'')
+if(ok=='ok')

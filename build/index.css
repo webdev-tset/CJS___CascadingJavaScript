@@ -2319,61 +2319,61 @@ textarea.form-control {
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
 
-.form-inline, body > nav[class^=navbarre] > form, navbar-std > form {
+.form-inline, body > nav[class^=navbarre] > form, headerbar-standard > form {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
 }
-.form-inline .form-check, body > nav[class^=navbarre] > form .form-check, navbar-std > form .form-check {
+.form-inline .form-check, body > nav[class^=navbarre] > form .form-check, headerbar-standard > form .form-check {
   width: 100%;
 }
 @media (min-width: 576px) {
-  .form-inline label, body > nav[class^=navbarre] > form label, navbar-std > form label {
+  .form-inline label, body > nav[class^=navbarre] > form label, headerbar-standard > form label {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
   }
-  .form-inline .form-group, body > nav[class^=navbarre] > form .form-group, navbar-std > form .form-group {
+  .form-inline .form-group, body > nav[class^=navbarre] > form .form-group, headerbar-standard > form .form-group {
     display: flex;
     flex: 0 0 auto;
     flex-flow: row wrap;
     align-items: center;
     margin-bottom: 0;
   }
-  .form-inline .form-control, body > nav[class^=navbarre] > form .form-control, navbar-std > form .form-control {
+  .form-inline .form-control, body > nav[class^=navbarre] > form .form-control, headerbar-standard > form .form-control {
     display: inline-block;
     width: auto;
     vertical-align: middle;
   }
-  .form-inline .form-control-plaintext, body > nav[class^=navbarre] > form .form-control-plaintext, navbar-std > form .form-control-plaintext {
+  .form-inline .form-control-plaintext, body > nav[class^=navbarre] > form .form-control-plaintext, headerbar-standard > form .form-control-plaintext {
     display: inline-block;
   }
-  .form-inline .input-group, body > nav[class^=navbarre] > form .input-group, navbar-std > form .input-group,
+  .form-inline .input-group, body > nav[class^=navbarre] > form .input-group, headerbar-standard > form .input-group,
 .form-inline .custom-select,
 body > nav[class^=navbarre] > form .custom-select,
-navbar-std > form .custom-select {
+headerbar-standard > form .custom-select {
     width: auto;
   }
-  .form-inline .form-check, body > nav[class^=navbarre] > form .form-check, navbar-std > form .form-check {
+  .form-inline .form-check, body > nav[class^=navbarre] > form .form-check, headerbar-standard > form .form-check {
     display: flex;
     align-items: center;
     justify-content: center;
     width: auto;
     padding-left: 0;
   }
-  .form-inline .form-check-input, body > nav[class^=navbarre] > form .form-check-input, navbar-std > form .form-check-input {
+  .form-inline .form-check-input, body > nav[class^=navbarre] > form .form-check-input, headerbar-standard > form .form-check-input {
     position: relative;
     flex-shrink: 0;
     margin-top: 0;
     margin-right: 0.25rem;
     margin-left: 0;
   }
-  .form-inline .custom-control, body > nav[class^=navbarre] > form .custom-control, navbar-std > form .custom-control {
+  .form-inline .custom-control, body > nav[class^=navbarre] > form .custom-control, headerbar-standard > form .custom-control {
     align-items: center;
     justify-content: center;
   }
-  .form-inline .custom-control-label, body > nav[class^=navbarre] > form .custom-control-label, navbar-std > form .custom-control-label {
+  .form-inline .custom-control-label, body > nav[class^=navbarre] > form .custom-control-label, headerbar-standard > form .custom-control-label {
     margin-bottom: 0;
   }
 }
@@ -2438,12 +2438,12 @@ fieldset:disabled a.btn {
   background-color: #007bff;
   border-color: #007bff;
 }
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-primary, navbar-std > menu > li.dropdown.show > a.btn-primary {
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-primary, headerbar-standard > menu > li.dropdown.show > a.btn-primary {
   color: #fff;
   background-color: #0062cc;
   border-color: #005cbf;
 }
-.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-primary:focus, navbar-std > menu > li.dropdown.show > a.btn-primary:focus {
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-primary:focus, headerbar-standard > menu > li.dropdown.show > a.btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
@@ -2468,12 +2468,12 @@ fieldset:disabled a.btn {
   background-color: #6c757d;
   border-color: #6c757d;
 }
-.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-secondary, navbar-std > menu > li.dropdown.show > a.btn-secondary {
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-secondary, headerbar-standard > menu > li.dropdown.show > a.btn-secondary {
   color: #fff;
   background-color: #545b62;
   border-color: #4e555b;
 }
-.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-secondary:focus, navbar-std > menu > li.dropdown.show > a.btn-secondary:focus {
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-secondary:focus, headerbar-standard > menu > li.dropdown.show > a.btn-secondary:focus {
   box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
 }
 
@@ -2498,12 +2498,12 @@ fieldset:disabled a.btn {
   background-color: #28a745;
   border-color: #28a745;
 }
-.btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active, .show > .btn-success.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-success, navbar-std > menu > li.dropdown.show > a.btn-success {
+.btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active, .show > .btn-success.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-success, headerbar-standard > menu > li.dropdown.show > a.btn-success {
   color: #fff;
   background-color: #1e7e34;
   border-color: #1c7430;
 }
-.btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus, .show > .btn-success.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-success:focus, navbar-std > menu > li.dropdown.show > a.btn-success:focus {
+.btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus, .show > .btn-success.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-success:focus, headerbar-standard > menu > li.dropdown.show > a.btn-success:focus {
   box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
 }
 
@@ -2528,12 +2528,12 @@ fieldset:disabled a.btn {
   background-color: #17a2b8;
   border-color: #17a2b8;
 }
-.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .show > .btn-info.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-info, navbar-std > menu > li.dropdown.show > a.btn-info {
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .show > .btn-info.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-info, headerbar-standard > menu > li.dropdown.show > a.btn-info {
   color: #fff;
   background-color: #117a8b;
   border-color: #10707f;
 }
-.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus, .show > .btn-info.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-info:focus, navbar-std > menu > li.dropdown.show > a.btn-info:focus {
+.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus, .show > .btn-info.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-info:focus, headerbar-standard > menu > li.dropdown.show > a.btn-info:focus {
   box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
 }
 
@@ -2558,12 +2558,12 @@ fieldset:disabled a.btn {
   background-color: #ffc107;
   border-color: #ffc107;
 }
-.btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active, .show > .btn-warning.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-warning, navbar-std > menu > li.dropdown.show > a.btn-warning {
+.btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active, .show > .btn-warning.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-warning, headerbar-standard > menu > li.dropdown.show > a.btn-warning {
   color: #212529;
   background-color: #d39e00;
   border-color: #c69500;
 }
-.btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-warning.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-warning:focus, navbar-std > menu > li.dropdown.show > a.btn-warning:focus {
+.btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-warning.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-warning:focus, headerbar-standard > menu > li.dropdown.show > a.btn-warning:focus {
   box-shadow: 0 0 0 0.2rem rgba(222, 170, 12, 0.5);
 }
 
@@ -2588,12 +2588,12 @@ fieldset:disabled a.btn {
   background-color: #dc3545;
   border-color: #dc3545;
 }
-.btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .show > .btn-danger.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-danger, navbar-std > menu > li.dropdown.show > a.btn-danger {
+.btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .show > .btn-danger.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-danger, headerbar-standard > menu > li.dropdown.show > a.btn-danger {
   color: #fff;
   background-color: #bd2130;
   border-color: #b21f2d;
 }
-.btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-danger.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-danger:focus, navbar-std > menu > li.dropdown.show > a.btn-danger:focus {
+.btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-danger.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-danger:focus, headerbar-standard > menu > li.dropdown.show > a.btn-danger:focus {
   box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
 }
 
@@ -2618,12 +2618,12 @@ fieldset:disabled a.btn {
   background-color: #f8f9fa;
   border-color: #f8f9fa;
 }
-.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-light, navbar-std > menu > li.dropdown.show > a.btn-light {
+.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-light, headerbar-standard > menu > li.dropdown.show > a.btn-light {
   color: #212529;
   background-color: #dae0e5;
   border-color: #d3d9df;
 }
-.btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .show > .btn-light.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-light:focus, navbar-std > menu > li.dropdown.show > a.btn-light:focus {
+.btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .show > .btn-light.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-light:focus, headerbar-standard > menu > li.dropdown.show > a.btn-light:focus {
   box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
 }
 
@@ -2648,12 +2648,12 @@ fieldset:disabled a.btn {
   background-color: #343a40;
   border-color: #343a40;
 }
-.btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active, .show > .btn-dark.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-dark, navbar-std > menu > li.dropdown.show > a.btn-dark {
+.btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active, .show > .btn-dark.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-dark, headerbar-standard > menu > li.dropdown.show > a.btn-dark {
   color: #fff;
   background-color: #1d2124;
   border-color: #171a1d;
 }
-.btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-dark.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-dark:focus, navbar-std > menu > li.dropdown.show > a.btn-dark:focus {
+.btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-dark.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-dark:focus, headerbar-standard > menu > li.dropdown.show > a.btn-dark:focus {
   box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
 }
 
@@ -2673,12 +2673,12 @@ fieldset:disabled a.btn {
   color: #007bff;
   background-color: transparent;
 }
-.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-primary, navbar-std > menu > li.dropdown.show > a.btn-outline-primary {
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-primary, headerbar-standard > menu > li.dropdown.show > a.btn-outline-primary {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
 }
-.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-primary:focus, navbar-std > menu > li.dropdown.show > a.btn-outline-primary:focus {
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-primary:focus, headerbar-standard > menu > li.dropdown.show > a.btn-outline-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 
@@ -2698,12 +2698,12 @@ fieldset:disabled a.btn {
   color: #6c757d;
   background-color: transparent;
 }
-.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-secondary, navbar-std > menu > li.dropdown.show > a.btn-outline-secondary {
+.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-secondary, headerbar-standard > menu > li.dropdown.show > a.btn-outline-secondary {
   color: #fff;
   background-color: #6c757d;
   border-color: #6c757d;
 }
-.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-secondary.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-secondary:focus, navbar-std > menu > li.dropdown.show > a.btn-outline-secondary:focus {
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-secondary.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-secondary:focus, headerbar-standard > menu > li.dropdown.show > a.btn-outline-secondary:focus {
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
 
@@ -2723,12 +2723,12 @@ fieldset:disabled a.btn {
   color: #28a745;
   background-color: transparent;
 }
-.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, .show > .btn-outline-success.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-success, navbar-std > menu > li.dropdown.show > a.btn-outline-success {
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, .show > .btn-outline-success.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-success, headerbar-standard > menu > li.dropdown.show > a.btn-outline-success {
   color: #fff;
   background-color: #28a745;
   border-color: #28a745;
 }
-.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-success.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-success:focus, navbar-std > menu > li.dropdown.show > a.btn-outline-success:focus {
+.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-success.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-success:focus, headerbar-standard > menu > li.dropdown.show > a.btn-outline-success:focus {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
@@ -2748,12 +2748,12 @@ fieldset:disabled a.btn {
   color: #17a2b8;
   background-color: transparent;
 }
-.btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active, .show > .btn-outline-info.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-info, navbar-std > menu > li.dropdown.show > a.btn-outline-info {
+.btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active, .show > .btn-outline-info.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-info, headerbar-standard > menu > li.dropdown.show > a.btn-outline-info {
   color: #fff;
   background-color: #17a2b8;
   border-color: #17a2b8;
 }
-.btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-info.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-info:focus, navbar-std > menu > li.dropdown.show > a.btn-outline-info:focus {
+.btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-info.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-info:focus, headerbar-standard > menu > li.dropdown.show > a.btn-outline-info:focus {
   box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
 
@@ -2773,12 +2773,12 @@ fieldset:disabled a.btn {
   color: #ffc107;
   background-color: transparent;
 }
-.btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active, .show > .btn-outline-warning.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-warning, navbar-std > menu > li.dropdown.show > a.btn-outline-warning {
+.btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active, .show > .btn-outline-warning.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-warning, headerbar-standard > menu > li.dropdown.show > a.btn-outline-warning {
   color: #212529;
   background-color: #ffc107;
   border-color: #ffc107;
 }
-.btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-warning.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-warning:focus, navbar-std > menu > li.dropdown.show > a.btn-outline-warning:focus {
+.btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-warning.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-warning:focus, headerbar-standard > menu > li.dropdown.show > a.btn-outline-warning:focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 
@@ -2798,12 +2798,12 @@ fieldset:disabled a.btn {
   color: #dc3545;
   background-color: transparent;
 }
-.btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active, .show > .btn-outline-danger.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-danger, navbar-std > menu > li.dropdown.show > a.btn-outline-danger {
+.btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active, .show > .btn-outline-danger.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-danger, headerbar-standard > menu > li.dropdown.show > a.btn-outline-danger {
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;
 }
-.btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-danger.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-danger:focus, navbar-std > menu > li.dropdown.show > a.btn-outline-danger:focus {
+.btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-danger.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-danger:focus, headerbar-standard > menu > li.dropdown.show > a.btn-outline-danger:focus {
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
 
@@ -2823,12 +2823,12 @@ fieldset:disabled a.btn {
   color: #f8f9fa;
   background-color: transparent;
 }
-.btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active, .show > .btn-outline-light.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-light, navbar-std > menu > li.dropdown.show > a.btn-outline-light {
+.btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active, .show > .btn-outline-light.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-light, headerbar-standard > menu > li.dropdown.show > a.btn-outline-light {
   color: #212529;
   background-color: #f8f9fa;
   border-color: #f8f9fa;
 }
-.btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-light.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-light:focus, navbar-std > menu > li.dropdown.show > a.btn-outline-light:focus {
+.btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-light.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-light:focus, headerbar-standard > menu > li.dropdown.show > a.btn-outline-light:focus {
   box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
 
@@ -2848,12 +2848,12 @@ fieldset:disabled a.btn {
   color: #343a40;
   background-color: transparent;
 }
-.btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active, .show > .btn-outline-dark.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-dark, navbar-std > menu > li.dropdown.show > a.btn-outline-dark {
+.btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active, .show > .btn-outline-dark.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-dark, headerbar-standard > menu > li.dropdown.show > a.btn-outline-dark {
   color: #fff;
   background-color: #343a40;
   border-color: #343a40;
 }
-.btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-dark.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-dark:focus, navbar-std > menu > li.dropdown.show > a.btn-outline-dark:focus {
+.btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-dark.dropdown-toggle:focus, body > nav[class^=navbarre] > menu > li.dropdown.show > a.btn-outline-dark:focus, headerbar-standard > menu > li.dropdown.show > a.btn-outline-dark:focus {
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
@@ -2914,7 +2914,7 @@ input[type=button].btn-block {
   opacity: 0;
 }
 
-.collapse:not(.show), body > nav[class^=navbarre] > menu:not(.show), navbar-std > menu:not(.show) {
+.collapse:not(.show), body > nav[class^=navbarre] > menu:not(.show), headerbar-standard > menu:not(.show) {
   display: none;
 }
 
@@ -2937,10 +2937,10 @@ input[type=button].btn-block {
   position: relative;
 }
 
-.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown > a, navbar-std > menu > li.dropdown > a {
+.dropdown-toggle, body > nav[class^=navbarre] > menu > li.dropdown > a, headerbar-standard > menu > li.dropdown > a {
   white-space: nowrap;
 }
-.dropdown-toggle::after, body > nav[class^=navbarre] > menu > li.dropdown > a::after, navbar-std > menu > li.dropdown > a::after {
+.dropdown-toggle::after, body > nav[class^=navbarre] > menu > li.dropdown > a::after, headerbar-standard > menu > li.dropdown > a::after {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
@@ -2950,11 +2950,11 @@ input[type=button].btn-block {
   border-bottom: 0;
   border-left: 0.3em solid transparent;
 }
-.dropdown-toggle:empty::after, body > nav[class^=navbarre] > menu > li.dropdown > a:empty::after, navbar-std > menu > li.dropdown > a:empty::after {
+.dropdown-toggle:empty::after, body > nav[class^=navbarre] > menu > li.dropdown > a:empty::after, headerbar-standard > menu > li.dropdown > a:empty::after {
   margin-left: 0;
 }
 
-.dropdown-menu, body > nav[class^=navbarre] > menu > li.dropdown > div, body > nav[class^=navbarre] > menu > li.dropdown > ul, body > nav[class^=navbarre] > menu > li.dropdown > ol, body > nav[class^=navbarre] > menu > li.dropdown > dt, navbar-std > menu > li.dropdown > div, navbar-std > menu > li.dropdown > ul, navbar-std > menu > li.dropdown > ol, navbar-std > menu > li.dropdown > dt {
+.dropdown-menu, body > nav[class^=navbarre] > menu > li.dropdown > div, body > nav[class^=navbarre] > menu > li.dropdown > ul, body > nav[class^=navbarre] > menu > li.dropdown > ol, body > nav[class^=navbarre] > menu > li.dropdown > dt, headerbar-standard > menu > li.dropdown > div, headerbar-standard > menu > li.dropdown > ul, headerbar-standard > menu > li.dropdown > ol, headerbar-standard > menu > li.dropdown > dt {
   position: absolute;
   top: 100%;
   left: 0;
@@ -3028,13 +3028,13 @@ input[type=button].btn-block {
     left: auto;
   }
 }
-.dropup .dropdown-menu, .dropup body > nav[class^=navbarre] > menu > li.dropdown > div, .dropup body > nav[class^=navbarre] > menu > li.dropdown > ul, .dropup body > nav[class^=navbarre] > menu > li.dropdown > ol, .dropup body > nav[class^=navbarre] > menu > li.dropdown > dt, .dropup navbar-std > menu > li.dropdown > div, .dropup navbar-std > menu > li.dropdown > ul, .dropup navbar-std > menu > li.dropdown > ol, .dropup navbar-std > menu > li.dropdown > dt {
+.dropup .dropdown-menu, .dropup body > nav[class^=navbarre] > menu > li.dropdown > div, .dropup body > nav[class^=navbarre] > menu > li.dropdown > ul, .dropup body > nav[class^=navbarre] > menu > li.dropdown > ol, .dropup body > nav[class^=navbarre] > menu > li.dropdown > dt, .dropup headerbar-standard > menu > li.dropdown > div, .dropup headerbar-standard > menu > li.dropdown > ul, .dropup headerbar-standard > menu > li.dropdown > ol, .dropup headerbar-standard > menu > li.dropdown > dt {
   top: auto;
   bottom: 100%;
   margin-top: 0;
   margin-bottom: 0.125rem;
 }
-.dropup .dropdown-toggle::after, .dropup body > nav[class^=navbarre] > menu > li.dropdown > a::after, .dropup navbar-std > menu > li.dropdown > a::after {
+.dropup .dropdown-toggle::after, .dropup body > nav[class^=navbarre] > menu > li.dropdown > a::after, .dropup headerbar-standard > menu > li.dropdown > a::after {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
@@ -3044,18 +3044,18 @@ input[type=button].btn-block {
   border-bottom: 0.3em solid;
   border-left: 0.3em solid transparent;
 }
-.dropup .dropdown-toggle:empty::after, .dropup body > nav[class^=navbarre] > menu > li.dropdown > a:empty::after, .dropup navbar-std > menu > li.dropdown > a:empty::after {
+.dropup .dropdown-toggle:empty::after, .dropup body > nav[class^=navbarre] > menu > li.dropdown > a:empty::after, .dropup headerbar-standard > menu > li.dropdown > a:empty::after {
   margin-left: 0;
 }
 
-.dropright .dropdown-menu, .dropright body > nav[class^=navbarre] > menu > li.dropdown > div, .dropright body > nav[class^=navbarre] > menu > li.dropdown > ul, .dropright body > nav[class^=navbarre] > menu > li.dropdown > ol, .dropright body > nav[class^=navbarre] > menu > li.dropdown > dt, .dropright navbar-std > menu > li.dropdown > div, .dropright navbar-std > menu > li.dropdown > ul, .dropright navbar-std > menu > li.dropdown > ol, .dropright navbar-std > menu > li.dropdown > dt {
+.dropright .dropdown-menu, .dropright body > nav[class^=navbarre] > menu > li.dropdown > div, .dropright body > nav[class^=navbarre] > menu > li.dropdown > ul, .dropright body > nav[class^=navbarre] > menu > li.dropdown > ol, .dropright body > nav[class^=navbarre] > menu > li.dropdown > dt, .dropright headerbar-standard > menu > li.dropdown > div, .dropright headerbar-standard > menu > li.dropdown > ul, .dropright headerbar-standard > menu > li.dropdown > ol, .dropright headerbar-standard > menu > li.dropdown > dt {
   top: 0;
   right: auto;
   left: 100%;
   margin-top: 0;
   margin-left: 0.125rem;
 }
-.dropright .dropdown-toggle::after, .dropright body > nav[class^=navbarre] > menu > li.dropdown > a::after, .dropright navbar-std > menu > li.dropdown > a::after {
+.dropright .dropdown-toggle::after, .dropright body > nav[class^=navbarre] > menu > li.dropdown > a::after, .dropright headerbar-standard > menu > li.dropdown > a::after {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
@@ -3065,30 +3065,30 @@ input[type=button].btn-block {
   border-bottom: 0.3em solid transparent;
   border-left: 0.3em solid;
 }
-.dropright .dropdown-toggle:empty::after, .dropright body > nav[class^=navbarre] > menu > li.dropdown > a:empty::after, .dropright navbar-std > menu > li.dropdown > a:empty::after {
+.dropright .dropdown-toggle:empty::after, .dropright body > nav[class^=navbarre] > menu > li.dropdown > a:empty::after, .dropright headerbar-standard > menu > li.dropdown > a:empty::after {
   margin-left: 0;
 }
-.dropright .dropdown-toggle::after, .dropright body > nav[class^=navbarre] > menu > li.dropdown > a::after, .dropright navbar-std > menu > li.dropdown > a::after {
+.dropright .dropdown-toggle::after, .dropright body > nav[class^=navbarre] > menu > li.dropdown > a::after, .dropright headerbar-standard > menu > li.dropdown > a::after {
   vertical-align: 0;
 }
 
-.dropleft .dropdown-menu, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > div, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > ul, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > ol, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > dt, .dropleft navbar-std > menu > li.dropdown > div, .dropleft navbar-std > menu > li.dropdown > ul, .dropleft navbar-std > menu > li.dropdown > ol, .dropleft navbar-std > menu > li.dropdown > dt {
+.dropleft .dropdown-menu, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > div, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > ul, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > ol, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > dt, .dropleft headerbar-standard > menu > li.dropdown > div, .dropleft headerbar-standard > menu > li.dropdown > ul, .dropleft headerbar-standard > menu > li.dropdown > ol, .dropleft headerbar-standard > menu > li.dropdown > dt {
   top: 0;
   right: 100%;
   left: auto;
   margin-top: 0;
   margin-right: 0.125rem;
 }
-.dropleft .dropdown-toggle::after, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > a::after, .dropleft navbar-std > menu > li.dropdown > a::after {
+.dropleft .dropdown-toggle::after, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > a::after, .dropleft headerbar-standard > menu > li.dropdown > a::after {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
   content: "";
 }
-.dropleft .dropdown-toggle::after, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > a::after, .dropleft navbar-std > menu > li.dropdown > a::after {
+.dropleft .dropdown-toggle::after, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > a::after, .dropleft headerbar-standard > menu > li.dropdown > a::after {
   display: none;
 }
-.dropleft .dropdown-toggle::before, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > a::before, .dropleft navbar-std > menu > li.dropdown > a::before {
+.dropleft .dropdown-toggle::before, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > a::before, .dropleft headerbar-standard > menu > li.dropdown > a::before {
   display: inline-block;
   margin-right: 0.255em;
   vertical-align: 0.255em;
@@ -3097,14 +3097,14 @@ input[type=button].btn-block {
   border-right: 0.3em solid;
   border-bottom: 0.3em solid transparent;
 }
-.dropleft .dropdown-toggle:empty::after, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > a:empty::after, .dropleft navbar-std > menu > li.dropdown > a:empty::after {
+.dropleft .dropdown-toggle:empty::after, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > a:empty::after, .dropleft headerbar-standard > menu > li.dropdown > a:empty::after {
   margin-left: 0;
 }
-.dropleft .dropdown-toggle::before, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > a::before, .dropleft navbar-std > menu > li.dropdown > a::before {
+.dropleft .dropdown-toggle::before, .dropleft body > nav[class^=navbarre] > menu > li.dropdown > a::before, .dropleft headerbar-standard > menu > li.dropdown > a::before {
   vertical-align: 0;
 }
 
-.dropdown-menu[x-placement^=top], body > nav[class^=navbarre] > menu > li.dropdown > div[x-placement^=top], body > nav[class^=navbarre] > menu > li.dropdown > ul[x-placement^=top], body > nav[class^=navbarre] > menu > li.dropdown > ol[x-placement^=top], body > nav[class^=navbarre] > menu > li.dropdown > dt[x-placement^=top], navbar-std > menu > li.dropdown > div[x-placement^=top], navbar-std > menu > li.dropdown > ul[x-placement^=top], navbar-std > menu > li.dropdown > ol[x-placement^=top], navbar-std > menu > li.dropdown > dt[x-placement^=top], .dropdown-menu[x-placement^=right], body > nav[class^=navbarre] > menu > li.dropdown > div[x-placement^=right], body > nav[class^=navbarre] > menu > li.dropdown > ul[x-placement^=right], body > nav[class^=navbarre] > menu > li.dropdown > ol[x-placement^=right], body > nav[class^=navbarre] > menu > li.dropdown > dt[x-placement^=right], navbar-std > menu > li.dropdown > div[x-placement^=right], navbar-std > menu > li.dropdown > ul[x-placement^=right], navbar-std > menu > li.dropdown > ol[x-placement^=right], navbar-std > menu > li.dropdown > dt[x-placement^=right], .dropdown-menu[x-placement^=bottom], body > nav[class^=navbarre] > menu > li.dropdown > div[x-placement^=bottom], body > nav[class^=navbarre] > menu > li.dropdown > ul[x-placement^=bottom], body > nav[class^=navbarre] > menu > li.dropdown > ol[x-placement^=bottom], body > nav[class^=navbarre] > menu > li.dropdown > dt[x-placement^=bottom], navbar-std > menu > li.dropdown > div[x-placement^=bottom], navbar-std > menu > li.dropdown > ul[x-placement^=bottom], navbar-std > menu > li.dropdown > ol[x-placement^=bottom], navbar-std > menu > li.dropdown > dt[x-placement^=bottom], .dropdown-menu[x-placement^=left], body > nav[class^=navbarre] > menu > li.dropdown > div[x-placement^=left], body > nav[class^=navbarre] > menu > li.dropdown > ul[x-placement^=left], body > nav[class^=navbarre] > menu > li.dropdown > ol[x-placement^=left], body > nav[class^=navbarre] > menu > li.dropdown > dt[x-placement^=left], navbar-std > menu > li.dropdown > div[x-placement^=left], navbar-std > menu > li.dropdown > ul[x-placement^=left], navbar-std > menu > li.dropdown > ol[x-placement^=left], navbar-std > menu > li.dropdown > dt[x-placement^=left] {
+.dropdown-menu[x-placement^=top], body > nav[class^=navbarre] > menu > li.dropdown > div[x-placement^=top], body > nav[class^=navbarre] > menu > li.dropdown > ul[x-placement^=top], body > nav[class^=navbarre] > menu > li.dropdown > ol[x-placement^=top], body > nav[class^=navbarre] > menu > li.dropdown > dt[x-placement^=top], headerbar-standard > menu > li.dropdown > div[x-placement^=top], headerbar-standard > menu > li.dropdown > ul[x-placement^=top], headerbar-standard > menu > li.dropdown > ol[x-placement^=top], headerbar-standard > menu > li.dropdown > dt[x-placement^=top], .dropdown-menu[x-placement^=right], body > nav[class^=navbarre] > menu > li.dropdown > div[x-placement^=right], body > nav[class^=navbarre] > menu > li.dropdown > ul[x-placement^=right], body > nav[class^=navbarre] > menu > li.dropdown > ol[x-placement^=right], body > nav[class^=navbarre] > menu > li.dropdown > dt[x-placement^=right], headerbar-standard > menu > li.dropdown > div[x-placement^=right], headerbar-standard > menu > li.dropdown > ul[x-placement^=right], headerbar-standard > menu > li.dropdown > ol[x-placement^=right], headerbar-standard > menu > li.dropdown > dt[x-placement^=right], .dropdown-menu[x-placement^=bottom], body > nav[class^=navbarre] > menu > li.dropdown > div[x-placement^=bottom], body > nav[class^=navbarre] > menu > li.dropdown > ul[x-placement^=bottom], body > nav[class^=navbarre] > menu > li.dropdown > ol[x-placement^=bottom], body > nav[class^=navbarre] > menu > li.dropdown > dt[x-placement^=bottom], headerbar-standard > menu > li.dropdown > div[x-placement^=bottom], headerbar-standard > menu > li.dropdown > ul[x-placement^=bottom], headerbar-standard > menu > li.dropdown > ol[x-placement^=bottom], headerbar-standard > menu > li.dropdown > dt[x-placement^=bottom], .dropdown-menu[x-placement^=left], body > nav[class^=navbarre] > menu > li.dropdown > div[x-placement^=left], body > nav[class^=navbarre] > menu > li.dropdown > ul[x-placement^=left], body > nav[class^=navbarre] > menu > li.dropdown > ol[x-placement^=left], body > nav[class^=navbarre] > menu > li.dropdown > dt[x-placement^=left], headerbar-standard > menu > li.dropdown > div[x-placement^=left], headerbar-standard > menu > li.dropdown > ul[x-placement^=left], headerbar-standard > menu > li.dropdown > ol[x-placement^=left], headerbar-standard > menu > li.dropdown > dt[x-placement^=left] {
   right: auto;
   bottom: auto;
 }
@@ -3116,7 +3116,7 @@ input[type=button].btn-block {
   border-top: 1px solid #e9ecef;
 }
 
-.dropdown-item, body > nav[class^=navbarre] > menu > li.dropdown > div > a, body > nav[class^=navbarre] > menu > li.dropdown > ul > a, body > nav[class^=navbarre] > menu > li.dropdown > ol > a, body > nav[class^=navbarre] > menu > li.dropdown > dt > a, navbar-std > menu > li.dropdown > div > a, navbar-std > menu > li.dropdown > ul > a, navbar-std > menu > li.dropdown > ol > a, navbar-std > menu > li.dropdown > dt > a {
+.dropdown-item, body > nav[class^=navbarre] > menu > li.dropdown > div > a, body > nav[class^=navbarre] > menu > li.dropdown > ul > a, body > nav[class^=navbarre] > menu > li.dropdown > ol > a, body > nav[class^=navbarre] > menu > li.dropdown > dt > a, headerbar-standard > menu > li.dropdown > div > a, headerbar-standard > menu > li.dropdown > ul > a, headerbar-standard > menu > li.dropdown > ol > a, headerbar-standard > menu > li.dropdown > dt > a {
   display: block;
   width: 100%;
   padding: 0.25rem 1.5rem;
@@ -3128,23 +3128,23 @@ input[type=button].btn-block {
   background-color: transparent;
   border: 0;
 }
-.dropdown-item:hover, body > nav[class^=navbarre] > menu > li.dropdown > div > a:hover, body > nav[class^=navbarre] > menu > li.dropdown > ul > a:hover, body > nav[class^=navbarre] > menu > li.dropdown > ol > a:hover, body > nav[class^=navbarre] > menu > li.dropdown > dt > a:hover, navbar-std > menu > li.dropdown > div > a:hover, navbar-std > menu > li.dropdown > ul > a:hover, navbar-std > menu > li.dropdown > ol > a:hover, navbar-std > menu > li.dropdown > dt > a:hover, .dropdown-item:focus, body > nav[class^=navbarre] > menu > li.dropdown > div > a:focus, body > nav[class^=navbarre] > menu > li.dropdown > ul > a:focus, body > nav[class^=navbarre] > menu > li.dropdown > ol > a:focus, body > nav[class^=navbarre] > menu > li.dropdown > dt > a:focus, navbar-std > menu > li.dropdown > div > a:focus, navbar-std > menu > li.dropdown > ul > a:focus, navbar-std > menu > li.dropdown > ol > a:focus, navbar-std > menu > li.dropdown > dt > a:focus {
+.dropdown-item:hover, body > nav[class^=navbarre] > menu > li.dropdown > div > a:hover, body > nav[class^=navbarre] > menu > li.dropdown > ul > a:hover, body > nav[class^=navbarre] > menu > li.dropdown > ol > a:hover, body > nav[class^=navbarre] > menu > li.dropdown > dt > a:hover, headerbar-standard > menu > li.dropdown > div > a:hover, headerbar-standard > menu > li.dropdown > ul > a:hover, headerbar-standard > menu > li.dropdown > ol > a:hover, headerbar-standard > menu > li.dropdown > dt > a:hover, .dropdown-item:focus, body > nav[class^=navbarre] > menu > li.dropdown > div > a:focus, body > nav[class^=navbarre] > menu > li.dropdown > ul > a:focus, body > nav[class^=navbarre] > menu > li.dropdown > ol > a:focus, body > nav[class^=navbarre] > menu > li.dropdown > dt > a:focus, headerbar-standard > menu > li.dropdown > div > a:focus, headerbar-standard > menu > li.dropdown > ul > a:focus, headerbar-standard > menu > li.dropdown > ol > a:focus, headerbar-standard > menu > li.dropdown > dt > a:focus {
   color: #16181b;
   text-decoration: none;
   background-color: #f8f9fa;
 }
-.dropdown-item.active, body > nav[class^=navbarre] > menu > li.dropdown > div > a.active, body > nav[class^=navbarre] > menu > li.dropdown > ul > a.active, body > nav[class^=navbarre] > menu > li.dropdown > ol > a.active, body > nav[class^=navbarre] > menu > li.dropdown > dt > a.active, navbar-std > menu > li.dropdown > div > a.active, navbar-std > menu > li.dropdown > ul > a.active, navbar-std > menu > li.dropdown > ol > a.active, navbar-std > menu > li.dropdown > dt > a.active, .dropdown-item:active, body > nav[class^=navbarre] > menu > li.dropdown > div > a:active, body > nav[class^=navbarre] > menu > li.dropdown > ul > a:active, body > nav[class^=navbarre] > menu > li.dropdown > ol > a:active, body > nav[class^=navbarre] > menu > li.dropdown > dt > a:active, navbar-std > menu > li.dropdown > div > a:active, navbar-std > menu > li.dropdown > ul > a:active, navbar-std > menu > li.dropdown > ol > a:active, navbar-std > menu > li.dropdown > dt > a:active {
+.dropdown-item.active, body > nav[class^=navbarre] > menu > li.dropdown > div > a.active, body > nav[class^=navbarre] > menu > li.dropdown > ul > a.active, body > nav[class^=navbarre] > menu > li.dropdown > ol > a.active, body > nav[class^=navbarre] > menu > li.dropdown > dt > a.active, headerbar-standard > menu > li.dropdown > div > a.active, headerbar-standard > menu > li.dropdown > ul > a.active, headerbar-standard > menu > li.dropdown > ol > a.active, headerbar-standard > menu > li.dropdown > dt > a.active, .dropdown-item:active, body > nav[class^=navbarre] > menu > li.dropdown > div > a:active, body > nav[class^=navbarre] > menu > li.dropdown > ul > a:active, body > nav[class^=navbarre] > menu > li.dropdown > ol > a:active, body > nav[class^=navbarre] > menu > li.dropdown > dt > a:active, headerbar-standard > menu > li.dropdown > div > a:active, headerbar-standard > menu > li.dropdown > ul > a:active, headerbar-standard > menu > li.dropdown > ol > a:active, headerbar-standard > menu > li.dropdown > dt > a:active {
   color: #fff;
   text-decoration: none;
   background-color: #007bff;
 }
-.dropdown-item.disabled, body > nav[class^=navbarre] > menu > li.dropdown > div > a.disabled, body > nav[class^=navbarre] > menu > li.dropdown > ul > a.disabled, body > nav[class^=navbarre] > menu > li.dropdown > ol > a.disabled, body > nav[class^=navbarre] > menu > li.dropdown > dt > a.disabled, navbar-std > menu > li.dropdown > div > a.disabled, navbar-std > menu > li.dropdown > ul > a.disabled, navbar-std > menu > li.dropdown > ol > a.disabled, navbar-std > menu > li.dropdown > dt > a.disabled, .dropdown-item:disabled, body > nav[class^=navbarre] > menu > li.dropdown > div > a:disabled, body > nav[class^=navbarre] > menu > li.dropdown > ul > a:disabled, body > nav[class^=navbarre] > menu > li.dropdown > ol > a:disabled, body > nav[class^=navbarre] > menu > li.dropdown > dt > a:disabled, navbar-std > menu > li.dropdown > div > a:disabled, navbar-std > menu > li.dropdown > ul > a:disabled, navbar-std > menu > li.dropdown > ol > a:disabled, navbar-std > menu > li.dropdown > dt > a:disabled {
+.dropdown-item.disabled, body > nav[class^=navbarre] > menu > li.dropdown > div > a.disabled, body > nav[class^=navbarre] > menu > li.dropdown > ul > a.disabled, body > nav[class^=navbarre] > menu > li.dropdown > ol > a.disabled, body > nav[class^=navbarre] > menu > li.dropdown > dt > a.disabled, headerbar-standard > menu > li.dropdown > div > a.disabled, headerbar-standard > menu > li.dropdown > ul > a.disabled, headerbar-standard > menu > li.dropdown > ol > a.disabled, headerbar-standard > menu > li.dropdown > dt > a.disabled, .dropdown-item:disabled, body > nav[class^=navbarre] > menu > li.dropdown > div > a:disabled, body > nav[class^=navbarre] > menu > li.dropdown > ul > a:disabled, body > nav[class^=navbarre] > menu > li.dropdown > ol > a:disabled, body > nav[class^=navbarre] > menu > li.dropdown > dt > a:disabled, headerbar-standard > menu > li.dropdown > div > a:disabled, headerbar-standard > menu > li.dropdown > ul > a:disabled, headerbar-standard > menu > li.dropdown > ol > a:disabled, headerbar-standard > menu > li.dropdown > dt > a:disabled {
   color: #6c757d;
   pointer-events: none;
   background-color: transparent;
 }
 
-.dropdown-menu.show, body > nav[class^=navbarre] > menu > li.dropdown > div.show, body > nav[class^=navbarre] > menu > li.dropdown > ul.show, body > nav[class^=navbarre] > menu > li.dropdown > ol.show, body > nav[class^=navbarre] > menu > li.dropdown > dt.show, navbar-std > menu > li.dropdown > div.show, navbar-std > menu > li.dropdown > ul.show, navbar-std > menu > li.dropdown > ol.show, navbar-std > menu > li.dropdown > dt.show {
+.dropdown-menu.show, body > nav[class^=navbarre] > menu > li.dropdown > div.show, body > nav[class^=navbarre] > menu > li.dropdown > ul.show, body > nav[class^=navbarre] > menu > li.dropdown > ol.show, body > nav[class^=navbarre] > menu > li.dropdown > dt.show, headerbar-standard > menu > li.dropdown > div.show, headerbar-standard > menu > li.dropdown > ul.show, headerbar-standard > menu > li.dropdown > ol.show, headerbar-standard > menu > li.dropdown > dt.show {
   display: block;
 }
 
@@ -3843,14 +3843,14 @@ input[type=button].btn-block {
   list-style: none;
 }
 
-.nav-link, body > nav[class^=navbarre] > menu > li > a, navbar-std > menu > li > a {
+.nav-link, body > nav[class^=navbarre] > menu > li > a, headerbar-standard > menu > li > a {
   display: block;
   padding: 0.5rem 1rem;
 }
-.nav-link:hover, body > nav[class^=navbarre] > menu > li > a:hover, navbar-std > menu > li > a:hover, .nav-link:focus, body > nav[class^=navbarre] > menu > li > a:focus, navbar-std > menu > li > a:focus {
+.nav-link:hover, body > nav[class^=navbarre] > menu > li > a:hover, headerbar-standard > menu > li > a:hover, .nav-link:focus, body > nav[class^=navbarre] > menu > li > a:focus, headerbar-standard > menu > li > a:focus {
   text-decoration: none;
 }
-.nav-link.disabled, body > nav[class^=navbarre] > menu > li > a.disabled, navbar-std > menu > li > a.disabled {
+.nav-link.disabled, body > nav[class^=navbarre] > menu > li > a.disabled, headerbar-standard > menu > li > a.disabled {
   color: #6c757d;
   pointer-events: none;
   cursor: default;
@@ -3859,65 +3859,65 @@ input[type=button].btn-block {
 .nav-tabs {
   border-bottom: 1px solid #dee2e6;
 }
-.nav-tabs .nav-item, .nav-tabs body > nav[class^=navbarre] > menu > li, .nav-tabs navbar-std > menu > li {
+.nav-tabs .nav-item, .nav-tabs body > nav[class^=navbarre] > menu > li, .nav-tabs headerbar-standard > menu > li {
   margin-bottom: -1px;
 }
-.nav-tabs .nav-link, .nav-tabs body > nav[class^=navbarre] > menu > li > a, .nav-tabs navbar-std > menu > li > a {
+.nav-tabs .nav-link, .nav-tabs body > nav[class^=navbarre] > menu > li > a, .nav-tabs headerbar-standard > menu > li > a {
   border: 1px solid transparent;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
-.nav-tabs .nav-link:hover, .nav-tabs body > nav[class^=navbarre] > menu > li > a:hover, .nav-tabs navbar-std > menu > li > a:hover, .nav-tabs .nav-link:focus, .nav-tabs body > nav[class^=navbarre] > menu > li > a:focus, .nav-tabs navbar-std > menu > li > a:focus {
+.nav-tabs .nav-link:hover, .nav-tabs body > nav[class^=navbarre] > menu > li > a:hover, .nav-tabs headerbar-standard > menu > li > a:hover, .nav-tabs .nav-link:focus, .nav-tabs body > nav[class^=navbarre] > menu > li > a:focus, .nav-tabs headerbar-standard > menu > li > a:focus {
   border-color: #e9ecef #e9ecef #dee2e6;
 }
-.nav-tabs .nav-link.disabled, .nav-tabs body > nav[class^=navbarre] > menu > li > a.disabled, .nav-tabs navbar-std > menu > li > a.disabled {
+.nav-tabs .nav-link.disabled, .nav-tabs body > nav[class^=navbarre] > menu > li > a.disabled, .nav-tabs headerbar-standard > menu > li > a.disabled {
   color: #6c757d;
   background-color: transparent;
   border-color: transparent;
 }
-.nav-tabs .nav-link.active, .nav-tabs body > nav[class^=navbarre] > menu > li > a.active, .nav-tabs navbar-std > menu > li > a.active,
+.nav-tabs .nav-link.active, .nav-tabs body > nav[class^=navbarre] > menu > li > a.active, .nav-tabs headerbar-standard > menu > li > a.active,
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-item.show body > nav[class^=navbarre] > menu > li > a,
-.nav-tabs .nav-item.show navbar-std > menu > li > a,
+.nav-tabs .nav-item.show headerbar-standard > menu > li > a,
 .nav-tabs body > nav[class^=navbarre] > menu > li.show .nav-link,
 .nav-tabs body > nav[class^=navbarre] > menu > li.show body > nav[class^=navbarre] > menu > li > a,
-.nav-tabs body > nav[class^=navbarre] > menu > li.show navbar-std > menu > li > a,
-.nav-tabs navbar-std > menu > li.show .nav-link,
-.nav-tabs navbar-std > menu > li.show body > nav[class^=navbarre] > menu > li > a,
-.nav-tabs navbar-std > menu > li.show navbar-std > menu > li > a {
+.nav-tabs body > nav[class^=navbarre] > menu > li.show headerbar-standard > menu > li > a,
+.nav-tabs headerbar-standard > menu > li.show .nav-link,
+.nav-tabs headerbar-standard > menu > li.show body > nav[class^=navbarre] > menu > li > a,
+.nav-tabs headerbar-standard > menu > li.show headerbar-standard > menu > li > a {
   color: #495057;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
-.nav-tabs .dropdown-menu, .nav-tabs body > nav[class^=navbarre] > menu > li.dropdown > div, .nav-tabs body > nav[class^=navbarre] > menu > li.dropdown > ul, .nav-tabs body > nav[class^=navbarre] > menu > li.dropdown > ol, .nav-tabs body > nav[class^=navbarre] > menu > li.dropdown > dt, .nav-tabs navbar-std > menu > li.dropdown > div, .nav-tabs navbar-std > menu > li.dropdown > ul, .nav-tabs navbar-std > menu > li.dropdown > ol, .nav-tabs navbar-std > menu > li.dropdown > dt {
+.nav-tabs .dropdown-menu, .nav-tabs body > nav[class^=navbarre] > menu > li.dropdown > div, .nav-tabs body > nav[class^=navbarre] > menu > li.dropdown > ul, .nav-tabs body > nav[class^=navbarre] > menu > li.dropdown > ol, .nav-tabs body > nav[class^=navbarre] > menu > li.dropdown > dt, .nav-tabs headerbar-standard > menu > li.dropdown > div, .nav-tabs headerbar-standard > menu > li.dropdown > ul, .nav-tabs headerbar-standard > menu > li.dropdown > ol, .nav-tabs headerbar-standard > menu > li.dropdown > dt {
   margin-top: -1px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-.nav-pills .nav-link, .nav-pills body > nav[class^=navbarre] > menu > li > a, .nav-pills navbar-std > menu > li > a {
+.nav-pills .nav-link, .nav-pills body > nav[class^=navbarre] > menu > li > a, .nav-pills headerbar-standard > menu > li > a {
   border-radius: 0.25rem;
 }
-.nav-pills .nav-link.active, .nav-pills body > nav[class^=navbarre] > menu > li > a.active, .nav-pills navbar-std > menu > li > a.active,
+.nav-pills .nav-link.active, .nav-pills body > nav[class^=navbarre] > menu > li > a.active, .nav-pills headerbar-standard > menu > li > a.active,
 .nav-pills .show > .nav-link,
 .nav-pills body > nav[class^=navbarre] > menu > li.show > a,
-.nav-pills navbar-std > menu > li.show > a {
+.nav-pills headerbar-standard > menu > li.show > a {
   color: #fff;
   background-color: #007bff;
 }
 
-.nav-fill > .nav-link, body > nav[class^=navbarre] > menu > li.nav-fill > a, navbar-std > menu > li.nav-fill > a,
+.nav-fill > .nav-link, body > nav[class^=navbarre] > menu > li.nav-fill > a, headerbar-standard > menu > li.nav-fill > a,
 .nav-fill .nav-item,
 .nav-fill body > nav[class^=navbarre] > menu > li,
-.nav-fill navbar-std > menu > li {
+.nav-fill headerbar-standard > menu > li {
   flex: 1 1 auto;
   text-align: center;
 }
 
-.nav-justified > .nav-link, body > nav[class^=navbarre] > menu > li.nav-justified > a, navbar-std > menu > li.nav-justified > a,
+.nav-justified > .nav-link, body > nav[class^=navbarre] > menu > li.nav-justified > a, headerbar-standard > menu > li.nav-justified > a,
 .nav-justified .nav-item,
 .nav-justified body > nav[class^=navbarre] > menu > li,
-.nav-justified navbar-std > menu > li {
+.nav-justified headerbar-standard > menu > li {
   flex-basis: 0;
   flex-grow: 1;
   text-align: center;
@@ -3930,7 +3930,7 @@ input[type=button].btn-block {
   display: block;
 }
 
-.navbar, body > nav[class^=navbarre], navbar-std {
+.navbar, body > nav[class^=navbarre], headerbar-standard {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -3938,28 +3938,28 @@ input[type=button].btn-block {
   justify-content: space-between;
   padding: 0.5rem 1rem;
 }
-.navbar .container, body > nav[class^=navbarre] .container, navbar-std .container,
+.navbar .container, body > nav[class^=navbarre] .container, headerbar-standard .container,
 .navbar .container-fluid,
 body > nav[class^=navbarre] .container-fluid,
-navbar-std .container-fluid,
+headerbar-standard .container-fluid,
 .navbar .container-sm,
 body > nav[class^=navbarre] .container-sm,
-navbar-std .container-sm,
+headerbar-standard .container-sm,
 .navbar .container-md,
 body > nav[class^=navbarre] .container-md,
-navbar-std .container-md,
+headerbar-standard .container-md,
 .navbar .container-lg,
 body > nav[class^=navbarre] .container-lg,
-navbar-std .container-lg,
+headerbar-standard .container-lg,
 .navbar .container-xl,
 body > nav[class^=navbarre] .container-xl,
-navbar-std .container-xl {
+headerbar-standard .container-xl {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
-.navbar-brand, body > nav[class^=navbarre] > a, navbar-std > a {
+.navbar-brand, body > nav[class^=navbarre] > a, headerbar-standard > a {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
@@ -3968,22 +3968,22 @@ navbar-std .container-xl {
   line-height: inherit;
   white-space: nowrap;
 }
-.navbar-brand:hover, body > nav[class^=navbarre] > a:hover, navbar-std > a:hover, .navbar-brand:focus, body > nav[class^=navbarre] > a:focus, navbar-std > a:focus {
+.navbar-brand:hover, body > nav[class^=navbarre] > a:hover, headerbar-standard > a:hover, .navbar-brand:focus, body > nav[class^=navbarre] > a:focus, headerbar-standard > a:focus {
   text-decoration: none;
 }
 
-.navbar-nav, body > nav[class^=navbarre] > menu, navbar-std > menu {
+.navbar-nav, body > nav[class^=navbarre] > menu, headerbar-standard > menu {
   display: flex;
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
 }
-.navbar-nav .nav-link, .navbar-nav navbar-std > menu > li > a, body > nav[class^=navbarre] > menu .nav-link, body > nav[class^=navbarre] > menu > li > a, navbar-std > menu .nav-link, navbar-std > menu > li > a {
+.navbar-nav .nav-link, .navbar-nav headerbar-standard > menu > li > a, body > nav[class^=navbarre] > menu .nav-link, body > nav[class^=navbarre] > menu > li > a, headerbar-standard > menu .nav-link, headerbar-standard > menu > li > a {
   padding-right: 0;
   padding-left: 0;
 }
-.navbar-nav .dropdown-menu, .navbar-nav navbar-std > menu > li.dropdown > div, .navbar-nav navbar-std > menu > li.dropdown > ul, .navbar-nav navbar-std > menu > li.dropdown > ol, .navbar-nav navbar-std > menu > li.dropdown > dt, body > nav[class^=navbarre] > menu .dropdown-menu, body > nav[class^=navbarre] > menu > li.dropdown > div, body > nav[class^=navbarre] > menu > li.dropdown > ul, body > nav[class^=navbarre] > menu > li.dropdown > ol, body > nav[class^=navbarre] > menu > li.dropdown > dt, navbar-std > menu .dropdown-menu, navbar-std > menu > li.dropdown > div, navbar-std > menu > li.dropdown > ul, navbar-std > menu > li.dropdown > ol, navbar-std > menu > li.dropdown > dt {
+.navbar-nav .dropdown-menu, .navbar-nav headerbar-standard > menu > li.dropdown > div, .navbar-nav headerbar-standard > menu > li.dropdown > ul, .navbar-nav headerbar-standard > menu > li.dropdown > ol, .navbar-nav headerbar-standard > menu > li.dropdown > dt, body > nav[class^=navbarre] > menu .dropdown-menu, body > nav[class^=navbarre] > menu > li.dropdown > div, body > nav[class^=navbarre] > menu > li.dropdown > ul, body > nav[class^=navbarre] > menu > li.dropdown > ol, body > nav[class^=navbarre] > menu > li.dropdown > dt, headerbar-standard > menu .dropdown-menu, headerbar-standard > menu > li.dropdown > div, headerbar-standard > menu > li.dropdown > ul, headerbar-standard > menu > li.dropdown > ol, headerbar-standard > menu > li.dropdown > dt {
   position: static;
   float: none;
 }
@@ -3994,13 +3994,13 @@ navbar-std .container-xl {
   padding-bottom: 0.5rem;
 }
 
-.navbar-collapse, body > nav[class^=navbarre] > menu, navbar-std > menu {
+.navbar-collapse, body > nav[class^=navbarre] > menu, headerbar-standard > menu {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
 }
 
-.navbar-toggler, body > nav[class^=navbarre] > button, navbar-std > button {
+.navbar-toggler, body > nav[class^=navbarre] > button, headerbar-standard > button {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
@@ -4008,11 +4008,11 @@ navbar-std .container-xl {
   border: 1px solid transparent;
   border-radius: 0.25rem;
 }
-.navbar-toggler:hover, body > nav[class^=navbarre] > button:hover, navbar-std > button:hover, .navbar-toggler:focus, body > nav[class^=navbarre] > button:focus, navbar-std > button:focus {
+.navbar-toggler:hover, body > nav[class^=navbarre] > button:hover, headerbar-standard > button:hover, .navbar-toggler:focus, body > nav[class^=navbarre] > button:focus, headerbar-standard > button:focus {
   text-decoration: none;
 }
 
-.navbar-toggler-icon, body > nav[class^=navbarre] > button > span, navbar-std > button > span {
+.navbar-toggler-icon, body > nav[class^=navbarre] > button > span, headerbar-standard > button > span {
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
@@ -4023,64 +4023,64 @@ navbar-std .container-xl {
 }
 
 @media (max-width: 575.98px) {
-  .navbar-expand-sm > .container, body > nav[class^=navbarre] > .container, navbar-std > .container,
+  .navbar-expand-sm > .container, body > nav[class^=navbarre] > .container, headerbar-standard > .container,
 .navbar-expand-sm > .container-fluid,
 body > nav[class^=navbarre] > .container-fluid,
-navbar-std > .container-fluid,
+headerbar-standard > .container-fluid,
 .navbar-expand-sm > .container-sm,
 body > nav[class^=navbarre] > .container-sm,
-navbar-std > .container-sm,
+headerbar-standard > .container-sm,
 .navbar-expand-sm > .container-md,
 body > nav[class^=navbarre] > .container-md,
-navbar-std > .container-md,
+headerbar-standard > .container-md,
 .navbar-expand-sm > .container-lg,
 body > nav[class^=navbarre] > .container-lg,
-navbar-std > .container-lg,
+headerbar-standard > .container-lg,
 .navbar-expand-sm > .container-xl,
 body > nav[class^=navbarre] > .container-xl,
-navbar-std > .container-xl {
+headerbar-standard > .container-xl {
     padding-right: 0;
     padding-left: 0;
   }
 }
 @media (min-width: 576px) {
-  .navbar-expand-sm, body > nav[class^=navbarre], navbar-std {
+  .navbar-expand-sm, body > nav[class^=navbarre], headerbar-standard {
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
-  .navbar-expand-sm .navbar-nav, .navbar-expand-sm body > nav[class^=navbarre] > menu, .navbar-expand-sm navbar-std > menu, body > nav[class^=navbarre] .navbar-nav, body > nav[class^=navbarre] > menu, body > nav[class^=navbarre] navbar-std > menu, navbar-std .navbar-nav, navbar-std > menu {
+  .navbar-expand-sm .navbar-nav, .navbar-expand-sm body > nav[class^=navbarre] > menu, .navbar-expand-sm headerbar-standard > menu, body > nav[class^=navbarre] .navbar-nav, body > nav[class^=navbarre] > menu, body > nav[class^=navbarre] headerbar-standard > menu, headerbar-standard .navbar-nav, headerbar-standard > menu {
     flex-direction: row;
   }
-  .navbar-expand-sm .navbar-nav .dropdown-menu, .navbar-expand-sm .navbar-nav navbar-std > menu > li.dropdown > div, .navbar-expand-sm .navbar-nav navbar-std > menu > li.dropdown > ul, .navbar-expand-sm .navbar-nav navbar-std > menu > li.dropdown > ol, .navbar-expand-sm .navbar-nav navbar-std > menu > li.dropdown > dt, .navbar-expand-sm navbar-std > menu .dropdown-menu, .navbar-expand-sm navbar-std > menu > li.dropdown > div, .navbar-expand-sm navbar-std > menu > li.dropdown > ul, .navbar-expand-sm navbar-std > menu > li.dropdown > ol, .navbar-expand-sm navbar-std > menu > li.dropdown > dt, body > nav[class^=navbarre] .navbar-nav .dropdown-menu, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li.dropdown > div, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li.dropdown > ul, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li.dropdown > ol, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li.dropdown > dt, body > nav[class^=navbarre] > menu .dropdown-menu, body > nav[class^=navbarre] > menu > li.dropdown > div, body > nav[class^=navbarre] > menu > li.dropdown > ul, body > nav[class^=navbarre] > menu > li.dropdown > ol, body > nav[class^=navbarre] > menu > li.dropdown > dt, body > nav[class^=navbarre] navbar-std > menu .dropdown-menu, body > nav[class^=navbarre] navbar-std > menu > li.dropdown > div, body > nav[class^=navbarre] navbar-std > menu > li.dropdown > ul, body > nav[class^=navbarre] navbar-std > menu > li.dropdown > ol, body > nav[class^=navbarre] navbar-std > menu > li.dropdown > dt, navbar-std .navbar-nav .dropdown-menu, navbar-std .navbar-nav navbar-std > menu > li.dropdown > div, navbar-std .navbar-nav navbar-std > menu > li.dropdown > ul, navbar-std .navbar-nav navbar-std > menu > li.dropdown > ol, navbar-std .navbar-nav navbar-std > menu > li.dropdown > dt, navbar-std > menu .dropdown-menu, navbar-std > menu > li.dropdown > div, navbar-std > menu > li.dropdown > ul, navbar-std > menu > li.dropdown > ol, navbar-std > menu > li.dropdown > dt {
+  .navbar-expand-sm .navbar-nav .dropdown-menu, .navbar-expand-sm .navbar-nav headerbar-standard > menu > li.dropdown > div, .navbar-expand-sm .navbar-nav headerbar-standard > menu > li.dropdown > ul, .navbar-expand-sm .navbar-nav headerbar-standard > menu > li.dropdown > ol, .navbar-expand-sm .navbar-nav headerbar-standard > menu > li.dropdown > dt, .navbar-expand-sm headerbar-standard > menu .dropdown-menu, .navbar-expand-sm headerbar-standard > menu > li.dropdown > div, .navbar-expand-sm headerbar-standard > menu > li.dropdown > ul, .navbar-expand-sm headerbar-standard > menu > li.dropdown > ol, .navbar-expand-sm headerbar-standard > menu > li.dropdown > dt, body > nav[class^=navbarre] .navbar-nav .dropdown-menu, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li.dropdown > div, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li.dropdown > ul, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li.dropdown > ol, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li.dropdown > dt, body > nav[class^=navbarre] > menu .dropdown-menu, body > nav[class^=navbarre] > menu > li.dropdown > div, body > nav[class^=navbarre] > menu > li.dropdown > ul, body > nav[class^=navbarre] > menu > li.dropdown > ol, body > nav[class^=navbarre] > menu > li.dropdown > dt, body > nav[class^=navbarre] headerbar-standard > menu .dropdown-menu, body > nav[class^=navbarre] headerbar-standard > menu > li.dropdown > div, body > nav[class^=navbarre] headerbar-standard > menu > li.dropdown > ul, body > nav[class^=navbarre] headerbar-standard > menu > li.dropdown > ol, body > nav[class^=navbarre] headerbar-standard > menu > li.dropdown > dt, headerbar-standard .navbar-nav .dropdown-menu, headerbar-standard .navbar-nav headerbar-standard > menu > li.dropdown > div, headerbar-standard .navbar-nav headerbar-standard > menu > li.dropdown > ul, headerbar-standard .navbar-nav headerbar-standard > menu > li.dropdown > ol, headerbar-standard .navbar-nav headerbar-standard > menu > li.dropdown > dt, headerbar-standard > menu .dropdown-menu, headerbar-standard > menu > li.dropdown > div, headerbar-standard > menu > li.dropdown > ul, headerbar-standard > menu > li.dropdown > ol, headerbar-standard > menu > li.dropdown > dt {
     position: absolute;
   }
-  .navbar-expand-sm .navbar-nav .nav-link, .navbar-expand-sm .navbar-nav body > nav[class^=navbarre] > menu > li > a, .navbar-expand-sm .navbar-nav navbar-std > menu > li > a, .navbar-expand-sm navbar-std > menu .nav-link, .navbar-expand-sm navbar-std > menu > li > a, body > nav[class^=navbarre] .navbar-nav .nav-link, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li > a, body > nav[class^=navbarre] > menu .nav-link, body > nav[class^=navbarre] > menu > li > a, body > nav[class^=navbarre] navbar-std > menu .nav-link, body > nav[class^=navbarre] navbar-std > menu > li > a, navbar-std .navbar-nav .nav-link, navbar-std .navbar-nav navbar-std > menu > li > a, navbar-std > menu .nav-link, navbar-std > menu > li > a {
+  .navbar-expand-sm .navbar-nav .nav-link, .navbar-expand-sm .navbar-nav body > nav[class^=navbarre] > menu > li > a, .navbar-expand-sm .navbar-nav headerbar-standard > menu > li > a, .navbar-expand-sm headerbar-standard > menu .nav-link, .navbar-expand-sm headerbar-standard > menu > li > a, body > nav[class^=navbarre] .navbar-nav .nav-link, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li > a, body > nav[class^=navbarre] > menu .nav-link, body > nav[class^=navbarre] > menu > li > a, body > nav[class^=navbarre] headerbar-standard > menu .nav-link, body > nav[class^=navbarre] headerbar-standard > menu > li > a, headerbar-standard .navbar-nav .nav-link, headerbar-standard .navbar-nav headerbar-standard > menu > li > a, headerbar-standard > menu .nav-link, headerbar-standard > menu > li > a {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .navbar-expand-sm > .container, body > nav[class^=navbarre] > .container, navbar-std > .container,
+  .navbar-expand-sm > .container, body > nav[class^=navbarre] > .container, headerbar-standard > .container,
 .navbar-expand-sm > .container-fluid,
 body > nav[class^=navbarre] > .container-fluid,
-navbar-std > .container-fluid,
+headerbar-standard > .container-fluid,
 .navbar-expand-sm > .container-sm,
 body > nav[class^=navbarre] > .container-sm,
-navbar-std > .container-sm,
+headerbar-standard > .container-sm,
 .navbar-expand-sm > .container-md,
 body > nav[class^=navbarre] > .container-md,
-navbar-std > .container-md,
+headerbar-standard > .container-md,
 .navbar-expand-sm > .container-lg,
 body > nav[class^=navbarre] > .container-lg,
-navbar-std > .container-lg,
+headerbar-standard > .container-lg,
 .navbar-expand-sm > .container-xl,
 body > nav[class^=navbarre] > .container-xl,
-navbar-std > .container-xl {
+headerbar-standard > .container-xl {
     flex-wrap: nowrap;
   }
-  .navbar-expand-sm .navbar-collapse, .navbar-expand-sm body > nav[class^=navbarre] > menu, .navbar-expand-sm navbar-std > menu, body > nav[class^=navbarre] .navbar-collapse, body > nav[class^=navbarre] > menu, body > nav[class^=navbarre] navbar-std > menu, navbar-std .navbar-collapse, navbar-std > menu {
+  .navbar-expand-sm .navbar-collapse, .navbar-expand-sm body > nav[class^=navbarre] > menu, .navbar-expand-sm headerbar-standard > menu, body > nav[class^=navbarre] .navbar-collapse, body > nav[class^=navbarre] > menu, body > nav[class^=navbarre] headerbar-standard > menu, headerbar-standard .navbar-collapse, headerbar-standard > menu {
     display: flex !important;
     flex-basis: auto;
   }
-  .navbar-expand-sm .navbar-toggler, .navbar-expand-sm body > nav[class^=navbarre] > button, .navbar-expand-sm navbar-std > button, body > nav[class^=navbarre] .navbar-toggler, body > nav[class^=navbarre] > button, body > nav[class^=navbarre] navbar-std > button, navbar-std .navbar-toggler, navbar-std > button {
+  .navbar-expand-sm .navbar-toggler, .navbar-expand-sm body > nav[class^=navbarre] > button, .navbar-expand-sm headerbar-standard > button, body > nav[class^=navbarre] .navbar-toggler, body > nav[class^=navbarre] > button, body > nav[class^=navbarre] headerbar-standard > button, headerbar-standard .navbar-toggler, headerbar-standard > button {
     display: none;
   }
 }
@@ -4100,13 +4100,13 @@ navbar-std > .container-xl {
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
-  .navbar-expand-md .navbar-nav, .navbar-expand-md body > nav[class^=navbarre] > menu, .navbar-expand-md navbar-std > menu {
+  .navbar-expand-md .navbar-nav, .navbar-expand-md body > nav[class^=navbarre] > menu, .navbar-expand-md headerbar-standard > menu {
     flex-direction: row;
   }
-  .navbar-expand-md .navbar-nav .dropdown-menu, .navbar-expand-md .navbar-nav navbar-std > menu > li.dropdown > div, .navbar-expand-md .navbar-nav navbar-std > menu > li.dropdown > ul, .navbar-expand-md .navbar-nav navbar-std > menu > li.dropdown > ol, .navbar-expand-md .navbar-nav navbar-std > menu > li.dropdown > dt, .navbar-expand-md body > nav[class^=navbarre] > menu .dropdown-menu, .navbar-expand-md body > nav[class^=navbarre] > menu > li.dropdown > div, .navbar-expand-md body > nav[class^=navbarre] > menu > li.dropdown > ul, .navbar-expand-md body > nav[class^=navbarre] > menu > li.dropdown > ol, .navbar-expand-md body > nav[class^=navbarre] > menu > li.dropdown > dt, .navbar-expand-md navbar-std > menu .dropdown-menu, .navbar-expand-md navbar-std > menu > li.dropdown > div, .navbar-expand-md navbar-std > menu > li.dropdown > ul, .navbar-expand-md navbar-std > menu > li.dropdown > ol, .navbar-expand-md navbar-std > menu > li.dropdown > dt {
+  .navbar-expand-md .navbar-nav .dropdown-menu, .navbar-expand-md .navbar-nav headerbar-standard > menu > li.dropdown > div, .navbar-expand-md .navbar-nav headerbar-standard > menu > li.dropdown > ul, .navbar-expand-md .navbar-nav headerbar-standard > menu > li.dropdown > ol, .navbar-expand-md .navbar-nav headerbar-standard > menu > li.dropdown > dt, .navbar-expand-md body > nav[class^=navbarre] > menu .dropdown-menu, .navbar-expand-md body > nav[class^=navbarre] > menu > li.dropdown > div, .navbar-expand-md body > nav[class^=navbarre] > menu > li.dropdown > ul, .navbar-expand-md body > nav[class^=navbarre] > menu > li.dropdown > ol, .navbar-expand-md body > nav[class^=navbarre] > menu > li.dropdown > dt, .navbar-expand-md headerbar-standard > menu .dropdown-menu, .navbar-expand-md headerbar-standard > menu > li.dropdown > div, .navbar-expand-md headerbar-standard > menu > li.dropdown > ul, .navbar-expand-md headerbar-standard > menu > li.dropdown > ol, .navbar-expand-md headerbar-standard > menu > li.dropdown > dt {
     position: absolute;
   }
-  .navbar-expand-md .navbar-nav .nav-link, .navbar-expand-md .navbar-nav navbar-std > menu > li > a, .navbar-expand-md body > nav[class^=navbarre] > menu .nav-link, .navbar-expand-md body > nav[class^=navbarre] > menu > li > a, .navbar-expand-md navbar-std > menu .nav-link, .navbar-expand-md navbar-std > menu > li > a {
+  .navbar-expand-md .navbar-nav .nav-link, .navbar-expand-md .navbar-nav headerbar-standard > menu > li > a, .navbar-expand-md body > nav[class^=navbarre] > menu .nav-link, .navbar-expand-md body > nav[class^=navbarre] > menu > li > a, .navbar-expand-md headerbar-standard > menu .nav-link, .navbar-expand-md headerbar-standard > menu > li > a {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
@@ -4118,11 +4118,11 @@ navbar-std > .container-xl {
 .navbar-expand-md > .container-xl {
     flex-wrap: nowrap;
   }
-  .navbar-expand-md .navbar-collapse, .navbar-expand-md body > nav[class^=navbarre] > menu, .navbar-expand-md navbar-std > menu {
+  .navbar-expand-md .navbar-collapse, .navbar-expand-md body > nav[class^=navbarre] > menu, .navbar-expand-md headerbar-standard > menu {
     display: flex !important;
     flex-basis: auto;
   }
-  .navbar-expand-md .navbar-toggler, .navbar-expand-md body > nav[class^=navbarre] > button, .navbar-expand-md navbar-std > button {
+  .navbar-expand-md .navbar-toggler, .navbar-expand-md body > nav[class^=navbarre] > button, .navbar-expand-md headerbar-standard > button {
     display: none;
   }
 }
@@ -4142,13 +4142,13 @@ navbar-std > .container-xl {
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
-  .navbar-expand-lg .navbar-nav, .navbar-expand-lg body > nav[class^=navbarre] > menu, .navbar-expand-lg navbar-std > menu {
+  .navbar-expand-lg .navbar-nav, .navbar-expand-lg body > nav[class^=navbarre] > menu, .navbar-expand-lg headerbar-standard > menu {
     flex-direction: row;
   }
-  .navbar-expand-lg .navbar-nav .dropdown-menu, .navbar-expand-lg .navbar-nav navbar-std > menu > li.dropdown > div, .navbar-expand-lg .navbar-nav navbar-std > menu > li.dropdown > ul, .navbar-expand-lg .navbar-nav navbar-std > menu > li.dropdown > ol, .navbar-expand-lg .navbar-nav navbar-std > menu > li.dropdown > dt, .navbar-expand-lg body > nav[class^=navbarre] > menu .dropdown-menu, .navbar-expand-lg body > nav[class^=navbarre] > menu > li.dropdown > div, .navbar-expand-lg body > nav[class^=navbarre] > menu > li.dropdown > ul, .navbar-expand-lg body > nav[class^=navbarre] > menu > li.dropdown > ol, .navbar-expand-lg body > nav[class^=navbarre] > menu > li.dropdown > dt, .navbar-expand-lg navbar-std > menu .dropdown-menu, .navbar-expand-lg navbar-std > menu > li.dropdown > div, .navbar-expand-lg navbar-std > menu > li.dropdown > ul, .navbar-expand-lg navbar-std > menu > li.dropdown > ol, .navbar-expand-lg navbar-std > menu > li.dropdown > dt {
+  .navbar-expand-lg .navbar-nav .dropdown-menu, .navbar-expand-lg .navbar-nav headerbar-standard > menu > li.dropdown > div, .navbar-expand-lg .navbar-nav headerbar-standard > menu > li.dropdown > ul, .navbar-expand-lg .navbar-nav headerbar-standard > menu > li.dropdown > ol, .navbar-expand-lg .navbar-nav headerbar-standard > menu > li.dropdown > dt, .navbar-expand-lg body > nav[class^=navbarre] > menu .dropdown-menu, .navbar-expand-lg body > nav[class^=navbarre] > menu > li.dropdown > div, .navbar-expand-lg body > nav[class^=navbarre] > menu > li.dropdown > ul, .navbar-expand-lg body > nav[class^=navbarre] > menu > li.dropdown > ol, .navbar-expand-lg body > nav[class^=navbarre] > menu > li.dropdown > dt, .navbar-expand-lg headerbar-standard > menu .dropdown-menu, .navbar-expand-lg headerbar-standard > menu > li.dropdown > div, .navbar-expand-lg headerbar-standard > menu > li.dropdown > ul, .navbar-expand-lg headerbar-standard > menu > li.dropdown > ol, .navbar-expand-lg headerbar-standard > menu > li.dropdown > dt {
     position: absolute;
   }
-  .navbar-expand-lg .navbar-nav .nav-link, .navbar-expand-lg .navbar-nav navbar-std > menu > li > a, .navbar-expand-lg body > nav[class^=navbarre] > menu .nav-link, .navbar-expand-lg body > nav[class^=navbarre] > menu > li > a, .navbar-expand-lg navbar-std > menu .nav-link, .navbar-expand-lg navbar-std > menu > li > a {
+  .navbar-expand-lg .navbar-nav .nav-link, .navbar-expand-lg .navbar-nav headerbar-standard > menu > li > a, .navbar-expand-lg body > nav[class^=navbarre] > menu .nav-link, .navbar-expand-lg body > nav[class^=navbarre] > menu > li > a, .navbar-expand-lg headerbar-standard > menu .nav-link, .navbar-expand-lg headerbar-standard > menu > li > a {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
@@ -4160,11 +4160,11 @@ navbar-std > .container-xl {
 .navbar-expand-lg > .container-xl {
     flex-wrap: nowrap;
   }
-  .navbar-expand-lg .navbar-collapse, .navbar-expand-lg body > nav[class^=navbarre] > menu, .navbar-expand-lg navbar-std > menu {
+  .navbar-expand-lg .navbar-collapse, .navbar-expand-lg body > nav[class^=navbarre] > menu, .navbar-expand-lg headerbar-standard > menu {
     display: flex !important;
     flex-basis: auto;
   }
-  .navbar-expand-lg .navbar-toggler, .navbar-expand-lg body > nav[class^=navbarre] > button, .navbar-expand-lg navbar-std > button {
+  .navbar-expand-lg .navbar-toggler, .navbar-expand-lg body > nav[class^=navbarre] > button, .navbar-expand-lg headerbar-standard > button {
     display: none;
   }
 }
@@ -4184,13 +4184,13 @@ navbar-std > .container-xl {
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
-  .navbar-expand-xl .navbar-nav, .navbar-expand-xl body > nav[class^=navbarre] > menu, .navbar-expand-xl navbar-std > menu {
+  .navbar-expand-xl .navbar-nav, .navbar-expand-xl body > nav[class^=navbarre] > menu, .navbar-expand-xl headerbar-standard > menu {
     flex-direction: row;
   }
-  .navbar-expand-xl .navbar-nav .dropdown-menu, .navbar-expand-xl .navbar-nav navbar-std > menu > li.dropdown > div, .navbar-expand-xl .navbar-nav navbar-std > menu > li.dropdown > ul, .navbar-expand-xl .navbar-nav navbar-std > menu > li.dropdown > ol, .navbar-expand-xl .navbar-nav navbar-std > menu > li.dropdown > dt, .navbar-expand-xl body > nav[class^=navbarre] > menu .dropdown-menu, .navbar-expand-xl body > nav[class^=navbarre] > menu > li.dropdown > div, .navbar-expand-xl body > nav[class^=navbarre] > menu > li.dropdown > ul, .navbar-expand-xl body > nav[class^=navbarre] > menu > li.dropdown > ol, .navbar-expand-xl body > nav[class^=navbarre] > menu > li.dropdown > dt, .navbar-expand-xl navbar-std > menu .dropdown-menu, .navbar-expand-xl navbar-std > menu > li.dropdown > div, .navbar-expand-xl navbar-std > menu > li.dropdown > ul, .navbar-expand-xl navbar-std > menu > li.dropdown > ol, .navbar-expand-xl navbar-std > menu > li.dropdown > dt {
+  .navbar-expand-xl .navbar-nav .dropdown-menu, .navbar-expand-xl .navbar-nav headerbar-standard > menu > li.dropdown > div, .navbar-expand-xl .navbar-nav headerbar-standard > menu > li.dropdown > ul, .navbar-expand-xl .navbar-nav headerbar-standard > menu > li.dropdown > ol, .navbar-expand-xl .navbar-nav headerbar-standard > menu > li.dropdown > dt, .navbar-expand-xl body > nav[class^=navbarre] > menu .dropdown-menu, .navbar-expand-xl body > nav[class^=navbarre] > menu > li.dropdown > div, .navbar-expand-xl body > nav[class^=navbarre] > menu > li.dropdown > ul, .navbar-expand-xl body > nav[class^=navbarre] > menu > li.dropdown > ol, .navbar-expand-xl body > nav[class^=navbarre] > menu > li.dropdown > dt, .navbar-expand-xl headerbar-standard > menu .dropdown-menu, .navbar-expand-xl headerbar-standard > menu > li.dropdown > div, .navbar-expand-xl headerbar-standard > menu > li.dropdown > ul, .navbar-expand-xl headerbar-standard > menu > li.dropdown > ol, .navbar-expand-xl headerbar-standard > menu > li.dropdown > dt {
     position: absolute;
   }
-  .navbar-expand-xl .navbar-nav .nav-link, .navbar-expand-xl .navbar-nav navbar-std > menu > li > a, .navbar-expand-xl body > nav[class^=navbarre] > menu .nav-link, .navbar-expand-xl body > nav[class^=navbarre] > menu > li > a, .navbar-expand-xl navbar-std > menu .nav-link, .navbar-expand-xl navbar-std > menu > li > a {
+  .navbar-expand-xl .navbar-nav .nav-link, .navbar-expand-xl .navbar-nav headerbar-standard > menu > li > a, .navbar-expand-xl body > nav[class^=navbarre] > menu .nav-link, .navbar-expand-xl body > nav[class^=navbarre] > menu > li > a, .navbar-expand-xl headerbar-standard > menu .nav-link, .navbar-expand-xl headerbar-standard > menu > li > a {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
@@ -4202,11 +4202,11 @@ navbar-std > .container-xl {
 .navbar-expand-xl > .container-xl {
     flex-wrap: nowrap;
   }
-  .navbar-expand-xl .navbar-collapse, .navbar-expand-xl body > nav[class^=navbarre] > menu, .navbar-expand-xl navbar-std > menu {
+  .navbar-expand-xl .navbar-collapse, .navbar-expand-xl body > nav[class^=navbarre] > menu, .navbar-expand-xl headerbar-standard > menu {
     display: flex !important;
     flex-basis: auto;
   }
-  .navbar-expand-xl .navbar-toggler, .navbar-expand-xl body > nav[class^=navbarre] > button, .navbar-expand-xl navbar-std > button {
+  .navbar-expand-xl .navbar-toggler, .navbar-expand-xl body > nav[class^=navbarre] > button, .navbar-expand-xl headerbar-standard > button {
     display: none;
   }
 }
@@ -4223,13 +4223,13 @@ navbar-std > .container-xl {
   padding-right: 0;
   padding-left: 0;
 }
-.navbar-expand .navbar-nav, .navbar-expand body > nav[class^=navbarre] > menu, .navbar-expand navbar-std > menu {
+.navbar-expand .navbar-nav, .navbar-expand body > nav[class^=navbarre] > menu, .navbar-expand headerbar-standard > menu {
   flex-direction: row;
 }
-.navbar-expand .navbar-nav .dropdown-menu, .navbar-expand .navbar-nav navbar-std > menu > li.dropdown > div, .navbar-expand .navbar-nav navbar-std > menu > li.dropdown > ul, .navbar-expand .navbar-nav navbar-std > menu > li.dropdown > ol, .navbar-expand .navbar-nav navbar-std > menu > li.dropdown > dt, .navbar-expand body > nav[class^=navbarre] > menu .dropdown-menu, .navbar-expand body > nav[class^=navbarre] > menu > li.dropdown > div, .navbar-expand body > nav[class^=navbarre] > menu > li.dropdown > ul, .navbar-expand body > nav[class^=navbarre] > menu > li.dropdown > ol, .navbar-expand body > nav[class^=navbarre] > menu > li.dropdown > dt, .navbar-expand navbar-std > menu .dropdown-menu, .navbar-expand navbar-std > menu > li.dropdown > div, .navbar-expand navbar-std > menu > li.dropdown > ul, .navbar-expand navbar-std > menu > li.dropdown > ol, .navbar-expand navbar-std > menu > li.dropdown > dt {
+.navbar-expand .navbar-nav .dropdown-menu, .navbar-expand .navbar-nav headerbar-standard > menu > li.dropdown > div, .navbar-expand .navbar-nav headerbar-standard > menu > li.dropdown > ul, .navbar-expand .navbar-nav headerbar-standard > menu > li.dropdown > ol, .navbar-expand .navbar-nav headerbar-standard > menu > li.dropdown > dt, .navbar-expand body > nav[class^=navbarre] > menu .dropdown-menu, .navbar-expand body > nav[class^=navbarre] > menu > li.dropdown > div, .navbar-expand body > nav[class^=navbarre] > menu > li.dropdown > ul, .navbar-expand body > nav[class^=navbarre] > menu > li.dropdown > ol, .navbar-expand body > nav[class^=navbarre] > menu > li.dropdown > dt, .navbar-expand headerbar-standard > menu .dropdown-menu, .navbar-expand headerbar-standard > menu > li.dropdown > div, .navbar-expand headerbar-standard > menu > li.dropdown > ul, .navbar-expand headerbar-standard > menu > li.dropdown > ol, .navbar-expand headerbar-standard > menu > li.dropdown > dt {
   position: absolute;
 }
-.navbar-expand .navbar-nav .nav-link, .navbar-expand .navbar-nav navbar-std > menu > li > a, .navbar-expand body > nav[class^=navbarre] > menu .nav-link, .navbar-expand body > nav[class^=navbarre] > menu > li > a, .navbar-expand navbar-std > menu .nav-link, .navbar-expand navbar-std > menu > li > a {
+.navbar-expand .navbar-nav .nav-link, .navbar-expand .navbar-nav headerbar-standard > menu > li > a, .navbar-expand body > nav[class^=navbarre] > menu .nav-link, .navbar-expand body > nav[class^=navbarre] > menu > li > a, .navbar-expand headerbar-standard > menu .nav-link, .navbar-expand headerbar-standard > menu > li > a {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
@@ -4241,120 +4241,120 @@ navbar-std > .container-xl {
 .navbar-expand > .container-xl {
   flex-wrap: nowrap;
 }
-.navbar-expand .navbar-collapse, .navbar-expand body > nav[class^=navbarre] > menu, .navbar-expand navbar-std > menu {
+.navbar-expand .navbar-collapse, .navbar-expand body > nav[class^=navbarre] > menu, .navbar-expand headerbar-standard > menu {
   display: flex !important;
   flex-basis: auto;
 }
-.navbar-expand .navbar-toggler, .navbar-expand body > nav[class^=navbarre] > button, .navbar-expand navbar-std > button {
+.navbar-expand .navbar-toggler, .navbar-expand body > nav[class^=navbarre] > button, .navbar-expand headerbar-standard > button {
   display: none;
 }
 
-.navbar-light .navbar-brand, .navbar-light navbar-std > a, body > nav[class^=navbarre] .navbar-brand, body > nav[class^=navbarre] > a, body > nav[class^=navbarre] navbar-std > a, navbar-std .navbar-brand, navbar-std > a {
+.navbar-light .navbar-brand, .navbar-light headerbar-standard > a, body > nav[class^=navbarre] .navbar-brand, body > nav[class^=navbarre] > a, body > nav[class^=navbarre] headerbar-standard > a, headerbar-standard .navbar-brand, headerbar-standard > a {
   color: rgba(0, 0, 0, 0.9);
 }
-.navbar-light .navbar-brand:hover, .navbar-light navbar-std > a:hover, body > nav[class^=navbarre] .navbar-brand:hover, body > nav[class^=navbarre] > a:hover, body > nav[class^=navbarre] navbar-std > a:hover, navbar-std .navbar-brand:hover, navbar-std > a:hover, .navbar-light .navbar-brand:focus, .navbar-light navbar-std > a:focus, body > nav[class^=navbarre] .navbar-brand:focus, body > nav[class^=navbarre] > a:focus, body > nav[class^=navbarre] navbar-std > a:focus, navbar-std .navbar-brand:focus, navbar-std > a:focus {
+.navbar-light .navbar-brand:hover, .navbar-light headerbar-standard > a:hover, body > nav[class^=navbarre] .navbar-brand:hover, body > nav[class^=navbarre] > a:hover, body > nav[class^=navbarre] headerbar-standard > a:hover, headerbar-standard .navbar-brand:hover, headerbar-standard > a:hover, .navbar-light .navbar-brand:focus, .navbar-light headerbar-standard > a:focus, body > nav[class^=navbarre] .navbar-brand:focus, body > nav[class^=navbarre] > a:focus, body > nav[class^=navbarre] headerbar-standard > a:focus, headerbar-standard .navbar-brand:focus, headerbar-standard > a:focus {
   color: rgba(0, 0, 0, 0.9);
 }
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav navbar-std > menu > li > a, .navbar-light navbar-std > menu .nav-link, .navbar-light navbar-std > menu > li > a, body > nav[class^=navbarre] .navbar-nav .nav-link, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li > a, body > nav[class^=navbarre] > menu .nav-link, body > nav[class^=navbarre] > menu > li > a, body > nav[class^=navbarre] navbar-std > menu .nav-link, body > nav[class^=navbarre] navbar-std > menu > li > a, navbar-std .navbar-nav .nav-link, navbar-std .navbar-nav navbar-std > menu > li > a, navbar-std > menu .nav-link, navbar-std > menu > li > a {
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav headerbar-standard > menu > li > a, .navbar-light headerbar-standard > menu .nav-link, .navbar-light headerbar-standard > menu > li > a, body > nav[class^=navbarre] .navbar-nav .nav-link, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li > a, body > nav[class^=navbarre] > menu .nav-link, body > nav[class^=navbarre] > menu > li > a, body > nav[class^=navbarre] headerbar-standard > menu .nav-link, body > nav[class^=navbarre] headerbar-standard > menu > li > a, headerbar-standard .navbar-nav .nav-link, headerbar-standard .navbar-nav headerbar-standard > menu > li > a, headerbar-standard > menu .nav-link, headerbar-standard > menu > li > a {
   color: rgba(0, 0, 0, 0.5);
 }
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav navbar-std > menu > li > a:hover, body > nav[class^=navbarre] .navbar-nav .nav-link:hover, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li > a:hover, body > nav[class^=navbarre] .navbar-nav navbar-std > menu > li > a:hover, body > nav[class^=navbarre] > menu .nav-link:hover, body > nav[class^=navbarre] > menu > li > a:hover, navbar-std .navbar-nav .nav-link:hover, navbar-std .navbar-nav navbar-std > menu > li > a:hover, navbar-std > menu .nav-link:hover, navbar-std > menu > li > a:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav navbar-std > menu > li > a:focus, body > nav[class^=navbarre] .navbar-nav .nav-link:focus, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li > a:focus, body > nav[class^=navbarre] .navbar-nav navbar-std > menu > li > a:focus, body > nav[class^=navbarre] > menu .nav-link:focus, body > nav[class^=navbarre] > menu > li > a:focus, navbar-std .navbar-nav .nav-link:focus, navbar-std .navbar-nav navbar-std > menu > li > a:focus, navbar-std > menu .nav-link:focus, navbar-std > menu > li > a:focus {
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav headerbar-standard > menu > li > a:hover, body > nav[class^=navbarre] .navbar-nav .nav-link:hover, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li > a:hover, body > nav[class^=navbarre] .navbar-nav headerbar-standard > menu > li > a:hover, body > nav[class^=navbarre] > menu .nav-link:hover, body > nav[class^=navbarre] > menu > li > a:hover, headerbar-standard .navbar-nav .nav-link:hover, headerbar-standard .navbar-nav headerbar-standard > menu > li > a:hover, headerbar-standard > menu .nav-link:hover, headerbar-standard > menu > li > a:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav headerbar-standard > menu > li > a:focus, body > nav[class^=navbarre] .navbar-nav .nav-link:focus, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li > a:focus, body > nav[class^=navbarre] .navbar-nav headerbar-standard > menu > li > a:focus, body > nav[class^=navbarre] > menu .nav-link:focus, body > nav[class^=navbarre] > menu > li > a:focus, headerbar-standard .navbar-nav .nav-link:focus, headerbar-standard .navbar-nav headerbar-standard > menu > li > a:focus, headerbar-standard > menu .nav-link:focus, headerbar-standard > menu > li > a:focus {
   color: rgba(0, 0, 0, 0.7);
 }
-.navbar-light .navbar-nav .nav-link.disabled, .navbar-light .navbar-nav navbar-std > menu > li > a.disabled, body > nav[class^=navbarre] .navbar-nav .nav-link.disabled, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li > a.disabled, body > nav[class^=navbarre] .navbar-nav navbar-std > menu > li > a.disabled, body > nav[class^=navbarre] > menu .nav-link.disabled, body > nav[class^=navbarre] > menu > li > a.disabled, navbar-std .navbar-nav .nav-link.disabled, navbar-std .navbar-nav navbar-std > menu > li > a.disabled, navbar-std > menu .nav-link.disabled, navbar-std > menu > li > a.disabled {
+.navbar-light .navbar-nav .nav-link.disabled, .navbar-light .navbar-nav headerbar-standard > menu > li > a.disabled, body > nav[class^=navbarre] .navbar-nav .nav-link.disabled, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li > a.disabled, body > nav[class^=navbarre] .navbar-nav headerbar-standard > menu > li > a.disabled, body > nav[class^=navbarre] > menu .nav-link.disabled, body > nav[class^=navbarre] > menu > li > a.disabled, headerbar-standard .navbar-nav .nav-link.disabled, headerbar-standard .navbar-nav headerbar-standard > menu > li > a.disabled, headerbar-standard > menu .nav-link.disabled, headerbar-standard > menu > li > a.disabled {
   color: rgba(0, 0, 0, 0.3);
 }
-.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav navbar-std > menu > li.show > a, body > nav[class^=navbarre] .navbar-nav .show > .nav-link, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li.show > a, body > nav[class^=navbarre] .navbar-nav navbar-std > menu > li.show > a, body > nav[class^=navbarre] > menu .show > .nav-link, body > nav[class^=navbarre] > menu > li.show > a, navbar-std .navbar-nav .show > .nav-link, navbar-std .navbar-nav navbar-std > menu > li.show > a, navbar-std > menu .show > .nav-link, navbar-std > menu > li.show > a,
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav headerbar-standard > menu > li.show > a, body > nav[class^=navbarre] .navbar-nav .show > .nav-link, body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li.show > a, body > nav[class^=navbarre] .navbar-nav headerbar-standard > menu > li.show > a, body > nav[class^=navbarre] > menu .show > .nav-link, body > nav[class^=navbarre] > menu > li.show > a, headerbar-standard .navbar-nav .show > .nav-link, headerbar-standard .navbar-nav headerbar-standard > menu > li.show > a, headerbar-standard > menu .show > .nav-link, headerbar-standard > menu > li.show > a,
 .navbar-light .navbar-nav .active > .nav-link,
-.navbar-light .navbar-nav navbar-std > menu > li.active > a,
+.navbar-light .navbar-nav headerbar-standard > menu > li.active > a,
 body > nav[class^=navbarre] .navbar-nav .active > .nav-link,
 body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li.active > a,
-body > nav[class^=navbarre] .navbar-nav navbar-std > menu > li.active > a,
+body > nav[class^=navbarre] .navbar-nav headerbar-standard > menu > li.active > a,
 body > nav[class^=navbarre] > menu .active > .nav-link,
 body > nav[class^=navbarre] > menu > li.active > a,
-navbar-std .navbar-nav .active > .nav-link,
-navbar-std .navbar-nav navbar-std > menu > li.active > a,
-navbar-std > menu .active > .nav-link,
-navbar-std > menu > li.active > a,
+headerbar-standard .navbar-nav .active > .nav-link,
+headerbar-standard .navbar-nav headerbar-standard > menu > li.active > a,
+headerbar-standard > menu .active > .nav-link,
+headerbar-standard > menu > li.active > a,
 .navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav navbar-std > menu > li > a.show,
+.navbar-light .navbar-nav headerbar-standard > menu > li > a.show,
 body > nav[class^=navbarre] .navbar-nav .nav-link.show,
 body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li > a.show,
-body > nav[class^=navbarre] .navbar-nav navbar-std > menu > li > a.show,
+body > nav[class^=navbarre] .navbar-nav headerbar-standard > menu > li > a.show,
 body > nav[class^=navbarre] > menu .nav-link.show,
 body > nav[class^=navbarre] > menu > li > a.show,
-navbar-std .navbar-nav .nav-link.show,
-navbar-std .navbar-nav navbar-std > menu > li > a.show,
-navbar-std > menu .nav-link.show,
-navbar-std > menu > li > a.show,
+headerbar-standard .navbar-nav .nav-link.show,
+headerbar-standard .navbar-nav headerbar-standard > menu > li > a.show,
+headerbar-standard > menu .nav-link.show,
+headerbar-standard > menu > li > a.show,
 .navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav navbar-std > menu > li > a.active,
+.navbar-light .navbar-nav headerbar-standard > menu > li > a.active,
 body > nav[class^=navbarre] .navbar-nav .nav-link.active,
 body > nav[class^=navbarre] .navbar-nav body > nav[class^=navbarre] > menu > li > a.active,
-body > nav[class^=navbarre] .navbar-nav navbar-std > menu > li > a.active,
+body > nav[class^=navbarre] .navbar-nav headerbar-standard > menu > li > a.active,
 body > nav[class^=navbarre] > menu .nav-link.active,
 body > nav[class^=navbarre] > menu > li > a.active,
-navbar-std .navbar-nav .nav-link.active,
-navbar-std .navbar-nav navbar-std > menu > li > a.active,
-navbar-std > menu .nav-link.active,
-navbar-std > menu > li > a.active {
+headerbar-standard .navbar-nav .nav-link.active,
+headerbar-standard .navbar-nav headerbar-standard > menu > li > a.active,
+headerbar-standard > menu .nav-link.active,
+headerbar-standard > menu > li > a.active {
   color: rgba(0, 0, 0, 0.9);
 }
-.navbar-light .navbar-toggler, .navbar-light navbar-std > button, body > nav[class^=navbarre] .navbar-toggler, body > nav[class^=navbarre] > button, body > nav[class^=navbarre] navbar-std > button, navbar-std .navbar-toggler, navbar-std > button {
+.navbar-light .navbar-toggler, .navbar-light headerbar-standard > button, body > nav[class^=navbarre] .navbar-toggler, body > nav[class^=navbarre] > button, body > nav[class^=navbarre] headerbar-standard > button, headerbar-standard .navbar-toggler, headerbar-standard > button {
   color: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.1);
 }
-.navbar-light .navbar-toggler-icon, .navbar-light navbar-std > button > span, body > nav[class^=navbarre] .navbar-toggler-icon, body > nav[class^=navbarre] > button > span, body > nav[class^=navbarre] navbar-std > button > span, navbar-std .navbar-toggler-icon, navbar-std > button > span {
+.navbar-light .navbar-toggler-icon, .navbar-light headerbar-standard > button > span, body > nav[class^=navbarre] .navbar-toggler-icon, body > nav[class^=navbarre] > button > span, body > nav[class^=navbarre] headerbar-standard > button > span, headerbar-standard .navbar-toggler-icon, headerbar-standard > button > span {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-.navbar-light .navbar-text, body > nav[class^=navbarre] .navbar-text, navbar-std .navbar-text {
+.navbar-light .navbar-text, body > nav[class^=navbarre] .navbar-text, headerbar-standard .navbar-text {
   color: rgba(0, 0, 0, 0.5);
 }
-.navbar-light .navbar-text a, body > nav[class^=navbarre] .navbar-text a, navbar-std .navbar-text a {
+.navbar-light .navbar-text a, body > nav[class^=navbarre] .navbar-text a, headerbar-standard .navbar-text a {
   color: rgba(0, 0, 0, 0.9);
 }
-.navbar-light .navbar-text a:hover, body > nav[class^=navbarre] .navbar-text a:hover, navbar-std .navbar-text a:hover, .navbar-light .navbar-text a:focus, body > nav[class^=navbarre] .navbar-text a:focus, navbar-std .navbar-text a:focus {
+.navbar-light .navbar-text a:hover, body > nav[class^=navbarre] .navbar-text a:hover, headerbar-standard .navbar-text a:hover, .navbar-light .navbar-text a:focus, body > nav[class^=navbarre] .navbar-text a:focus, headerbar-standard .navbar-text a:focus {
   color: rgba(0, 0, 0, 0.9);
 }
 
-.navbar-dark .navbar-brand, .navbar-dark body > nav[class^=navbarre] > a, .navbar-dark navbar-std > a {
+.navbar-dark .navbar-brand, .navbar-dark body > nav[class^=navbarre] > a, .navbar-dark headerbar-standard > a {
   color: #fff;
 }
-.navbar-dark .navbar-brand:hover, .navbar-dark body > nav[class^=navbarre] > a:hover, .navbar-dark navbar-std > a:hover, .navbar-dark .navbar-brand:focus, .navbar-dark body > nav[class^=navbarre] > a:focus, .navbar-dark navbar-std > a:focus {
+.navbar-dark .navbar-brand:hover, .navbar-dark body > nav[class^=navbarre] > a:hover, .navbar-dark headerbar-standard > a:hover, .navbar-dark .navbar-brand:focus, .navbar-dark body > nav[class^=navbarre] > a:focus, .navbar-dark headerbar-standard > a:focus {
   color: #fff;
 }
-.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav navbar-std > menu > li > a, .navbar-dark body > nav[class^=navbarre] > menu .nav-link, .navbar-dark body > nav[class^=navbarre] > menu > li > a, .navbar-dark navbar-std > menu .nav-link, .navbar-dark navbar-std > menu > li > a {
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav headerbar-standard > menu > li > a, .navbar-dark body > nav[class^=navbarre] > menu .nav-link, .navbar-dark body > nav[class^=navbarre] > menu > li > a, .navbar-dark headerbar-standard > menu .nav-link, .navbar-dark headerbar-standard > menu > li > a {
   color: rgba(255, 255, 255, 0.5);
 }
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark body > nav[class^=navbarre] > menu .nav-link:hover, .navbar-dark body > nav[class^=navbarre] > menu > li > a:hover, .navbar-dark navbar-std > menu .nav-link:hover, .navbar-dark navbar-std > menu > li > a:hover, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark body > nav[class^=navbarre] > menu .nav-link:focus, .navbar-dark body > nav[class^=navbarre] > menu > li > a:focus, .navbar-dark navbar-std > menu .nav-link:focus, .navbar-dark navbar-std > menu > li > a:focus {
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark body > nav[class^=navbarre] > menu .nav-link:hover, .navbar-dark body > nav[class^=navbarre] > menu > li > a:hover, .navbar-dark headerbar-standard > menu .nav-link:hover, .navbar-dark headerbar-standard > menu > li > a:hover, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark body > nav[class^=navbarre] > menu .nav-link:focus, .navbar-dark body > nav[class^=navbarre] > menu > li > a:focus, .navbar-dark headerbar-standard > menu .nav-link:focus, .navbar-dark headerbar-standard > menu > li > a:focus {
   color: rgba(255, 255, 255, 0.75);
 }
-.navbar-dark .navbar-nav .nav-link.disabled, .navbar-dark body > nav[class^=navbarre] > menu .nav-link.disabled, .navbar-dark body > nav[class^=navbarre] > menu > li > a.disabled, .navbar-dark navbar-std > menu .nav-link.disabled, .navbar-dark navbar-std > menu > li > a.disabled {
+.navbar-dark .navbar-nav .nav-link.disabled, .navbar-dark body > nav[class^=navbarre] > menu .nav-link.disabled, .navbar-dark body > nav[class^=navbarre] > menu > li > a.disabled, .navbar-dark headerbar-standard > menu .nav-link.disabled, .navbar-dark headerbar-standard > menu > li > a.disabled {
   color: rgba(255, 255, 255, 0.25);
 }
-.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark body > nav[class^=navbarre] > menu .show > .nav-link, .navbar-dark body > nav[class^=navbarre] > menu > li.show > a, .navbar-dark navbar-std > menu .show > .nav-link, .navbar-dark navbar-std > menu > li.show > a,
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark body > nav[class^=navbarre] > menu .show > .nav-link, .navbar-dark body > nav[class^=navbarre] > menu > li.show > a, .navbar-dark headerbar-standard > menu .show > .nav-link, .navbar-dark headerbar-standard > menu > li.show > a,
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark body > nav[class^=navbarre] > menu .active > .nav-link,
 .navbar-dark body > nav[class^=navbarre] > menu > li.active > a,
-.navbar-dark navbar-std > menu .active > .nav-link,
-.navbar-dark navbar-std > menu > li.active > a,
+.navbar-dark headerbar-standard > menu .active > .nav-link,
+.navbar-dark headerbar-standard > menu > li.active > a,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark body > nav[class^=navbarre] > menu .nav-link.show,
 .navbar-dark body > nav[class^=navbarre] > menu > li > a.show,
-.navbar-dark navbar-std > menu .nav-link.show,
-.navbar-dark navbar-std > menu > li > a.show,
+.navbar-dark headerbar-standard > menu .nav-link.show,
+.navbar-dark headerbar-standard > menu > li > a.show,
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark body > nav[class^=navbarre] > menu .nav-link.active,
 .navbar-dark body > nav[class^=navbarre] > menu > li > a.active,
-.navbar-dark navbar-std > menu .nav-link.active,
-.navbar-dark navbar-std > menu > li > a.active {
+.navbar-dark headerbar-standard > menu .nav-link.active,
+.navbar-dark headerbar-standard > menu > li > a.active {
   color: #fff;
 }
-.navbar-dark .navbar-toggler, .navbar-dark body > nav[class^=navbarre] > button, .navbar-dark navbar-std > button {
+.navbar-dark .navbar-toggler, .navbar-dark body > nav[class^=navbarre] > button, .navbar-dark headerbar-standard > button {
   color: rgba(255, 255, 255, 0.5);
   border-color: rgba(255, 255, 255, 0.1);
 }
-.navbar-dark .navbar-toggler-icon, .navbar-dark body > nav[class^=navbarre] > button > span, .navbar-dark navbar-std > button > span {
+.navbar-dark .navbar-toggler-icon, .navbar-dark body > nav[class^=navbarre] > button > span, .navbar-dark headerbar-standard > button > span {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .navbar-dark .navbar-text {
@@ -6150,7 +6150,7 @@ button.bg-danger:focus {
   background-color: #bd2130 !important;
 }
 
-.bg-light, body > nav[class^=navbarre], navbar-std {
+.bg-light, body > nav[class^=navbarre], headerbar-standard {
   background-color: #f8f9fa !important;
 }
 
@@ -6415,7 +6415,7 @@ button.bg-dark:focus {
   }
 }
 @media (min-width: 992px) {
-  .d-lg-none, body > nav[class^=navbarre] > button, navbar-std > button {
+  .d-lg-none, body > nav[class^=navbarre] > button, headerbar-standard > button {
     display: none !important;
   }
 
@@ -7354,7 +7354,7 @@ button.bg-dark:focus {
   position: sticky !important;
 }
 
-.fixed-top, body > nav[class^=navbarre], navbar-std {
+.fixed-top, body > nav[class^=navbarre], headerbar-standard {
   position: fixed;
   top: 0;
   right: 0;
@@ -7378,7 +7378,7 @@ button.bg-dark:focus {
   }
 }
 
-.sr-only, body > nav[class^=navbarre] > menu > li > a > span, navbar-std > menu > li > a > span {
+.sr-only, body > nav[class^=navbarre] > menu > li > a > span, headerbar-standard > menu > li > a > span {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -7531,10 +7531,10 @@ button.bg-dark:focus {
   margin: 0.5rem !important;
 }
 
-.mt-2, body > nav[class^=navbarre] > menu, navbar-std > menu,
+.mt-2, body > nav[class^=navbarre] > menu, headerbar-standard > menu,
 .my-2,
 body > nav[class^=navbarre] > form,
-navbar-std > form {
+headerbar-standard > form {
   margin-top: 0.5rem !important;
 }
 
@@ -7546,7 +7546,7 @@ navbar-std > form {
 .mb-2,
 .my-2,
 body > nav[class^=navbarre] > form,
-navbar-std > form {
+headerbar-standard > form {
   margin-bottom: 0.5rem !important;
 }
 
@@ -7900,7 +7900,7 @@ navbar-std > form {
   margin-top: auto !important;
 }
 
-.mr-auto, body > nav[class^=navbarre] > menu, navbar-std > menu,
+.mr-auto, body > nav[class^=navbarre] > menu, headerbar-standard > menu,
 .mx-auto {
   margin-right: auto !important;
 }
@@ -8786,10 +8786,10 @@ navbar-std > form {
     margin: 0 !important;
   }
 
-  .mt-lg-0, body > nav[class^=navbarre] > menu, navbar-std > menu,
+  .mt-lg-0, body > nav[class^=navbarre] > menu, headerbar-standard > menu,
 .my-lg-0,
 body > nav[class^=navbarre] > form,
-navbar-std > form {
+headerbar-standard > form {
     margin-top: 0 !important;
   }
 
@@ -8801,7 +8801,7 @@ navbar-std > form {
   .mb-lg-0,
 .my-lg-0,
 body > nav[class^=navbarre] > form,
-navbar-std > form {
+headerbar-standard > form {
     margin-bottom: 0 !important;
   }
 
@@ -9956,7 +9956,7 @@ h3 {
     min-width: 992px !important;
   }
 
-  .navbar, body > nav[class^=navbarre], navbar-std {
+  .navbar, body > nav[class^=navbarre], headerbar-standard {
     display: none;
   }
 
@@ -9992,7 +9992,7 @@ h3 {
     border-color: #dee2e6;
   }
 }
-body > nav[class^=navbarre], navbar-std {
+body > nav[class^=navbarre], headerbar-standard {
   /*UNE OPTION POURRA PERMETTRE DE DEFINIR LE COLLAPSE A LA VALEUR SOUHAITEE (lg,md,sm,xs,..), OPTION PAR DEFAUT A 'sm'*/
   /*UNE OPTION POURRA PERMETTRE DE DEFINIR LE BACKGROUND SOUHAITE(light,dark,..), OPTION PAR DEFAUT A 'light'*/
   /*UNE OPTION POURRA PERMETTRE DE DEFINIR si le navbar doit etre collé a un bord, et lequel(top,bottom,right,or left), OPTION PAR DEFAUT A 'top'*/
