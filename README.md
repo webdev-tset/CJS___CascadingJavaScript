@@ -2,6 +2,22 @@
 # CE WIDGET PERMETTRA EN PLUS PAR EXEMPLEDE SERVIR DE FEUILLE DE BROUILLON? OU DE TODI LISTS OU QUE SAIS6JE NECORE, TOUT CE QUI PEUT S'AFFICHER ET ETRE UTILE !)
 
 
+# PROCESS
+un webcompoasnt est appelé dans le docupment html
+le constructor de la classe du composant est appelé, qui appelle le constructor de sa base, qui appelle le constructor de sa class parente
+     - celui-ci recherche dans la variable json5 cjsdatafile si la clé correspondant au nom ou code machine existe ou pas. 
+     - on crée this.options = si la clé existe et qu'une régle est définie (clé == "_") dans cette objet on l'extirpe de l'objet || {} objet vide
+     - on crée this.data = la valeur de cette clé si elle existe || {} un objet vide
+     - crée les elements en bouclant sur la liste des schémas de la class de base  correspondant au webcomponent (chaque class de base à une liste de l'ensemble des webcomposant que l'on peut construire avec (cette class de base))
+          les methodes sont appelés pour générer les élements. Si des données sont manquantes ou meme s'il n'y a aucune donnée, ces méthodes génerent quand même un contenu HTML avec du dummy content.
+le constructor de la class de base
+     - implémente des fonctionnalités pour permettre la modification et la manipulation du web-composant ou de certains de ces éléments. => ensemble de FONCTIONNALITES A DEFINIR !!!
+le constructor du webcomposant
+     - utilise this.options pour implémenter des fonctionnalité sur le webcomposant ou sur certains de ses élements. 
+
+
+
+# TODO LIST
 
 # LISTE DES COMPOSANTS (bootstrap):
 - alerts 2

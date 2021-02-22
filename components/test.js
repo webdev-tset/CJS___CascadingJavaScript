@@ -18,6 +18,9 @@ class MonTest extends HTMLElement{
           
      }
      attributeChangedCallback (name, old, newV){
+          // alert(newV)
+          console.log(name)
+          console.log(old)
           console.log(newV)
      }
 }

@@ -4,9 +4,14 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Document</title>
+     <script src="test0.js"></script>
      <script src="test.js"></script>
+     <style>
+     </style>
 </head>
 <body>
+     <ok-ok></ok-ok>
+     <hr>
      <!-- <span is="mon-test-span" ok="iiii" /> -->
      <mon-test ok="nonnnnnn">
           <div slot="ok">yoshyoshyoshi</div>
@@ -22,6 +27,13 @@
                document.querySelector('mon-test')
                     .shadowRoot.querySelector('span')
           )
+
+
+
+          // TEST TARGETTING THROUGH SHODOW OR NOT
+          // WITH MODE OPEN OR NOT 
+          // alert(document.querySelector("#ok").innerHTML)
+          // alert(document.querySelector('ok-ok').shadowRoot.querySelector("#okk").innerHTML)
      </script>
 </body>
 </html>

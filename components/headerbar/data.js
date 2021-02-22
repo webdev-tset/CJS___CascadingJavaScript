@@ -4,7 +4,7 @@ CHAQUE COMPOSANT-WEB POSSEDE UN FICHIER data.js TEL QUE CELUI-CI
 
 */
 // headerbar-standard
-var datafile = {
+var cjsdatafile = {
     "headerbar_standard": {
         _: {
             // t for Traitment, 

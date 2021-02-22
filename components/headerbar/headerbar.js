@@ -7,9 +7,6 @@ export default class Headerbar extends MyHtmlElement{
 
     constructor(){
         super()
-        // VIA L'IMPORT DU SCRIPT ./data.js, JE RECUPERE LES DONNEES data
-        // DU WEB-COMPOSANT headerbar VIA LA VARIABLE CRÉÉE PAR CE SCRIPT DANS LE <head/> 
-        this.data = headerbar_data;
         this.component = {a:null,h1:null,menu:null,ul:null,form:null,button:null}
     }
     // APPELÉ LORSQUE L'ÉLEMENNT EST CONNECTÉ À LA PAGE

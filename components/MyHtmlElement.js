@@ -6,9 +6,11 @@ export default class MyHtmlElement extends HTMLElement{
      COMPONENT_NAME = "element"
 
      constructor(){
-          // alert('a')
           super()
-          // alert('b')
+          // VIA L'IMPORT DU SCRIPT ./data.js, JE RECUPERE LES DONNEES data
+          // DU WEB-COMPOSANT headerbar VIA LA VARIABLE CRÉÉE PAR CE SCRIPT DANS LE <head/> 
+          this.data = cjsdatafile;
+          this.yo()
           this.err = []
           this.data = {}
           this.elements = {}

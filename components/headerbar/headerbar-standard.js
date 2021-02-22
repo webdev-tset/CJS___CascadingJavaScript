@@ -7,8 +7,9 @@ export default class HeaderbarStandard extends Headerbar{
      constructor(){
           super()
           this.component = {h1:"logo",menu:"primary",ul:"seondary",form:"headerbar",button:"responsive"}
-
+          
      }
+     yo(){alert('ok')}
      // APPELÉ LORSQUE L'ÉLEMENNT EST CONNECTÉ À LA PAGE
      connectedCallback(){
           // VIA L'IMPORT DU SCRIPT ./data.js, JE RECUPERE LES DONNEES data
@@ -82,6 +83,7 @@ export default class HeaderbarStandard extends Headerbar{
               $(this).append(this.component[a])
 
           this.id = this.COMPONENT_NAME+"___"+Math.round(Math.random()*100)
+          alert('z')
       }
 
 
